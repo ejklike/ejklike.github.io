@@ -1,8 +1,8 @@
 title:            Study Note
 description:      "그저 묵묵히 달리기 연습을 할 뿐,"
-url:              # Site url.
+url:              http://ejklike.github.com
 signoff:          # Your name.
-disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
+disqus_shortname: ejklike
 facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
 google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
 
@@ -12,9 +12,9 @@ links:
 #   - name:         Blog
 #     url:          http://muan.co
 #     external:     true
-  # - name:         Email
-  #   url:          mailto:hello@muan.co
-  #   external:     true
+  - name:         Email
+    url:          mailto:ejklike@gmail.com
+    external:     true
 #   - name:         GitHub
 #     url:          http://github.com/muan
 #     external:     true
