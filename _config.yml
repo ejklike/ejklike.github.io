@@ -1,13 +1,26 @@
-# Site settings
-title: Study Note
-email: ejklike@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://ejklike.github.io" # the base hostname & protocol for your site
+title:            Study Note
+description:      "그저 묵묵히 달리기 연습을 할 뿐,"
+url:              # Site url.
+signoff:          # Your name.
+disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
+facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
+google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
 
-# Build settings
-markdown: redcarpet
-pygments: true
+links:
+  - name:         About
+    url:          /about
+#   - name:         Blog
+#     url:          http://muan.co
+#     external:     true
+  # - name:         Email
+  #   url:          mailto:hello@muan.co
+  #   external:     true
+#   - name:         GitHub
+#     url:          http://github.com/muan
+#     external:     true
+highlighter:      pygments
+permalink:        pretty
+markdown:         redcarpet
+redcarpet:
+  extensions:
+    - smart
