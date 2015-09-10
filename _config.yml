@@ -9,7 +9,7 @@ highlighter: pygments
 # so be sure to set them if your theme uses them.
 #
 title : Study Note
-tagline: Site Tagline
+tagline: 그저 묵묵히 달리기 연습을 할 뿐,
 author :
   name : Eunji Kim
   # email : blah@email.test
