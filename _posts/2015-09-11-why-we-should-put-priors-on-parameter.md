@@ -4,6 +4,7 @@ title: "Why we should put priors on parameter?"
 description: ""
 category: 
 tags: []
+use_math: true
 ---
 {% include JB/setup %}
 
