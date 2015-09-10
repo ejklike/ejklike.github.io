@@ -4,9 +4,12 @@ title: "Why we should put priors on parameter?"
 description: ""
 category: 
 tags: []
-use_math: true
 ---
 {% include JB/setup %}
+
+$\theta$ is a variable representing a parameter.
+
+$$ this is an example $$
 
 Many statistical analyses assume that random variables being studied are independent and identically distributed (iid). With the assumption, we can calculate the joint distributed probability by multiplying marginal probabilities of variables.
 
