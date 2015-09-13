@@ -1,1 +1,0 @@
-requre 'jekyll/tagging'
