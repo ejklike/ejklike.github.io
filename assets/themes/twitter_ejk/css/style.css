@@ -133,6 +133,10 @@ border-bottom:1px solid #989898!important }
   /*color: #666666;*/
 }
 
+@media screen and (max-width: 540px) {
+  #post-list .dates { display: none; }
+
+
 
 
 /* tag_box */
