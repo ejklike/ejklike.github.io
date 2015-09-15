@@ -16,7 +16,7 @@
 .notice--yellow h1,.notice--yellow h2,.notice--yellow h3,
 .notice--green h1,.notice--green h2,.notice--green h3,
 .notice--red h1,.notice--red h2,.notice--red h3,{
-padding-top:0;margin-top:0!important;margin-bottom:0.25em;line-height:1!important }
+padding-top:0;margin-top:0!important;margin-top: 0em;margin-bottom:0.25em;line-height:1!important }
 
 .notice p,.notice p,.notice p,.notice p,.notice p{
 margin-bottom:0; font-family:Arial,sans-serif; font-size:0.8rem }
