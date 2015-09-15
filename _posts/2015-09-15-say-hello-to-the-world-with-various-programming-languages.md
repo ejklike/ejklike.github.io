@@ -7,22 +7,16 @@ tags: [python,java,javascript,c++]
 ---
 {% include JB/setup %}
 
-Python
-```python
-print "hello world!"
-```
+{% include JB/setup %}
 
-Java
-```java
-System.out.println("hello world!");
-```
+Python 
+{% highlight python %} print "hello world!" {% endhighlight %}
+
+Java 
+{% highlight java %} System.out.println("hello world!"); {% endhighlight %}
 
 JavaScript
-```javascript
-console.log("hello world!");
-```
+{% highlight javascript %} console.log("hello world!"); {% endhighlight %}
 
-c++
-```cpp
-cout << "Hello World!";
-```
+c++ 
+{% highlight cpp %} cout << "Hello World!"; {% endhighlight %}
