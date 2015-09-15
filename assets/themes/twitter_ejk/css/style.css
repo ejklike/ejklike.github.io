@@ -15,7 +15,7 @@
 .notice--blue h1,.notice--blue h2,.notice--blue h3,
 .notice--yellow h1,.notice--yellow h2,.notice--yellow h3,
 .notice--green h1,.notice--green h2,.notice--green h3,
-.notice--red h1,.notice--red h2,.notice--red h3,{
+.notice--red h1,.notice--red h2,.notice--red h3{
 padding-top:0em;margin-top:0!important;margin-bottom:0.25em;line-height:1!important }
 
 .notice p,.notice p,.notice p,.notice p,.notice p{
