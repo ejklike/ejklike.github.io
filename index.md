@@ -31,6 +31,8 @@ without thought on anything but the ride you are taking."
 </ul>
 
 ---
+I see. I know. I understand.
+---
 Just keep pedaling :+1:!
 
 <!-- <ul class="posts">
