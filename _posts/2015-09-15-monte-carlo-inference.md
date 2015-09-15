@@ -17,10 +17,11 @@ For posterior inference, we can use various deterministic algorithms.
 * examples???
 * 
 
-
-
 Main issues
 
+* Why do we use MC approximation for posterior inference rather than deterministic algorithms?
+  * ???
+  * 
 * How do we efficiently generate samples from a probability distribution, particularly in high dimensions?
   * non-iterative methods for generating independent samples
   * iterative method known as Markov Chain Monte Carlo(MCMC): produces dependent samples but which works well in high dimensions
@@ -41,7 +42,7 @@ When: univariate cdf
 
 <div class="notice--blue">
 <h2>Theorem</h2>
-<p>If $U \sim unif(0,1), then F^{-1}(U) \sim F$.</p>
+<p>If $U \sim unif(0,1)$, then $F^{-1}(U) \sim F$.</p>
 </div>
 
 ## Box-Muller method
@@ -53,6 +54,8 @@ When: sampling from a Gaussian (univariate or multivariate)
 
 ## Rejection sampling
 
+
+## Importance sampling
 
 
 (Ref: K. Murphy, Ch.23)
