@@ -7,11 +7,10 @@ tags: []
 ---
 {% include JB/setup %}
 
-K. Murphy, Ch23.
-
 The concept of Monte Carlo approximation is very simple: 
+
 > Generate some samples from a distribution, and then use these to compute any quantity of interest.
-> All quantities can be approximated by $\mathbb{E}[f] \approx \frac{1}{S}\sum_{s=1}^{S} f(\textbf{x}^s)$ where $\textbf{x} \sim p(\textbf{x})$ for some distribution $p$ 
+> All quantities can be approximated by $\mathbb{E}[f] \approx \frac{1}{S}\sum_{s=1}^{S} f(\textbf{x}^s)$ where $\textbf{x} \sim p(\textbf{x})$ for some distribution $p$.
 
 For posterior inference, we can use various deterministic algorithms. 
 
@@ -47,6 +46,13 @@ When: univariate cdf
 
 ## Box-Muller method
 
-When: sampling from a 2d Gaussian
+When: sampling from a Gaussian (univariate or multivariate)
 
 1. 
+
+
+## Rejection sampling
+
+
+
+(Ref: K. Murphy, Ch.23)
