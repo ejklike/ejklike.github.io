@@ -8,9 +8,9 @@ tags: [python,java,javascript,c++]
 {% include JB/setup %}
 
 Python
-{% highlight python %}
+```python
 print "hello world!"
-{% endhighlight %}
+```
 
 Java
 {% highlight java %}
