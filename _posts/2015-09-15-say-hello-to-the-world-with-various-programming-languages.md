@@ -13,16 +13,16 @@ print "hello world!"
 ```
 
 Java
-{% highlight java %}
+```java
 System.out.println("hello world!");
-{% endhighlight %}
+```
 
 JavaScript
-{% highlight javascript %}
+```javascript
 console.log("hello world!");
-{% endhighlight %}
+```
 
 c++
-{% highlight cpp %}
+```cpp
 cout << "Hello World!";
-{% endhighlight %}
+```
