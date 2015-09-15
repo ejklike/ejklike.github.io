@@ -1,8 +1,8 @@
 /* notice */
 .notice, .notice--blue, .notice--yellow, .notice--green, .notice--red {
   margin-top: 15px; margin-bottom: 15px;
-  padding-left:2em; padding-right:2em;
-  padding-top:1em; padding-bottom:1em;
+  padding-left:0.5em; padding-right:0.5em;
+  padding-top:0.5em; padding-bottom:0.3em;
   border-radius:3px }
 
 .notice{ background-color:#f4f4f4;border:1px solid #e1e1e8; }

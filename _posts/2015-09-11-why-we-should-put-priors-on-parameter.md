@@ -16,11 +16,12 @@ But, iid is stronger assumption than infinitely exchangeable. If the data is exc
 
 
 <div class = "notice--blue">
-<h2>Theorem (De Finnetti, 1930s)</h2>
-<p>
+<b>Theorem (De Finnetti, 1930s)</b>
+<!-- <p> -->
 A sequence of random variables $(x_1,x_2,\cdots)$ is infinitely exchangeable iff, for all $n$,
 $$p(x_1,x_2,\cdots,x_n) = \int { \prod_{i=1}^{n}{p(x_i|\theta)} }P(d\theta),$$
-for some measure $P$ on $\theta$.</p>
+for some measure $P$ on $\theta$.
+<!-- </p> -->
 </div>
 
 Here's an example. Bag-of-words models assume that the order of words in a document does not matter. Even the words are definitely not iid, we can continue the argument since the assumption makes words conditionally independent.

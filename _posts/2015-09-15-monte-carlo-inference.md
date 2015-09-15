@@ -17,6 +17,7 @@ For posterior inference, we can use various deterministic algorithms.
 * examples???
 * 
 
+
 Main issues
 
 * Why do we use MC approximation for posterior inference rather than deterministic algorithms?
@@ -32,32 +33,56 @@ Main issues
 
 # Sampling from standard distributions
 
-* 1 or 2 dimensions
-* often used as subroutines by more complex methods
+These methods works in 1~2 dimensional sampling and often used as subroutines by more complex methods.
 
 ## Inverse probability transform 
 
-When: univariate cdf
+When the inverse of an univariate cdf is easy to calculate,
 
-* monotonic (having inverse function)
-* range in unit interval
+1. Generate $u \sim unif(0,1)$.
+2. Compute the value $F(x)=u$ where $F$ is the given cdf.
+3. Take x to be the random number drawn from the cdf $F$.
 
-<div class="notice--blue">
-<h3>Theorem</h3>
-<p>If $U \sim unif(0,1)$, then $F^{-1}(U) \sim F$.</p>
-</div>
+This is due to the following theorem:
+
+<div class="notice"><b>Theorem</b> For a cdf $F$ and an uniform random variable $u \sim unif(0,1)$, $F^{-1}(u) \sim F$. </div>
 
 ## Box-Muller method
 
-When: sampling from a Gaussian (univariate or bivariate)
+When we want to generate **Gaussian random numbers**, we can't use the Inverse probability transform because there is no closed form formula for Gaussian cdf. Box-Muller method gives us pairs of independent standard normals from two independent uniforms.
 
-1. 
+If $(X,Y)$ is a pair of independent standard normals, then the probability density is a product:
 
+$$f(x,y)=f(x)f(y)=\frac{1}{\sqrt{2\pi}} e^{-x^2/2}\cdot\frac{1}{\sqrt{2\pi}} e^{-y^2/2}=\frac{1}{\sqrt{2\pi}} e^{-(x^2+y^2)/2}$$
+
+Since this density is radially symmetric, it is natural to consider the polar coordinate random variables $(R,\Theta)$. We interprete the change of variables probabilistically: $\Theta$ is uniformly distributed over $[0,2\pi]$. Then, the marginal cdf over $R$ is 
+
+$$P(R \leq r) = \int_{0}^{r} e^{-s^2/2}sds = 1-e^{-r^2/2}.$$
+
+By letting $e^{-r^2/2}=U_2$, 
+
+$$\Theta=2\pi U_1,\: R=\sqrt{-2 ln(U_2)},\: X=Rcos\Theta,\: Y=Rsin\Theta$$
+
+The resulting $X$ and $Y$ are independent univariate standard normals.
+
+To sample from a multivariate Gaussian, 
+
+1. Compute the Cholesky decomposition of given covariance matrix: $\boldsymbol\Sigma=\textbf{L}\textbf{L}^T$, where $\textbf{L}$ is lower triangular.
+2. Sample $\textbf{x} \sim \mathcal{N}(\textbf{0},\textbf{I})$ using the Box-Muller method. ($n$ independent standard normals)
+3. Set $\textbf{y}=\textbf{Lx}+\boldsymbol\mu$.
+
+This is valid since
+
+$$cov[\textbf{y}]=\textbf{L} cov[\textbf{x}] \textbf{L}^T=\textbf{L I L}^T=\boldsymbol\Sigma$$
 
 ## Rejection sampling
 
+When the inverse cdf method cannot be used, a type of Monte Carlo method called Rejection sampling (=acceptance-rejection method) can be used. The method works for any distritions in $\mathbb{R}^m$ with a density.
 
 ## Importance sampling
 
+When: approximating integrals of the form $I=\mathbb{E}[f]=\int f(\textbf{x})p(\textbf{x})d\textbf{x}$
 
-(Ref: K. Murphy, Ch.23)
+Basic idea: 
+
+### (References: K. Murphy, Ch.23, wikipedia)
