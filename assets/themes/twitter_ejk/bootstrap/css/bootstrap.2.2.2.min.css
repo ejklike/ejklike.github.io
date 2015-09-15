@@ -78,11 +78,12 @@ a.text-error:hover{color:#953b39;}
 a.text-info:hover{color:#2d6987;}
 .text-success{color:#468847;}
 a.text-success:hover{color:#356635;}
-h1,h2,h3{margin:10px 0;font-family:"Vollkorn", serif;font-weight:bold;line-height:20px;color:inherit;text-rendering:optimizelegibility;}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{font-weight:normal;line-height:1;color:#999999;}
+h1,h2,h3{margin:10px 0;line-height:20px;color:inherit;text-rendering:optimizelegibility;}
 /*h1,h2,h3{line-height:20px;}*/
-h1{font-size:18px;}
+h1{font-size:18px;font-family:"Vollkorn", serif;font-weight:bold;}
 h2{font-size:15px;}
 h3{font-size:12px;}
+h1 small,h2 small,h3 small{font-weight:normal;line-height:1;color:#999999;}
 h1 small{font-size:24.5px;}
 h2 small{font-size:17.5px;}
 h3 small{font-size:14px;}
