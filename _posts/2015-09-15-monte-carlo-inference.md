@@ -31,23 +31,25 @@ Main issues
 
 
 # Sampling from standard distributions
+
 * 1 or 2 dimensions
 * often used as subroutines by more complex methods
 
 ## Inverse probability transform 
 
-When: univariate cdf 
+When: univariate cdf
+
 * monotonic (having inverse function)
 * range in unit interval
 
 <div class="notice--blue">
-<h2>Theorem</h2>
+<h3>Theorem</h3>
 <p>If $U \sim unif(0,1)$, then $F^{-1}(U) \sim F$.</p>
 </div>
 
 ## Box-Muller method
 
-When: sampling from a Gaussian (univariate or multivariate)
+When: sampling from a Gaussian (univariate or bivariate)
 
 1. 
 
