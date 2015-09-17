@@ -12,20 +12,21 @@ The concept of Monte Carlo approximation is very simple:
 > Generate some samples from a distribution, and then use these to compute any quantity of interest.
 > All quantities can be approximated by $\mathbb{E}[f] \approx \frac{1}{S}\sum_{s=1}^{S} f(\textbf{x}^s)$ where $\textbf{x} \sim p(\textbf{x})$ for some distribution $p$.
 
-For posterior inference, we can use various deterministic algorithms. 
-
-* examples???
-* 
+Monte Carlo methods are used for posterior inference because we are interested about the integration value(mean, variance, ...) as well as the distribution(the probability for given $x$). When the sample size is large enough, we can achieve any desired level of accuracy.
 
 
-Main issues
+<!-- For posterior inference, we can use various deterministic algorithms. But, our posterior may have some problems: -->
+<!-- * need to be normalized -->
+<!-- * hard to integrate (=hard to derive mean, variance, ...) -->
 
-* Why do we use MC approximation for posterior inference rather than deterministic algorithms?
-  * ???
-  * 
-* How do we efficiently generate samples from a probability distribution, particularly in high dimensions?
+<!-- Then, how can we -->
+<!-- * Why do we use MC approximation for posterior inference rather than deterministic algorithms? -->
+  <!-- * ??? -->
+  <!-- *  -->
+
+<!-- How do we efficiently generate samples from a probability distribution, particularly in high dimensions?
   * non-iterative methods for generating independent samples
-  * iterative method known as Markov Chain Monte Carlo(MCMC): produces dependent samples but which works well in high dimensions
+  * iterative method known as Markov Chain Monte Carlo(MCMC): produces dependent samples but which works well in high dimensions -->
 
 
 
@@ -55,13 +56,13 @@ If $(X,Y)$ is a pair of independent standard normals, then the probability densi
 
 $$f(x,y)=f(x)f(y)=\frac{1}{\sqrt{2\pi}} e^{-x^2/2}\cdot\frac{1}{\sqrt{2\pi}} e^{-y^2/2}=\frac{1}{\sqrt{2\pi}} e^{-(x^2+y^2)/2}$$
 
-Since this density is radially symmetric, it is natural to consider the polar coordinate random variables $(R,\Theta)$. We interprete the change of variables probabilistically: $\Theta$ is uniformly distributed over $[0,2\pi]$. Then, the marginal cdf over $R$ is 
+Since this density is radially symmetric, it is natural to consider the polar coordinate random variables $(R,\theta)$. We interprete the change of variables probabilistically: $\theta$ is uniformly distributed over $[0,2\pi]$. Then, the marginal cdf over $R$ is 
 
 $$P(R \leq r) = \int_{0}^{r} e^{-s^2/2}sds = 1-e^{-r^2/2}.$$
 
 By letting $e^{-r^2/2}=U_2$, 
 
-$$\Theta=2\pi U_1,\: R=\sqrt{-2 ln(U_2)},\: X=Rcos\Theta,\: Y=Rsin\Theta$$
+$$\theta=2\pi U_1,\: R=\sqrt{-2 ln(U_2)},\: X=R\cos\theta,\: Y=R\sin\theta$$
 
 The resulting $X$ and $Y$ are independent univariate standard normals.
 
@@ -73,11 +74,19 @@ To sample from a multivariate Gaussian,
 
 This is valid since
 
-$$cov[\textbf{y}]=\textbf{L} cov[\textbf{x}] \textbf{L}^T=\textbf{L I L}^T=\boldsymbol\Sigma$$
+$$cov[\textbf{y}]=\textbf{L} cov[\textbf{x}] \textbf{L}^T=\textbf{L I L}^T=\boldsymbol\Sigma.$$
 
 ## Rejection sampling
 
 When the inverse cdf method cannot be used, a type of Monte Carlo method called Rejection sampling (=acceptance-rejection method) can be used. The method works for any distritions in $\mathbb{R}^m$ with a density.
+
+When the computational cost for deriving evidence(=normalizing constant) is very expensive, rejection samping works well in low dimension. (In high dimension, rejection rate grows exponentially.)
+
+Suppose that an unnormalized target $\tilde{p}(\textbf{x})$ is given.
+
+1. Find a constant $M$ and a **proposal distribution** $q(\textbf{x})$ such that $Mq(\textbf{x})\leq \tilde{p}(\textbf{x})$.
+2. Sample $u\sim unif(0,1)$ (random height for $y$) and $\textbf{x} \sim q(\textbf{x})$ (random location for $\textbf{x}$) $\textbf{x}$)
+3. Accept $\textbf{x}$ if $u\leq \tilde{p}(x) / M q(\textbf{x})$
 
 ## Importance sampling
 
