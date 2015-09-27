@@ -45,7 +45,7 @@ without thought on anything but the ride you are taking."
 
 ---
 
-<h2 class="post_title">{.{page.title}}</h2>
+<!-- <h2 class="post_title">{.{page.title}}</h2>
 <ul>
   {.% for post in site.posts %}
   {.% for tag in post.tags %}
@@ -62,7 +62,7 @@ without thought on anything but the ride you are taking."
   {.% endif %}
   {.% endfor %}
   {.% endfor %}
-</ul>
+</ul> -->
 
 {% for tag in site.tags %} 
   <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
@@ -73,9 +73,7 @@ without thought on anything but the ride you are taking."
 {% endfor %}
 
 ---
-I see. I know. I understand.
----
-Just keep pedaling :+1:!
+I see. I know. I understand.---Just keep pedaling :+1:!
 
 <!-- <ul class="posts">
   {% for post in site.posts %}
