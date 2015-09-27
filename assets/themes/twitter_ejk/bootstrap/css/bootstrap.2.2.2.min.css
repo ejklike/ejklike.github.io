@@ -82,7 +82,7 @@ h1,h2,h3{margin-top:20px 0;margin-bottom:10px 0;line-height:20px;color:inherit;t
 /*h1,h2,h3{line-height:20px;}*/
 h1{font-size:20px;font-family:"Vollkorn", serif;padding-top:2em;}
 h2{font-size:16px;font-family:"Vollkorn", serif;padding-top:1em;}
-h3{font-size:13px;font-weight: 200;font-style: italic;}
+h3{font-size:13px;font-weight: 200;font-style: italic;padding-top:1em;}
 /*h1 small,h2 small,h3 small{font-weight:normal;line-height:1;color:#999999;}*/
 /*h1 small{font-size:24.5px;}
 h2 small{font-size:17.5px;}

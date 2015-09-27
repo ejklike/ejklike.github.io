@@ -86,7 +86,7 @@ Suppose that an unnormalized target $\tilde{p}(\textbf{x})$ is given.
 
 1. Find a constant $M$ and a **proposal distribution** $q(\textbf{x})$ such that $Mq(\textbf{x})\leq \tilde{p}(\textbf{x})$.
 2. Sample $u\sim unif(0,1)$ (random height for $y$) and $\textbf{x} \sim q(\textbf{x})$ (random location for $\textbf{x}$) $\textbf{x}$)
-3. Accept $\textbf{x}$ if $u\leq \tilde{p}(x)/Mq(\textbf{x})}$
+3. Accept $\textbf{x}$ if $u\leq \tilde{p}(x) / M q(\textbf{x})$
 
 ## Importance sampling
 
