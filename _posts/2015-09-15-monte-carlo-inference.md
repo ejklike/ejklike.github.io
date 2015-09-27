@@ -54,7 +54,7 @@ When we want to generate **Gaussian random numbers**, we can't use the Inverse p
 
 If $(X,Y)$ is a pair of independent standard normals, then the probability density is a product:
 
-$$f(x,y)=f(x)f(y)=\frac{1}{\sqrt{2\pi}} e^{-x^2/2}\cdot\frac{1}{\sqrt{2\pi}} e^{-y^2/2}=\frac{1}{\sqrt{2\pi}} e^{-(x^2+y^2)/2}$$
+$$f(x,y)=f(x)f(y)=\frac{1}{\sqrt{2\pi}} e^{-x^2/2}\cdot\frac{1}{\sqrt{2\pi}} e^{-y^2/2}=\frac{1}{2\pi} e^{-(x^2+y^2)/2}$$
 
 Since this density is radially symmetric, it is natural to consider the polar coordinate random variables $(R,\theta)$. We interprete the change of variables probabilistically: $\theta$ is uniformly distributed over $[0,2\pi]$. Then, the marginal cdf over $R$ is 
 
