@@ -1,7 +1,7 @@
 # Site settings
 title: Study Note
 email: eunjikim@dm.snu.ac.kr
-description: 하하하하핳하하하하하하하 It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+description: > machine learning, statistical learning, python, programming, data, datamining, data mining, data scientist, pattern recognition, deep learning
 baseurl: "" # the subpath of your site, e.g. /blog/
 author: Eunji Kim
 url: "http://ejklike.github.io" # the base hostname & protocol for your site
