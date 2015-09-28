@@ -1,7 +1,9 @@
 # Site settings
 title: Study Note
 email: eunjikim@dm.snu.ac.kr
-description: > machine learning, statistical learning, python, programming, data, datamining, data mining, data scientist, pattern recognition, deep learning
+description: > # machine learning, statistical learning, 
+pattern recognition, deep learning, data, datamining, data mining, data scientist,
+python, programming
 baseurl: "" # the subpath of your site, e.g. /blog/
 author: Eunji Kim
 url: "http://ejklike.github.io" # the base hostname & protocol for your site
