@@ -1,29 +1,20 @@
----
-theme :
-  name : twitter_ejk
----
-{% include JB/setup %}
-{% include themes/twitter_ejk/default.html %}
+<!DOCTYPE html>
+<html>
 
-<!-- pigments theme -->
-<link rel="stylesheet" href="/pygments-solarized-light.css">
+  {% include head.html %}
 
-<!-- google font -->
-<link href='https://fonts.googleapis.com/css?family=Schoolbell|Copse|Kameron|Vollkorn:700' rel='stylesheet' type='text/css'>
+  <body>
 
-<!-- mathjax config -->
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- {% include header.html %} -->
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$'], ['\[','\]']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-});
-</script>
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

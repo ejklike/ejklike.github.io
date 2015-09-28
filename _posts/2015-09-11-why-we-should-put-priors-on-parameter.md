@@ -3,9 +3,8 @@ layout: post
 title: "Why we should put priors on parameter?"
 description: ""
 category: 
-tags: [bayesian, prior, parameter]
+tags: bayesian prior parameter
 ---
-{% include JB/setup %}
 
 Many statistical analyses assume that random variables being studied are independent and identically distributed (iid). With the assumption, we can calculate the joint distributed probability by multiplying marginal probabilities of variables.
 
@@ -15,7 +14,7 @@ But, iid is stronger assumption than infinitely exchangeable. If the data is exc
 * the conditionally independence of given data $(x1,x2,\cdots,x_n)$
 
 
-<div class = "notice--blue">
+<div class = "notice">
 <b>Theorem (De Finnetti, 1930s)</b>
 <!-- <p> -->
 A sequence of random variables $(x_1,x_2,\cdots)$ is infinitely exchangeable iff, for all $n$,

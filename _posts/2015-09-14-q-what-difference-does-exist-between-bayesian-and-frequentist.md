@@ -3,9 +3,8 @@ layout: post
 title: "What difference does exist between Bayesian and Frequentist?"
 description: ""
 category: 
-tags: [bayesian, frequentist]
+tags: bayesian frequentist
 ---
-{% include JB/setup %}
 
 I found a helpful example that is easy to understand the difference btw them.
 

@@ -3,11 +3,8 @@ layout: post
 title: "Say hello to the world (with various programming languages)"
 description: ""
 category: 
-tags: [python,java,javascript,c++]
+tags: python java javascript c++
 ---
-{% include JB/setup %}
-
-{% include JB/setup %}
 
 Python 
 {% highlight python %} print "hello world!" {% endhighlight %}
