@@ -2,7 +2,7 @@
 layout: post
 title: "Monte Carlo inference"
 description: ""
-tags: mcmc sampling
+tags: [mcmc, sampling, monte carlo]
 ---
 
 The concept of Monte Carlo approximation is very simple: 

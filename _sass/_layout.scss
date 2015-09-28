@@ -291,11 +291,6 @@
     li {
         display: inline;
 
-        active {
-            color: white;
-            background: $link-color;
-        }
-
         a {
             padding: 3px 6px;
             margin: 3px;
@@ -306,15 +301,16 @@
             /* border: 1px dashed $link-color; */
         }
 
-        a:hover {
-            text-decoration: 1px underline dashed;
-        }
-
         span {
             vertical-align: super;
             font-size: 0.8em;
         }
     }
+
+    li.active>a {
+            color: white;
+            background: $link-color;
+        }
 }
 
 
@@ -327,4 +323,27 @@
     background-color: #eed;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+/* darken favicons */
+.darkicon {
+    a, a:active, a:visited, a:hover {
+        color: $grey-color-dark;
+    }
+}
+
+/* post pagi */
+.left-pagi {
+    float: left;
+    a, a:active, a:visited, a:hover {
+        color: $grey-color-dark;
+        font-size: $small-font-size;
+    }
+}
+.right-pagi {
+    float: right;
+    a, a:active, a:visited, a:hover {
+        color: $grey-color-dark;
+        font-size: $small-font-size;
+    }
 }
