@@ -11,4 +11,4 @@ permalink: /about/
 [<i class="fa fa-envelope-square"></i>](mailto:eunjikim@dm.snu.ac.kr)
 [<i class="fa fa-linkedin-square"></i>](https://kr.linkedin.com/pub/eunji-kim/61/ba4/132)
 
-//[s//]
+\\[s\\]
