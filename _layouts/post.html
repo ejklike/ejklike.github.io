@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="post">
 
-  <header class="post-header">
+<header class="post-header">
           
   <p class="left-pagi">
   {% if page.next %}
@@ -20,33 +20,15 @@ layout: default
     <a>&nbsp;&nbsp;</a>
   {% endif %}
   </p>
-<br><br>
+  <br><br>
 
 
-      <p align="center"><a href="{{ site.baseurl }}/"><i class="icon-home"></i></a></p>
-
-<!--   	<p align="center">
+  <p align="center"><a href="{{ site.baseurl }}/"><i class="icon-home"></i></a></p>
 
 
-      {% if page.previous %}
-        <span class="darkicon"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}"><i class="fa fa-angle-double-left"></i></a></span>
-      {% else %}
-        <a>&nbsp;&nbsp;</a>
-      {% endif %}
-          
-      <a href="{{ site.baseurl }}/"><i class="icon-home"></i></a>
-
-      {% if page.next %}
-        <span class="darkicon"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}"><i class="fa fa-angle-double-right"></i></a></span>
-      {% else %}
-        <a>&nbsp;&nbsp;</a>
-      {% endif %}
-
-
-    </p> -->
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-date">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+  <h1 class="post-title">{{ page.title }}</h1>
+  <p class="post-date">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+</header>
 
   <article class="post-content">
     {{ content }}
@@ -61,8 +43,8 @@ layout: default
   </ul>
   {% endunless %}  
 
-  <br>
-  <div id="disqus_thread"></div>
+<br>
+<div id="disqus_thread"></div>
 	<script type="text/javascript">
 	    /* * * CONFIGURATION VARIABLES * * */
 	    var disqus_shortname = 'ejklike';
@@ -75,6 +57,5 @@ layout: default
 	    })();
 	</script>
 	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-  <!-- <h1 class="page-heading" align="center">Read more</h1> -->
 
 </div>
