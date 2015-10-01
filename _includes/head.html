@@ -10,78 +10,12 @@
   
   
   <!-- mathjax config -->
-  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
+  <!--<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
   
+  <style id="custom-css-css">.mathenv_thm{background:#f0f0f0;border:1px solid silver;padding:1em;margin-bottom:1.5em}.mathenv_proof{margin-bottom:1.5em}.mathenv_proof.header::before{content:"Proof.";font-style:italic;margin-right:.5em}.mathenv_proof.qed::after{content:"////";float:right}</style>
+  <!-- Mathjax implementation / settings -->
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
   <script type="text/x-mathjax-config">
-	MathJax.Hub.Config({
-	  MathML: {
-		extensions: ["content-mathml.js"]
-	}
-	inlineMath: [['$','$'], ['\\(','\\)']],
-	displayMath: [['$$','$$'], ['\[','\]']],
-	processEscapes: true,
-	processEnvironments: true,
-	skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-	TeX: { equationNumbers: { autoNumber: "AMS" },
-	 extensions: ["AMSmath.js", "AMSsymbols.js"] }
-	});
-  </script>
-  <script>
-	function load() {
-	    xml = '<math xmlns:mt="http://www.w3.org/1998/Math/MathML" xmlns:sml="urn:simml"><mt:apply><mt:eq></mt:eq><mt:ci>cacc</mt:ci><mt:apply><mt:plus></mt:plus><mt:ci>cacc</mt:ci><mt:apply><mt:ci>icash</mt:ci><mt:ci xmlns:s="urn:simml">currInteract</mt:ci></mt:apply></mt:apply></mt:apply></math>';
-	      var divcontent;
-	  		var parseXml;
-	  		if (window.ActiveXObject) {
-	 			xhttp = new ActiveXObject("Msxml2.XMLHTTP");
-	  		} else {
-	  			xhttp = new XMLHttpRequest();
-	  		}
-			if (window.DOMParser) {
-			    parseXml = function(xmlStr) {
-				return ( new window.DOMParser() ).parseFromString(xmlStr, "text/xml");
-			    };
-			} else if (typeof window.ActiveXObject != "undefined" && new window.ActiveXObject("Microsoft.XMLDOM")) {
-			    parseXml = function(xmlStr) {
-				var xmlDoc = new window.ActiveXObject("Microsoft.XMLDOM");
-				xmlDoc.async = "false";
-				xmlDoc.loadXML(xmlStr);
-				return xmlDoc;
-			    };
-			} else {
-			    parseXml = function() { return null; }
-			}
-	
-			var xmlDoc = parseXml(xml);
-	 
-			// code for IE
-			if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
-				ex = xml.transformNode(xsl_simML);
-				divcontent =  ex.innerHTML;
-	  		}
-			// code for Chrome, Firefox, Opera, etc.
-			else if (document.implementation && document.implementation.createDocument) {
-				var div = document.createElement('div');
-				div.appendChild( xmlDoc.documentElement.cloneNode(true));
-				divcontent =  div.innerHTML;
-	  		}
-	    $( "#A" ).append(divcontent);
-	    MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
-	}
-  </script>
-
-
-<!-- MathJax -->
-<!-- <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-});
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
-
-<!-- <style id="custom-css-css">.mathenv_thm{background:#f0f0f0;border:1px solid silver;padding:1em;margin-bottom:1.5em}.mathenv_proof{margin-bottom:1.5em}.mathenv_proof.header::before{content:"Proof.";font-style:italic;margin-right:.5em}.mathenv_proof.qed::after{content:"////";float:right}</style>-->
-	<!-- Mathjax implementation / settings --> <!--
-	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
-	<script type="text/x-mathjax-config">
 	MathJax.Hub.Config({
 		jax: ["input/TeX","output/HTML-CSS"],
 		tex2jax: {
@@ -110,22 +44,8 @@ MathJax.Hub.Config({
 			data.math = data.math.replace(/[—–]/g, '-');
 		});
 	});
-	</script> -->
+  </script> 
 
-
- // <script type="text/x-mathjax-config">
-	// MathJax.Hub.Config({
-	//   tex2jax: {
-	//     inlineMath: [['$','$'], ['\\(','\\)']],
-	//     displayMath: [['$$','$$'], ['\[','\]']],
-	//     processEscapes: true,
-	//     processEnvironments: true,
-	//     skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-	//     TeX: { equationNumbers: { autoNumber: "AMS" },
-	//          extensions: ["AMSmath.js", "AMSsymbols.js"] }
-	//   }
-	// });
- // </script>
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
