@@ -11,14 +11,21 @@
   
   <!-- mathjax config -->
   <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
-  <!--
+  
   <script type="text/x-mathjax-config">
 	MathJax.Hub.Config({
 	  MathML: {
 		extensions: ["content-mathml.js"]
-    }
+	}
+	inlineMath: [['$','$'], ['\\(','\\)']],
+	displayMath: [['$$','$$'], ['\[','\]']],
+	processEscapes: true,
+	processEnvironments: true,
+	skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	TeX: { equationNumbers: { autoNumber: "AMS" },
+	 extensions: ["AMSmath.js", "AMSsymbols.js"] }
 	});
-  </script>-->
+  </script>
   <script>
 	function load() {
 	    xml = '<math xmlns:mt="http://www.w3.org/1998/Math/MathML" xmlns:sml="urn:simml"><mt:apply><mt:eq></mt:eq><mt:ci>cacc</mt:ci><mt:apply><mt:plus></mt:plus><mt:ci>cacc</mt:ci><mt:apply><mt:ci>icash</mt:ci><mt:ci xmlns:s="urn:simml">currInteract</mt:ci></mt:apply></mt:apply></mt:apply></math>';
@@ -106,19 +113,19 @@ MathJax.Hub.Config({
 	</script> -->
 
 
-  <script type="text/x-mathjax-config">
-	MathJax.Hub.Config({
-	  tex2jax: {
-	    inlineMath: [['$','$'], ['\\(','\\)']],
-	    displayMath: [['$$','$$'], ['\[','\]']],
-	    processEscapes: true,
-	    processEnvironments: true,
-	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-	    TeX: { equationNumbers: { autoNumber: "AMS" },
-	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-	  }
-	});
-  </script>
+ // <script type="text/x-mathjax-config">
+	// MathJax.Hub.Config({
+	//   tex2jax: {
+	//     inlineMath: [['$','$'], ['\\(','\\)']],
+	//     displayMath: [['$$','$$'], ['\[','\]']],
+	//     processEscapes: true,
+	//     processEnvironments: true,
+	//     skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	//     TeX: { equationNumbers: { autoNumber: "AMS" },
+	//          extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	//   }
+	// });
+ // </script>
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
