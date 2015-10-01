@@ -10,42 +10,13 @@
   
   
   <!-- mathjax config -->
-  <!--<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
-  
-  <style id="custom-css-css">.mathenv_thm{background:#f0f0f0;border:1px solid silver;padding:1em;margin-bottom:1.5em}.mathenv_proof{margin-bottom:1.5em}.mathenv_proof.header::before{content:"Proof.";font-style:italic;margin-right:.5em}.mathenv_proof.qed::after{content:"////";float:right}</style>
-  <!-- Mathjax implementation / settings -->
-  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
+  <!-- MathJax -->
   <script type="text/x-mathjax-config">
 	MathJax.Hub.Config({
-		jax: ["input/TeX","output/HTML-CSS"],
-		tex2jax: {
-			inlineMath: [["$", "$"], ["\\\\(","\\\\)"]],
-			displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], 
-			ignoreClass: "tex2jax_ignore|dno",
-			processEscapes: true
-		},
-		"HTML-CSS": {
-			availableFonts: ["STIX", "TeX"],   // Add "STIX" for Word style formula
-			preferredFont: "TeX",
-			linebreaks: { automatic:true },
-			EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
-		},
-		TeX: {
-			equationNumbers: { autoNumber: "AMS" }
-		}
+  		tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 	});
-
-	/*
-	Replace em-dashes and en-dashes inside TeX code which are automatically created by WordPress processor
-	Code from https://groups.google.com/forum/m/#!topic/mathjax-users/MXqOpqPeBF4
-	*/
-	MathJax.Hub.Register.StartupHook("TeX Jax Ready", function (){
-		MathJax.InputJax.TeX.prefilterHooks.Add(function (data){
-			data.math = data.math.replace(/[—–]/g, '-');
-		});
-	});
-  </script> 
-
+  </script>
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
