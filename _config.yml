@@ -10,7 +10,6 @@ url: "http://ejklike.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-mathjax: true
 highlighter: pygments
 gems:
   - jemoji
