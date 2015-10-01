@@ -6,16 +6,17 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <!-- <link rel="icon" type="image/ico" href="/img/fav.ico"/> -->
-
-<script type="text/x-mathjax-config">
+  <link rel="icon" type="image/ico" href="/img/fav.ico"/>
+  
+  <!--
+  <script type="text/x-mathjax-config">
 	MathJax.Hub.Config({
 	  MathML: {
 		extensions: ["content-mathml.js"]
     }
 	});
-	</script>
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   <script>
 function load() {
     xml = '<math xmlns:mt="http://www.w3.org/1998/Math/MathML" xmlns:sml="urn:simml"><mt:apply><mt:eq></mt:eq><mt:ci>cacc</mt:ci><mt:apply><mt:plus></mt:plus><mt:ci>cacc</mt:ci><mt:apply><mt:ci>icash</mt:ci><mt:ci xmlns:s="urn:simml">currInteract</mt:ci></mt:apply></mt:apply></mt:apply></math>';
@@ -58,6 +59,7 @@ function load() {
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
 </script>
+-->
 
 
 
@@ -72,9 +74,8 @@ function load() {
 
 
 
-
-	<!-- mathjax config -->
-	<!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+  <!-- mathjax config -->
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
 
 <!-- MathJax -->
 <!-- <script type="text/x-mathjax-config">
