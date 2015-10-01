@@ -8,6 +8,9 @@
 
   <link rel="icon" type="image/ico" href="/img/fav.ico"/>
   
+  
+  <!-- mathjax config -->
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
   <!--
   <script type="text/x-mathjax-config">
 	MathJax.Hub.Config({
@@ -15,67 +18,50 @@
 		extensions: ["content-mathml.js"]
     }
 	});
-  </script>
-  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </script>-->
   <script>
-function load() {
-    xml = '<math xmlns:mt="http://www.w3.org/1998/Math/MathML" xmlns:sml="urn:simml"><mt:apply><mt:eq></mt:eq><mt:ci>cacc</mt:ci><mt:apply><mt:plus></mt:plus><mt:ci>cacc</mt:ci><mt:apply><mt:ci>icash</mt:ci><mt:ci xmlns:s="urn:simml">currInteract</mt:ci></mt:apply></mt:apply></mt:apply></math>';
-      var divcontent;
-  		var parseXml;
-  		if (window.ActiveXObject) {
- 			xhttp = new ActiveXObject("Msxml2.XMLHTTP");
-  		} else {
-  			xhttp = new XMLHttpRequest();
-  		}
-		if (window.DOMParser) {
-		    parseXml = function(xmlStr) {
-			return ( new window.DOMParser() ).parseFromString(xmlStr, "text/xml");
-		    };
-		} else if (typeof window.ActiveXObject != "undefined" && new window.ActiveXObject("Microsoft.XMLDOM")) {
-		    parseXml = function(xmlStr) {
-			var xmlDoc = new window.ActiveXObject("Microsoft.XMLDOM");
-			xmlDoc.async = "false";
-			xmlDoc.loadXML(xmlStr);
-			return xmlDoc;
-		    };
-		} else {
-		    parseXml = function() { return null; }
-		}
+	function load() {
+	    xml = '<math xmlns:mt="http://www.w3.org/1998/Math/MathML" xmlns:sml="urn:simml"><mt:apply><mt:eq></mt:eq><mt:ci>cacc</mt:ci><mt:apply><mt:plus></mt:plus><mt:ci>cacc</mt:ci><mt:apply><mt:ci>icash</mt:ci><mt:ci xmlns:s="urn:simml">currInteract</mt:ci></mt:apply></mt:apply></mt:apply></math>';
+	      var divcontent;
+	  		var parseXml;
+	  		if (window.ActiveXObject) {
+	 			xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+	  		} else {
+	  			xhttp = new XMLHttpRequest();
+	  		}
+			if (window.DOMParser) {
+			    parseXml = function(xmlStr) {
+				return ( new window.DOMParser() ).parseFromString(xmlStr, "text/xml");
+			    };
+			} else if (typeof window.ActiveXObject != "undefined" && new window.ActiveXObject("Microsoft.XMLDOM")) {
+			    parseXml = function(xmlStr) {
+				var xmlDoc = new window.ActiveXObject("Microsoft.XMLDOM");
+				xmlDoc.async = "false";
+				xmlDoc.loadXML(xmlStr);
+				return xmlDoc;
+			    };
+			} else {
+			    parseXml = function() { return null; }
+			}
+	
+			var xmlDoc = parseXml(xml);
+	 
+			// code for IE
+			if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
+				ex = xml.transformNode(xsl_simML);
+				divcontent =  ex.innerHTML;
+	  		}
+			// code for Chrome, Firefox, Opera, etc.
+			else if (document.implementation && document.implementation.createDocument) {
+				var div = document.createElement('div');
+				div.appendChild( xmlDoc.documentElement.cloneNode(true));
+				divcontent =  div.innerHTML;
+	  		}
+	    $( "#A" ).append(divcontent);
+	    MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	}
+  </script>
 
-		var xmlDoc = parseXml(xml);
- 
-		// code for IE
-		if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
-			ex = xml.transformNode(xsl_simML);
-			divcontent =  ex.innerHTML;
-  		}
-		// code for Chrome, Firefox, Opera, etc.
-		else if (document.implementation && document.implementation.createDocument) {
-			var div = document.createElement('div');
-			div.appendChild( xmlDoc.documentElement.cloneNode(true));
-			divcontent =  div.innerHTML;
-  		}
-    $( "#A" ).append(divcontent);
-    MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
-}
-</script>
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- mathjax config -->
-  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
 
 <!-- MathJax -->
 <!-- <script type="text/x-mathjax-config">
