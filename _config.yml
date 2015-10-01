@@ -9,7 +9,7 @@ url: "http://ejklike.github.io" # the base hostname & protocol for your site
 # github_username:  jekyll
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 mathjax: true
 highlighter: pygments
 gems:
