@@ -120,7 +120,7 @@ MathJax.Hub.Config({
 	</script> -->
 
 
-<!--	 <script type="text/x-mathjax-config">
+  <script type="text/x-mathjax-config">
 	MathJax.Hub.Config({
 	  tex2jax: {
 	    inlineMath: [['$','$'], ['\\(','\\)']],
@@ -132,22 +132,7 @@ MathJax.Hub.Config({
 	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
 	  }
 	});
-	</script> -->
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    TeX: {
-      equationNumbers: {
-        autoNumber: "AMS"
-      }
-    },
-    tex2jax: {
-      inlineMath: [ ['$','$'], ['\(', '\)'] ],
-      displayMath: [ ['$$','$$'] ],
-      processEscapes: true,
-    }
-  });
-</script>
+  </script>
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
