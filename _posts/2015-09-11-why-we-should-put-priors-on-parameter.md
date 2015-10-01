@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Why we should put priors on parameter?"
 description: ""
 category: 
