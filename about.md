@@ -12,3 +12,6 @@ permalink: /about/
 [<i class="fa fa-linkedin-square"></i>](https://kr.linkedin.com/pub/eunji-kim/61/ba4/132)
 
 \\[s\\]
+$$s$$
+\\(t\\)
+$t$
