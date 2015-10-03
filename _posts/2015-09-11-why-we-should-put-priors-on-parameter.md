@@ -11,7 +11,7 @@ Many statistical analyses assume that random variables being studied are indepen
 But, iid is stronger assumption than infinitely exchangeable. If the data is exchangeable and not iid, how we can calculate the joint probability? The theorem below says that the exchangeability of the data ensures
 
 * the existence of a parameter $\theta$, a distribution $P$ on $\theta$, and a likelihood $p(x\vert\theta)$
-* the conditionally independence of given data $(x1,x2,\cdots,x_n)$
+* the conditionally independence of given data $(x_1,x_2,\cdots,x_n)$
 
 
 <div class = "notice">
