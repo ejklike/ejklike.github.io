@@ -220,7 +220,7 @@
 }
 
 .post-date {
-  font: normal 10px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font: normal 10px $base-font-family;
   margin: 5px 0 30px 0;
   color: #b2b9be;
   text-align: center;
@@ -349,3 +349,10 @@ hr {
 
 /* mathjax settings */
 code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
+
+/* img align */
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}

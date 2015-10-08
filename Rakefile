@@ -46,8 +46,6 @@ task :default => :preview
 #
 # ... or load them from the configuration file, e.g.:
 # 
-load '_rake-configuration.rb' if File.exist?('_rake-configuration.rb')
-load '_rake_configuration.rb' if File.exist?('_rake_configuration.rb')
 
 # ... we are a bit redundant and allow two different file names
 
@@ -58,7 +56,7 @@ load '_rake_configuration.rb' if File.exist?('_rake_configuration.rb')
 
 # Specify default values for variables NOT set by the user
 
-$post_ext ||= ".textile"
+$post_ext ||= ".md"
 $post_dir ||= "_posts/"
 $git_check ||= true
 $git_autopush ||= false
@@ -216,7 +214,7 @@ task :create_post, [:date, :title, :category, :content] do |t, args|
     File.open(post_dir + filename, 'w') do |f|
       f.puts "---"
       f.puts "title: \"#{post_title}\""
-      f.puts "layout: default"
+      f.puts "layout: post"
       f.puts yaml_cat if yaml_cat != nil
       f.puts "date: #{post_date}"
       f.puts "---"
