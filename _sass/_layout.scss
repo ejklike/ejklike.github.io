@@ -346,3 +346,6 @@ hr {
     border-top: 1px solid $grey-color-light;
     padding-top: $spacing-unit;
 }
+
+/* mathjax settings */
+code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}

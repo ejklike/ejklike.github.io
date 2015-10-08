@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
@@ -10,20 +10,36 @@
   
   <!-- mathjax config -->
   <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
   <!-- MathJax -->
   <script type="text/x-mathjax-config">
 	  MathJax.Hub.Config({
+      jax: ["input/TeX","output/HTML-CSS"],
 	    TeX: {
 	      equationNumbers: {
 	        autoNumber: "AMS"
 	      }
 	    },
+      "HTML-CSS": {
+        availableFonts: ["STIX", "TeX"],   // Add "STIX" for Word style formula
+        preferredFont: "TeX",
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+      },
 	    tex2jax: {
-	      inlineMath: [ ['$','$'], ['\\(', '\\)'] ],
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	      inlineMath: [["$", "$"], ["\\\\(","\\\\)"]],
 	      displayMath: [ ['$$','$$'], ['\\[', '\\]'] ],
-	      processEscapes: true
+	      ignoreClass: "tex2jax_ignore|dno",
+        processEscapes: true
 	    }
 	  });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
   </script>
 
   <!-- google analytics -->
