@@ -2,7 +2,7 @@
 layout: post
 title: "Monte Carlo inference"
 description: ""
-tags: [mcmc, sampling, monte carlo]
+tags: [mcmc, sampling]
 ---
 
 The concept of Monte Carlo approximation is very simple: 
@@ -92,4 +92,7 @@ When: approximating integrals of the form $I=\mathbb{E}[f]=\int f(\textbf{x})p(\
 
 Basic idea: 
 
-(References: K. Murphy, Ch.23, wikipedia)
+# References
+
+* K. Murphy, Ch.23
+* Wikipedia

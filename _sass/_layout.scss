@@ -12,8 +12,8 @@
 
 .site-title {
     padding-bottom: 9px; margin:40px 0 20px 0;
-    font-size: 30px;
-    font-family: cursive;
+    font-size: 42px;
+    font-family: $site-title-font-family;
     text-align: center;
 
     a,&,
@@ -212,13 +212,11 @@
 
 .post-title {
     font-size: 32px;
+    font-family: $post-title-font-family;
+    font-weight: 300;
     letter-spacing: -1px;
     line-height: 1;
     text-align:center;
-
-    @include media-query($on-laptop) {
-        font-size: 28px;
-    }
 }
 
 .post-date {
@@ -236,27 +234,20 @@
     margin-bottom: $spacing-unit;
 
     h1 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
+        margin-top: $spacing-unit*1.2;
+        margin-bottom: $spacing-unit*0.6;
+        font-size: 22px;
+        font-family: $title-font-family;
+        font-weight: 700;
     }
 
     h2 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h3 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
+        margin-top: $spacing-unit*1;
+        margin-bottom: $spacing-unit*0.5;
+        font-size: 17px;
+        font-family: $title-font-family;
+        font-weight: 700;
+        letter-spacing: 1px;
     }
 }
 
@@ -346,4 +337,12 @@
         color: $grey-color-dark;
         font-size: $small-font-size;
     }
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $grey-color-light;
+    padding-top: $spacing-unit;
 }

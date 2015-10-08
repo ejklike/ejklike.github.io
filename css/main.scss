@@ -6,7 +6,10 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+$site-title-font-family: Dancing Script;
+$base-font-family: 'Roboto', sans-serif;
+$post-title-font-family: 'Noto Sans KR', sans-serif;
+$title-font-family: 'Roboto Condensed', sans-serif;
 $base-font-size:   14px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -53,5 +56,6 @@ $on-laptop:        640px;
         url(/css/pygments-solarized-light.css),
         url(/css/icons.css),
         url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css),
-        url(https://fonts.googleapis.com/css?family=Copse|Kameron|Vollkorn:700)
+        url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,400,500,700|Dancing+Script:400),
+        url(http://fonts.googleapis.com/earlyaccess/notosanskr.css)
 ;
