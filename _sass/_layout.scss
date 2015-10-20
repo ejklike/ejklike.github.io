@@ -249,6 +249,13 @@
         font-weight: 700;
         letter-spacing: 1px;
     }
+
+    h3 {
+        font-size: 13px;
+        font-family: $title-font-family;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
 }
 
 
@@ -314,6 +321,13 @@
     background-color: #eed;
     margin-top: 15px;
     margin-bottom: 15px;
+
+    p, dl, dd, ol, ul, figure {
+        margin-top:0;
+        margin-bottom: 0;
+        padding-top:0;
+        padding-bottom: 0;
+    }
 }
 
 /* darken favicons */

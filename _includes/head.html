@@ -14,11 +14,34 @@
   <!-- MathJax -->
   <script type="text/x-mathjax-config">
 	  MathJax.Hub.Config({
-      jax: ["input/TeX","output/HTML-CSS"],
 	    TeX: {
+        Macros: {
+              // \def\R{\mathbb R}
+              R: "{\\mathbb R}",
+              E: ["{\\mathbb{E} \\left[ {#1} \\right]}",1],
+              EE: ["{\\mathbb{E}_{#1} \\left[ {#2} \\right]}",2],
+              D: "{\\mathscr D}",
+              x: "{\\textbf x}",
+              y: "{\\textbf y}",
+              z: "{\\textbf z}",
+              bold: ["{\\bf #1}",1]
+            },
 	      equationNumbers: {
 	        autoNumber: "AMS"
-	      }
+	      },
+        noErrors: {
+            multiLine: true,             // false for TeX on all one line
+            style: {
+              "font-size":   "90%",
+              "text-align":  "left",
+              "color":       "black",
+              "padding":     "1px 3px",
+              "border":      "1px solid"
+              // add any additional CSS styles that you want
+              //  (be sure there is no extra comma at the end of the last item)
+            }
+        },
+        extensions: ["AMSmath.js", "AMSsymbols.js"]
 	    },
       "HTML-CSS": {
         availableFonts: ["STIX", "TeX"],   // Add "STIX" for Word style formula
@@ -27,20 +50,12 @@
         EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
       },
 	    tex2jax: {
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-	      inlineMath: [["$", "$"], ["\\\\(","\\\\)"]],
-	      displayMath: [ ['$$','$$'], ['\\[', '\\]'] ],
-	      ignoreClass: "tex2jax_ignore|dno",
-        processEscapes: true
+	      inlineMath: [["$", "$"], ["\\(","\\)"]],
+	      displayMath: [ ['$$','$$'], ['\\[', '\\]'] ]
 	    }
 	  });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
   </script>
+
 
   <!-- google analytics -->
   <script>

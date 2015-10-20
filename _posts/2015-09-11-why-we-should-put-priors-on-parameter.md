@@ -25,3 +25,7 @@ for some measure $P$ on $\theta$.
 
 Here's an example. Bag-of-words models assume that the order of words in a document does not matter. Even the words are definitely not iid, we can continue the argument since the assumption makes words conditionally independent.
 
+# References
+
+* [Michael I. Jordan's lecture note](http://www.cs.berkeley.edu/~jordan/courses/260-spring10/lectures/lecture1.pdf)
+
