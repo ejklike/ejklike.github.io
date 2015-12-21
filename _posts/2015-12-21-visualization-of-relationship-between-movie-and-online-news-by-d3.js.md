@@ -710,6 +710,9 @@ d3.tsv(tsvFile, function(error, data) {
 
 별개로, 데이터 시각화를 통한 웹에서의 스토리텔링이 필요하지 않다면 [Spotfire](http://spotfire.tipco.com)라는 매우 편리한 프로그램을 사용하는 것을 강추하는 바이다. 스팟파이어를 사용하면 비슷한 시각화 결과물을 몇 번의 클릭으로 만들어낼 수 있다. (그러나, 매우 비싸다.)
 
+# References
 
-
+* [http://bl.ocks.org/nsonnad/4481531](http://bl.ocks.org/nsonnad/4481531)
+* [http://bl.ocks.org/WilliamQLiu/bd12f73d0b79d70bfbae](http://bl.ocks.org/WilliamQLiu/bd12f73d0b79d70bfbae)
+* [http://bl.ocks.org/d3noob/e34791a32a54e015f57d](http://bl.ocks.org/d3noob/e34791a32a54e015f57d)
 
