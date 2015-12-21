@@ -3,7 +3,7 @@ layout: post
 title: "d3.js를 이용한 시각화: 영화의 흥행 여부와 온라인 뉴스량 간 관계"
 description: ""
 category: 
-tags: ['d3.js','vizualization','movie','news','scatter plot']
+tags: ['d3.js','visualization','movie','news','scatter plot']
 ---
 
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
