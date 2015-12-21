@@ -73,7 +73,7 @@ path
 
 <script>
 // set the stage
-var margin = {t:30, r:50, b:0, l:80 },
+var margin = {t:30, r:50, b:0, l:60 },
     w = 600 - margin.l - margin.r,
     h = 500 - margin.t - margin.b,
     x = d3.scale.linear().range([0, w]),
@@ -124,8 +124,8 @@ d3.tsv("/assets/20151221/2_scatter_linear.tsv", function(dataset) {
         svg.append("g")
             .attr("class", "guide")
         .append("line")
-            .attr("x1", circle.attr("cx")+margin.l)
-            .attr("x2", circle.attr("cx")+margin.l)
+            .attr("x1", circle.attr("cx")+margin.l-20)
+            .attr("x2", circle.attr("cx")+margin.l-20)
             .attr("y1", +circle.attr("cy") + 26)
             .attr("y2", h - margin.t - margin.b - 20)
             .attr("transform", "translate(80,20)")
@@ -136,8 +136,8 @@ d3.tsv("/assets/20151221/2_scatter_linear.tsv", function(dataset) {
         svg.append("g")
             .attr("class", "guide")
         .append("line")
-            .attr("x1", +circle.attr("cx") - 16)
-            .attr("x2", 0)
+            .attr("x1", +circle.attr("cx") - 36)
+            .attr("x2", -20)
             .attr("y1", circle.attr("cy"))
             .attr("y2", circle.attr("cy"))
             .attr("transform", "translate(80,30)")
@@ -220,7 +220,7 @@ d3.tsv("/assets/20151221/2_scatter_linear.tsv", function(dataset) {
         .attr("class", "y label")
         .attr("text-anchor", "end")
         .attr("x", -30)
-        .attr("y", 95)
+        .attr("y", 75)
         .attr("transform", "rotate(-90)")
         .style("font-size","11px")
 
@@ -260,15 +260,8 @@ d3.tsv("/assets/20151221/2_scatter_linear.tsv", function(dataset) {
 
 <script>
     // set the stage
-    var margin = {t:30, r:20, b:0, l:80 },
-        w = 600 - margin.l - margin.r,
-        h = 500 - margin.t - margin.b,
-        x2 = d3.scale.linear().range([0, w]),
-        y2 = d3.scale.linear().range([h - 60, 0]),
-        //colors that will reflect geographical regions
-        color = d3.scale.category10();
-
-    var scale = function (x) { return x/700000; };
+    var x2 = d3.scale.linear().range([0, w]),
+        y2 = d3.scale.linear().range([h - 60, 0]);
 
     var svg2 = d3.select("div#scatter_beforeafter").append("svg")
         .attr("width", w + margin.l + margin.r)
@@ -363,8 +356,8 @@ d3.tsv("/assets/20151221/2_scatter_linear.tsv", function(dataset) {
         svg2.append("g")
             .attr("class", "guide")
         .append("line")
-            .attr("x1", circle.attr("cx")+margin.l)
-            .attr("x2", circle.attr("cx")+margin.l)
+            .attr("x1", circle.attr("cx")+margin.l-20)
+            .attr("x2", circle.attr("cx")+margin.l-20)
             .attr("y1", +circle.attr("cy") + 26)
             .attr("y2", h - margin.t - margin.b - 20)
             .attr("transform", "translate(80,20)")
@@ -375,8 +368,8 @@ d3.tsv("/assets/20151221/2_scatter_linear.tsv", function(dataset) {
         svg2.append("g")
             .attr("class", "guide")
         .append("line")
-            .attr("x1", +circle.attr("cx") - 16)
-            .attr("x2", 0)
+            .attr("x1", +circle.attr("cx") - 36)
+            .attr("x2", -20)
             .attr("y1", circle.attr("cy"))
             .attr("y2", circle.attr("cy"))
             .attr("transform", "translate(80,30)")
@@ -447,7 +440,7 @@ d3.tsv("/assets/20151221/2_scatter_linear.tsv", function(dataset) {
             .attr("class", "y label")
             .attr("text-anchor", "end")
             .attr("x", -30)
-            .attr("y", 95)
+            .attr("y", 75)
             .attr("transform", "rotate(-90)")
             .style("font-size","11px")
         
