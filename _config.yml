@@ -13,5 +13,6 @@ markdown: kramdown
 highlighter: pygments
 gems:
   - jemoji
+  - jekyll-paginate
 paginate: 1
 paginate_path: "/page:num/"
