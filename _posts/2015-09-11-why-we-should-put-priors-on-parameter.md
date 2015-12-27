@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Why we should put priors on parameter?"
-description: ""
-category: 
+description: "Many statistical analyses assume that random variables being studied are independent and identically distributed (iid). With the assumption, we can calculate the joint distributed probability by multiplying marginal probabilities of variables. But, iid is stronger assumption than infinitely exchangeable. If the data is exchangeable and not iid, how we can calculate the joint probability? The theorem below says that the exchangeability of the data ensures"
 tags: bayesian prior parameter
 ---
 
