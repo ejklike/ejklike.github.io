@@ -1,361 +1,229 @@
-# coding: utf-8
-task :default => :preview
+# source: https://github.com/gummesson/jekyll-rake-boilerplate
 
-# CONFIGURATION VARIABLES (on top of those defined by Jekyll in _config(_deploy).yml)
-#
-# PREVIEWING
-# If your project is based on compass and you want compass to be invoked
-# by the script, set the $compass variable to true
-#
-# $compass = false # default
-# $compass = true  # if you wish to run compass as well
-#
-# Notice that Jekyll 2.0 supports sass natively, so you might want to have a look
-# at the functions provided by Jekyll instead of using the functions provided here.
-#
-# MANAGING POSTS
-# Set the extension for new posts (defaults to .textile, if not set)
-#
-# $post_ext = ".textile"  # default
-# $post_ext = ".md"       # if you prefer markdown
-#
-# Set the location of new posts (defaults to "_posts/", if not set).
-# Please, terminate with a slash:
-#
-# $post_dir = "_posts/"
-#
-# MANAGING MULTI-USER WORK
-# If you are using git to manage the sources, you might want to check the repository
-# is up-to-date with the remote branch, before deploying.  In fact---when this is not the
-# case---you end up deploying a previous version of your website.
-#
-# The following variable determines whether you want to check the git repository is
-# up-to-date with the remote branch and, if not, issue a warning.
-#
-# $git_check = true
-#
-# It is safe to leave the variable set to true, even if you do not manage your sources
-# with git.
-#
-# The following variable controls whether we push to the remote branch after deployment,
-# committing all uncommitted changes
-#
-# $git_autopush = false
-#
-# If set to true, the sources have to be managed by git or an error message will be issued.
-#
-# ... or load them from the configuration file, e.g.:
-# 
+# == Dependencies ==============================================================
 
-# ... we are a bit redundant and allow two different file names
+require 'rake'
+require 'yaml'
+require 'fileutils'
+require 'rbconfig'
 
+# == Configuration =============================================================
 
-#
-# --- NO NEED TO TOUCH ANYTHING BELOW THIS LINE ---
-#
+# Set "rake watch" as default task
+task :default => :watch
 
-# Specify default values for variables NOT set by the user
+# Load the configuration file
+CONFIG = YAML.load_file("_config.yml")
 
-$post_ext ||= ".md"
-$post_dir ||= "_posts/"
-$git_check ||= true
-$git_autopush ||= false
+# Get and parse the date
+DATE = Time.now.strftime("%Y-%m-%d")
+TIME = Time.now.strftime("%H:%M:%S")
+POST_TIME = DATE + ' ' + TIME
 
-#
-# Tasks start here
-#
+# Directories
+POSTS = "_posts"
+DRAFTS = "_drafts"
 
-desc 'Clean up generated site'
-task :clean do
-  cleanup
+# == Helpers ===================================================================
+
+# Execute a system command
+def execute(command)
+  system "#{command}"
 end
 
-
-desc 'Preview on local machine (server with --auto)'
-task :preview => :clean do
-  compass('compile') # so that we are sure sass has been compiled before we run the server
-  compass('watch &')
-  jekyll('serve --watch')
-end
-task :serve => :preview
-
-
-desc 'Build for deployment (but do not deploy)'
-task :build, [:deployment_configuration] => :clean do |t, args|
-  args.with_defaults(:deployment_configuration => 'deploy')
-  config_file = "_config_#{args[:deployment_configuration]}.yml"
-
-  if rake_running then
-    puts "\n\nWarning! An instance of rake seems to be running (it might not be *this* Rakefile, however).\n"
-    puts "Building while running other tasks (e.g., preview), might create a website with broken links.\n\n"
-    puts "Are you sure you want to continue? [Y|n]"
-
-    ans = STDIN.gets.chomp
-    exit if ans != 'Y' 
+# Chech the title
+def check_title(title)
+  if title.nil? or title.empty?
+    raise "Please add a title to your file."
   end
-
-  compass('compile')
-  jekyll("build --config _config.yml,#{config_file}")
 end
 
+# Transform the filename and date to a slug
+def transform_to_slug(title, extension)
+  characters = /("|'|!|\?|:|\s\z)/
+  whitespace = /\s/
+  "#{title.gsub(characters,"").gsub(whitespace,"-").downcase}.#{extension}"
+end
 
-desc 'Build and deploy to remote server'
-task :deploy, [:deployment_configuration] => :build do |t, args|
-  args.with_defaults(:deployment_configuration => 'deploy')
-  config_file = "_config_#{args[:deployment_configuration]}.yml"
+# Read the template file
+def read_file(template)
+  File.read(template)
+end
 
-  text = File.read("_config_#{args[:deployment_configuration]}.yml")
-  matchdata = text.match(/^deploy_dir: (.*)$/)
-  if matchdata
+# Save the file with the title in the YAML front matter
+def write_file(content, title, directory, filename)
+  parsed_content = "#{content.sub("title:", "title: \"#{title}\"")}"
+  parsed_content = "#{parsed_content.sub("date:", "date: #{POST_TIME}")}"
+  File.write("#{directory}/#{filename}", parsed_content)
+  puts "#{filename} was created in '#{directory}'."
+end
 
-    if git_requires_attention("master") then
-      puts "\n\nWarning! It seems that the local repository is not in sync with the remote.\n"
-      puts "This could be ok if the local version is more recent than the remote repository.\n"
-      puts "Deploying before committing might cause a regression of the website (at this or the next deploy).\n\n"
-      puts "Are you sure you want to continue? [Y|n]"
-
-      ans = STDIN.gets.chomp
-      exit if ans != 'Y' 
-    end
-
-    deploy_dir = matchdata[1]
-    sh "rsync -avz --delete _site/ #{deploy_dir}"
-    time = Time.new
-    File.open("_last_deploy.txt", 'w') {|f| f.write(time) }
-    %x{git add -A && git commit -m "autopush by Rakefile at #{time}" && git push} if $git_autopush
+# Create the file with the slug and open the default editor
+def create_file(directory, filename, content, title, editor)
+  FileUtils.mkdir(directory) unless File.exists?(directory)
+  if File.exists?("#{directory}/#{filename}")
+    raise "The file already exists."
   else
-    puts "Error! deploy_url not found in _config_deploy.yml"
-    exit 1
-  end
-end
-
-desc 'Build and deploy to github'
-task :deploy_github => :build do |t, args|
-  args.with_defaults(:deployment_configuration => 'deploy')
-  config_file = "_config_#{args[:deployment_configuration]}.yml"
-
-  if git_requires_attention("gh_pages") then
-    puts "\n\nWarning! It seems that the local repository is not in sync with the remote.\n"
-    puts "This could be ok if the local version is more recent than the remote repository.\n"
-    puts "Deploying before committing might cause a regression of the website (at this or the next deploy).\n\n"
-    puts "Are you sure you want to continue? [Y|n]"
-
-    ans = STDIN.gets.chomp
-    exit if ans != 'Y' 
-  end
-
-  %x{git add -A && git commit -m "autopush by Rakefile at #{time}" && git push origin gh_pages} if $git_autopush
-  
-  time = Time.new
-  File.open("_last_deploy.txt", 'w') {|f| f.write(time) }
-end
-
-desc 'Create a post'
-task :create_post, [:date, :title, :category, :content] do |t, args|
-  if args.title == nil then
-    puts "Error! title is empty"
-    puts "Usage: create_post[date,title,category,content]"
-    puts "DATE and CATEGORY are optional"
-    puts "DATE is in the form: YYYY-MM-DD; use nil or empty for today's date"
-    puts "CATEGORY is a string; nil or empty for no category"
-    exit 1
-  end
-  if (args.date != nil and args.date != "nil" and args.date != "" and args.date.match(/[0-9]+-[0-9]+-[0-9]+/) == nil) then
-    puts "Error: date not understood"
-    puts "Usage: create_post[date,title,category,content]"
-    puts "DATE and CATEGORY are optional"
-    puts "DATE is in the form: YYYY-MM-DD; use nil or the empty string for today's date"
-    puts "CATEGORY is a string; nil or empty for no category"
-    puts ""
-
-    title = args.title || "title"
-
-    puts "Examples: create_post[\"\",\"#{args.title}\"]"
-    puts "          create_post[nil,\"#{args.title}\"]"
-    puts "          create_post[,\"#{args.title}\"]"
-    puts "          create_post[#{Time.new.strftime("%Y-%m-%d")},\"#{args.title}\"]"
-    exit 1
-  end
-
-  post_title = args.title
-  post_date = (args.date != "" and args.date != "nil") ? args.date : Time.new.strftime("%Y-%m-%d %H:%M:%S %Z")
-
-  # the destination directory is <<category>>/$post_dir, if category is non-nil
-  # and the directory exists; $post_dir otherwise (a category tag is added in
-  # the post body, in this case)
-  post_category = args.category
-  if post_category and Dir.exists?(File.join(post_category, $post_dir)) then
-    post_dir = File.join(post_category, $post_dir)
-    yaml_cat = nil
-  else
-    post_dir = $post_dir
-    yaml_cat = post_category ? "category: #{post_category}\n" : nil
-  end
-
-  def slugify (title)
-    # strip characters and whitespace to create valid filenames, also lowercase
-    return title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-  end
-
-  filename = post_date[0..9] + "-" + slugify(post_title) + $post_ext
-
-  # generate a unique filename appending a number
-  i = 1
-  while File.exists?(post_dir + filename) do
-    filename = post_date[0..9] + "-" +
-               File.basename(slugify(post_title)) + "-" + i.to_s +
-               $post_ext 
-    i += 1
-  end
-
-  # the condition is not really necessary anymore (since the previous
-  # loop ensures the file does not exist)
-  if not File.exists?(post_dir + filename) then
-    File.open(post_dir + filename, 'w') do |f|
-      f.puts "---"
-      f.puts "title: \"#{post_title}\""
-      f.puts "layout: post"
-      f.puts yaml_cat if yaml_cat != nil
-      f.puts "date: #{post_date}"
-      f.puts "---"
-      f.puts args.content if args.content != nil
-    end  
-
-    puts "Post created under \"#{post_dir}#{filename}\""
-
-    sh "open \"#{post_dir}#{filename}\"" if args.content == nil
-  else
-    puts "A post with the same name already exists. Aborted."
-  end
-  # puts "You might want to: edit #{$post_dir}#{filename}"
-end
-
-
-desc 'Create a post listing all changes since last deploy'
-task :post_changes do |t, args|
-  content = list_file_changed
-  Rake::Task["create_post"].invoke(Time.new.strftime("%Y-%m-%d %H:%M:%S"), "Recent Changes", nil, content)
-end
-
-
-desc 'Show the file changed since last deploy to stdout'
-task :list_changes do |t, args|
-  content = list_file_changed
-  puts content
-end
-
-
-#
-# support functions for generating list of changed files
-#
-
-def list_file_changed
-  content = "Files changed since last deploy:\n"
-  IO.popen('find * -newer _last_deploy.txt -type f') do |io| 
-    while (line = io.gets) do
-      filename = line.chomp
-      if user_visible(filename) then
-        content << "* \"#{filename}\":{{site.url}}/#{file_change_ext(filename, ".html")}\n"
-      end
+    write_file(content, title, directory, filename)
+    if editor && !editor.nil?
+      sleep 1
+      execute("#{editor} #{directory}/#{filename}")
     end
-  end 
-  content
-end
-
-# this is the list of files we do not want to show in changed files
-EXCLUSION_LIST = [/.*~/, /_.*/, "javascripts?", "js", /stylesheets?/, "css", "Rakefile", "Gemfile", /s[ca]ss/, /.*\.css/, /.*.js/, "bower_components", "config.rb"]
-
-# return true if filename is "visible" to the user (e.g., it is not javascript, css, ...)
-def user_visible(filename)
-  exclusion_list = Regexp.union(EXCLUSION_LIST)
-  not filename.match(exclusion_list)
-end 
-
-def file_change_ext(filename, newext)
-  if File.extname(filename) == ".textile" or File.extname(filename) == ".md" then
-    filename.sub(File.extname(filename), newext)
-  else  
-    filename
   end
 end
 
+# Get the "open" command
+def open_command
+  if RbConfig::CONFIG["host_os"] =~ /mswin|mingw/
+    "start"
+  elsif RbConfig::CONFIG["host_os"] =~ /darwin/
+    "open"
+  else
+    "xdg-open"
+  end
+end
 
-desc 'Check links for site already running on localhost:4000'
-task :check_links do
-  begin
-    require 'anemone'
+# == Tasks =====================================================================
 
-    root = 'http://localhost:4000/'
-    puts "Checking links with anemone ... "
-    # check-links --no-warnings http://localhost:4000
-    Anemone.crawl(root, :discard_page_bodies => true) do |anemone|
-      anemone.after_crawl do |pagestore|
-        broken_links = Hash.new { |h, k| h[k] = [] }
-        pagestore.each_value do |page|
-          if page.code != 200
-            referrers = pagestore.pages_linking_to(page.url)
-            referrers.each do |referrer|
-              broken_links[referrer] << page
-            end
-          else
-            puts "OK #{page.url}"
-          end
-        end
-        puts "\n\nLinks with issues: "
-        broken_links.each do |referrer, pages|
-          puts "#{referrer.url} contains the following broken links:"
-          pages.each do |page|
-            puts "  HTTP #{page.code} #{page.url}"
-          end
-        end
-      end
+# rake post["Title"]
+desc "Create a post in _posts"
+task :post, :title do |t, args|
+  title = args[:title]
+  template = CONFIG["post"]["template"]
+  extension = CONFIG["post"]["extension"]
+  editor = CONFIG["editor"]
+  check_title(title)
+  filename = "#{DATE}-#{transform_to_slug(title, extension)}"
+  content = read_file(template)
+  create_file(POSTS, filename, content, title, editor)
+end
+
+# rake draft["Title"]
+desc "Create a post in _drafts"
+task :draft, :title do |t, args|
+  title = args[:title]
+  template = CONFIG["post"]["template"]
+  extension = CONFIG["post"]["extension"]
+  editor = CONFIG["editor"]
+  check_title(title)
+  filename = transform_to_slug(title, extension)
+  content = read_file(template)
+  create_file(DRAFTS, filename, content, title, editor)
+end
+
+# rake publish
+desc "Move a post from _drafts to _posts"
+task :publish do
+  extension = CONFIG["post"]["extension"]
+  files = Dir["#{DRAFTS}/*.#{extension}"]
+  files.each_with_index do |file, index|
+    puts "#{index + 1}: #{file}".sub("#{DRAFTS}/", "")
+  end
+  print "> "
+  number = $stdin.gets
+  if number =~ /\D/
+    filename = files[number.to_i - 1].sub("#{DRAFTS}/", "")
+    FileUtils.mv("#{DRAFTS}/#{filename}", "#{POSTS}/#{DATE}-#{filename}")
+    puts "#{filename} was moved to '#{POSTS}'."
+  else
+    puts "Please choose a draft by the assigned number."
+  end
+end
+
+# rake page["Title"]
+# rake page["Title","Path/to/folder"]
+desc "Create a page (optional filepath)"
+task :page, :title, :path do |t, args|
+  title = args[:title]
+  template = CONFIG["page"]["template"]
+  extension = CONFIG["page"]["extension"]
+  editor = CONFIG["editor"]
+  directory = args[:path]
+  if directory.nil? or directory.empty?
+    directory = "./"
+  else
+    FileUtils.mkdir_p("#{directory}")
+  end
+  check_title(title)
+  filename = transform_to_slug(title, extension)
+  content = read_file(template)
+  create_file(directory, filename, content, title, editor)
+end
+
+# rake build
+desc "Build the site"
+task :build do
+  execute("jekyll build")
+end
+
+# rake watch
+# rake watch[number]
+# rake watch["drafts"]
+desc "Serve and watch the site (with post limit or drafts)"
+task :watch, :option do |t, args|
+  option = args[:option]
+  if option.nil? or option.empty?
+    execute("jekyll serve --watch")
+  else
+    if option == "drafts"
+      execute("jekyll serve --watch --drafts")
+    else
+      execute("jekyll serve --watch --limit_posts #{option}")
     end
-    puts "... done!"
-
-  rescue LoadError
-    abort 'Install anemone gem: gem install anemone'
   end
 end
 
-
-#
-# General support functions
-#
-
-# remove generated site
-def cleanup
-  sh 'rm -rf _site'
-  compass('clean')
+# rake preview
+desc "Launch a preview of the site in the browser"
+task :preview do
+  port = CONFIG["port"]
+  if port.nil? or port.empty?
+    port = 4000
+  end
+  Thread.new do
+    puts "Launching browser for preview..."
+    sleep 1
+    execute("#{open_command} http://localhost:#{port}/")
+  end
+  Rake::Task[:watch].invoke
 end
 
-# launch jekyll
-def jekyll(directives = '')
-  sh 'jekyll ' + directives
+# rake deploy["Commit message"]
+desc "Deploy the site to a remote git repo"
+task :deploy, :message do |t, args|
+  message = args[:message]
+  branch = CONFIG["git"]["branch"]
+  if message.nil? or message.empty?
+    raise "Please add a commit message."
+  end
+  if branch.nil? or branch.empty?
+    raise "Please add a branch."
+  else
+    Rake::Task[:build].invoke
+    execute("git add .")
+    execute("git commit -m \"#{message}\"")
+    execute("git push origin #{branch}")
+  end
 end
 
-# launch compass
-def compass(command = 'compile')
-  (sh 'compass ' + command) if $compass
-end
-
-# check if there is another rake task running (in addition to this one!)
-def rake_running
-  `ps | grep 'rake' | grep -v 'grep' | wc -l`.to_i > 1
-end
-
-def git_local_diffs
-  %x{git diff --name-only} != ""
-end
-
-def git_remote_diffs branch
-  %x{git fetch}
-  %x{git rev-parse #{branch}} != %x{git rev-parse origin/#{branch}}
-end
-
-def git_repo?
-  %x{git status} != ""
-end
-
-def git_requires_attention branch
-  $git_check and git_repo? and git_remote_diffs(branch)
+# rake transfer
+desc "Transfer the site (remote server or a local git repo)"
+task :transfer do
+  command = CONFIG["transfer"]["command"]
+  source = CONFIG["transfer"]["source"]
+  destination = CONFIG["transfer"]["destination"]
+  settings = CONFIG["transfer"]["settings"]
+  if command.nil? or command.empty?
+    raise "Please choose a file transfer command."
+  elsif command == "robocopy"
+    Rake::Task[:build].invoke
+    execute("robocopy #{source} #{destination} #{settings}")
+    puts "Your site was transfered."
+  elsif command == "rsync"
+    Rake::Task[:build].invoke
+    execute("rsync #{settings} #{source} #{destination}")
+    puts "Your site was transfered."
+  else
+    raise "#{command} isn't a valid file transfer command."
+  end
 end
