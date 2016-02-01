@@ -126,12 +126,14 @@ blockquote {
 pre,
 code {
     font-size: $small-font-size;
+    font-family: $code-font-family;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #eed;
 }
 
 code {
+    font-family: $code-font-family;
     padding: 1px 5px;
 }
 
@@ -140,6 +142,7 @@ pre {
     overflow-x: scroll;
 
     > code {
+        font-family: $code-font-family;
         border: 0;
         padding-right: 0;
         padding-left: 0;
