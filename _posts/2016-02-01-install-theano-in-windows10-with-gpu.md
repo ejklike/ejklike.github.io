@@ -13,7 +13,9 @@ tags: ['windows','cuda','nvidia','theano','gpu','python']
 
 ## 2. Visual Studio 환경변수 설정
 
-* 환경변수 `Path` 변수에 `C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\;C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE` 추가
+* 환경변수 `Path` 변수에 아래 내용 추가
+
+<pre><code>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\;C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE</code></pre>
 
 ## 3. Cuda 7.5 toolkit 설치
 
@@ -35,13 +37,12 @@ tags: ['windows','cuda','nvidia','theano','gpu','python']
 * 아래 내용의 `.theanorc.txt` 파일을 `$HOME` 폴더에 만듦
 * 참고로, `$Home` 폴더는 설정을 건드리지 않았다면 `C:\Users\로그인이름`일 것임 ([확인하는법](http://blogs.technet.com/b/heyscriptingguy/archive/2015/04/27/powertip-find-user-39-s-home-directory-in-powershell.aspx))
 
-<!-- {% highlight %}
-[global]
+<pre><code>[global]
 floatX = float32
 device = gpu
 [nvcc]
 fastmath = True
-{% endhighlight %} -->
+</code></pre>
 
 > 원문에는 `flags`와 `compiler_bindir` 경로를 설정하도록 되어있었지만, 이는 나에게 아래와 같은 오류를 주었다...
 > 
@@ -56,7 +57,7 @@ fastmath = True
 
 * 아래의 코드를 실행시켜서 `Used the gpu`가 뜨면 성공!
 
-<!-- {% highlight python %}
+{% highlight python %}
 from theano import function, config, shared, sandbox
 import theano.tensor as T
 import numpy
@@ -80,6 +81,3 @@ if numpy.any([isinstance(x.op, T.Elemwise) for x in f.maker.fgraph.toposort()]):
 else:
     print('Used the gpu')
 {% endhighlight %}
-
-
- -->
