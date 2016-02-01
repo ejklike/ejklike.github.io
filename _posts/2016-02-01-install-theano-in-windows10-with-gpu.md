@@ -56,7 +56,7 @@ fastmath = True
 
 * 아래의 코드를 실행시켜서 `Used the gpu`가 뜨면 성공!
 
-{% highlight python %}
+<!-- {% highlight python %}
 from theano import function, config, shared, sandbox
 import theano.tensor as T
 import numpy
@@ -82,3 +82,4 @@ else:
 {% endhighlight %}
 
 
+ -->
