@@ -43,20 +43,17 @@ C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\;C:\Program Files (x8
 [global]
 floatX = float32
 device = gpu
-
 [nvcc]
 fastmath = True
 ```
 
-<div class="notice" markdown="1">
-원문에는 `flags`와 `compiler_bindir` 경로를 설정하도록 되어있었지만, 이는 나에게 아래와 같은 오류를 주었다...
-
+> 원문에는 `flags`와 `compiler_bindir` 경로를 설정하도록 되어있었지만, 이는 나에게 아래와 같은 오류를 주었다...
+> 
 > ValueError: Theano nvcc.flags support only parameter/value pairs without space b
 > etween them. e.g.: '--machine 64' is not supported, but '--machine=64' is suppor
 > ted. Please add the '=' symbol. nvcc.flags value is ''C:\Anaconda2\lib''
-
-[https://www.kaggle.com/c/datasciencebowl/forums/t/12677/install-theano-on-windows-8-1-with-gpu-enabled-pycuda-installation-problems](https://www.kaggle.com/c/datasciencebowl/forums/t/12677/install-theano-on-windows-8-1-with-gpu-enabled-pycuda-installation-problems)의 맨 마지막 코멘트를 참고하여 경로설정을 없앴더니 해결되었다(!)
-</div>
+> 
+> [https://www.kaggle.com/c/datasciencebowl/forums/t/12677/install-theano-on-windows-8-1-with-gpu-enabled-pycuda-installation-problems](https://www.kaggle.com/c/datasciencebowl/forums/t/12677/install-theano-on-windows-8-1-with-gpu-enabled-pycuda-installation-problems)의 맨 마지막 코멘트를 참고하여 경로설정을 없앴더니 해결되었다(!)
 
 
 ## 8. Test: theano가 GPU를 사용하는지 확인
