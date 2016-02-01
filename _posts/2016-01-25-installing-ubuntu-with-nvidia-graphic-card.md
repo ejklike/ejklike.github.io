@@ -29,7 +29,7 @@ Nvidia cuda 설치 시 OpenGL이나 nouveau와 충돌하여 오류가 생기는 
 해결방법: 
 
 1. Ubuntu installer usb로 부팅하여 `Try Ubuntu without installing`, `Install Ubuntu` 등을 선택할 수 있는 화면이 나타남을 확인한다.
-2. `e`를 누른 뒤 나타나는 텍스트 편집창에서 `quiet splash`라는 문구가 등장하는 라인(나의 경우, 아래에서 두 번쨰 라인이었음)의 맨 끝에 `nomodeset`을 입력한다.
+2. `e`를 누른 뒤 나타나는 텍스트 편집창에서 `quiet splash`라는 문구가 등장하는 라인(나의 경우, 아래에서 두 번쨰 라인이었음)의 맨 끝에 `nomodeset`을 입력한다. (혹시 맨 끝에 `quiet splash --`라고 되어있다면 `quiet splash nomodeset`으로 수정)
 3. `F10`을 눌러 재부팅하면 검정색 빈 화면이 뜨지 않고 ubuntu 로고와 함께 정상적인 설치화면이 나타남을 확인할 수 있다.
 
 설치 후, 최초 부팅 시에도 nomodeset을 적용하여 부팅해야 ubuntu 로고와 함께 정상적인 로그인 화면이 등장한다. 매번 부팅할 때마다 자동으로 적용될 수 있도록 하려면 다음을 따라한다.
