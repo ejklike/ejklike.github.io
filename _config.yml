@@ -16,7 +16,7 @@ gems:
   - jekyll-paginate
 paginate: 1
 paginate_path: "/page:num/"
-
+encoding: utf-8
 
 post:
   template: _post.txt
