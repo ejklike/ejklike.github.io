@@ -1,4 +1,4 @@
-initialize();
+// initialize();
 
 // Global variables for keeping tokens and device id
 var AUTH_CODE = 'c105a8b70ecaf2f27c5404f4cf52a97df7a81d1c0d1113a897ed99011595a3b8';
