@@ -186,13 +186,14 @@ function showApiResult(apiName)
 function updateApiElement(apiName, apiResult)
 {   
     console.log("updateApiView for " + apiName);
+    console.log(apiResult);
     
     var resultString = '';
     for (var param in apiResult)
     {
         resultString += param + ' ' + apiResult[param] + '<br />';
     }
-    
+    console.log(resultString);
     document.getElementById(apiName).innerHTML = resultString;
 }
 
