@@ -1,7 +1,7 @@
 initialize();
 
 // Global variables for keeping tokens and device id
-var AUTH_CODE;
+var AUTH_CODE; // b38b1392e4e769038dc01d1cfd7d4a5f0521883bfdad21a24ce19de3b4709851
 var ACCESS_TOKEN;
 var DEVICE_ID;
 
@@ -62,7 +62,7 @@ function enertalkLogin()
  */
 function parseAuthCodeFromUrl()
 {
-    var expectedUrl = "http://codepen.io/eunjikim/pen/Vaboge";
+    var expectedUrl = "http://ejklike.github.io/enertalk.html";
     
     var currentUri = window.location.href;
     console.log(": " + currentUri);
