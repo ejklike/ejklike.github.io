@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" href="./enertalk.css" type="text/css" title="no title" charset="utf-8"/>
+    <script src="https://enertalk-card.encoredtech.com/sdk.js"></script>
+    <script src="enertalk.js" type="text/javascript" charset="utf-8"></script>
+    <title>Intro. </title>
+    
+</head>
+
+
+<body>
+<div id="auth">
+    <div id="auth-login">
+        <h2>1. Authentication</h2>
+        <h4>a. Login</h4>
+        <a href="#" id="auth-login-button" onClick="enertalkLogin();">Enertalk Login</a>
+        <p id="login-string">Logged in successfully</p>
+    </div>
+
+    <div id="auth-tokens">
+        <h4>b. Authorization Code</h4>
+        <p id="authorization-code">Not Available</p>
+        <h4>c. Access Token</h4>
+        <a href="#" id="get-access-token-button" onClick="updateAccessTokenFromAuthCode();">Get Access Token</a>
+        <p id="access-token-string"></p>
+    </div>
+</div>
+
+<div id="enertalk-api">
+    <h2>2. Enertalk API</h2>
+    
+    <a href="#realtimeUsage" onClick="showApiResult('realtimeUsage');">Get Realtime Usage</a>
+    <p id="realtimeUsage"></p>
+    
+    <a href="#meteringUsage" onClick="showApiResult('meteringUsage');">Get Metering Usage</a>
+    <p id="meteringUsage"></p>
+    
+    <a href="#forecastUsage" onClick="showApiResult('forecastUsage');">Get Forecast Usage</a>
+    <p id="forecastUsage"></p>
+    
+    <a href="#deviceInfo" onClick="showApiResult('deviceInfo');">Get Device info</a>
+    <p id="deviceInfo"></p>
+</div>
+
+<div id="enertalk-card">
+    <h2>3. Enertalk Card UI</h2>
+    <a href="http://enertalk-card.encoredtech.com/console" target="_blank">
+        Open Card SDK Console
+    </a>
+    <p>(NOTE: Use access token in section 1.c)</p>
+</div>
+
+
+
+
+</body>
+
+</html>
