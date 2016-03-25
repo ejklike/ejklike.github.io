@@ -1,14 +1,22 @@
-// initialize();
+initialize();
 
 // Global variables for keeping tokens and device id
-var AUTH_CODE = "c62ff3549c9c0ab0bec04f91d763f28bad2f0729f9304927f69b922463f596e2";
-var ACCESS_TOKEN = "a6f20bbf425f0ccd1ad8d1a1c521a0094fbd9d84113b2cc46d98236ce5b21d57833d34b4d794036e8336216277a635cbfe359fe493690d4cc2495e3e209d47e4";
-var DEVICE_ID = "12B1089D-8077-423E-8A8B-097A1394F180";
+var AUTH_CODE;
+var ACCESS_TOKEN;
+var DEVICE_ID;
 
 // TODO Please replace with your client_id, secret, and redirect URI
 var CLIENT_ID = "ZXVuamlraW1AZG0uc251LmFjLmtyX3Rlc3Q=";
 var CLIENT_SECRET = "w71024tu5kh8548mp7xf4c74qi8bq1p48366on3";
 var REDIRECT_URI = "http://ejklike.github.io/enertalk.html";
+
+
+/* dev.ID = seoul01
+// Global variables for keeping tokens and device id
+var AUTH_CODE = "c62ff3549c9c0ab0bec04f91d763f28bad2f0729f9304927f69b922463f596e2";
+var ACCESS_TOKEN = "a6f20bbf425f0ccd1ad8d1a1c521a0094fbd9d84113b2cc46d98236ce5b21d57833d34b4d794036e8336216277a635cbfe359fe493690d4cc2495e3e209d47e4";
+var DEVICE_ID = "12B1089D-8077-423E-8A8B-097A1394F180";
+*/
 
 // Define String.startsWith method
 if (!String.prototype.startsWith)
@@ -311,7 +319,7 @@ function sendApiRequest_usages(period, start, end)
     console.log('start' + start +', end'+end);
     apiUrl += '/' + 'usages?' + 'period=' + period + '&start=' + start + '&end=' + end;
     console.log(apiUrl);
-    
+
     httpRequest.open("GET", apiUrl);
     httpRequest.setRequestHeader("Authorization", "Bearer " + ACCESS_TOKEN);
     
