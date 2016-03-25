@@ -3,7 +3,12 @@
 // Global variables for keeping tokens and device id
 var AUTH_CODE = 'c105a8b70ecaf2f27c5404f4cf52a97df7a81d1c0d1113a897ed99011595a3b8';
 var ACCESS_TOKEN = 'e4c63295c4087a310c1219e1e7b3c6009c658ebf2d115454f3973f2d96ff19cca33b500519a4c2f83c45f1bceb82877f9e308a405abbceeee1bfc7dab0c07c42';
-var DEVICE_ID;
+var DEVICE_ID = '6A92ED86-E66B-11E5-9730-9A79F3FFF7B8';
+
+// dev.ID = seoul01
+// var AUTH_CODE = "c62ff3549c9c0ab0bec04f91d763f28bad2f0729f9304927f69b922463f596e2";
+// var ACCESS_TOKEN = "a6f20bbf425f0ccd1ad8d1a1c521a0094fbd9d84113b2cc46d98236ce5b21d57833d34b4d794036e8336216277a635cbfe359fe493690d4cc2495e3e209d47e4";
+// var DEVICE_ID = "12B1089D-8077-423E-8A8B-097A1394F180";
 
 // TODO Please replace with your client_id, secret, and redirect URI
 var CLIENT_ID = "ZXVuamlraW1AZG0uc251LmFjLmtyX3Rlc3Q=";
@@ -11,12 +16,7 @@ var CLIENT_SECRET = "w71024tu5kh8548mp7xf4c74qi8bq1p48366on3";
 var REDIRECT_URI = "http://ejklike.github.io/enertalk.html";
 
 
-/* dev.ID = seoul01
-// Global variables for keeping tokens and device id
-var AUTH_CODE = "c62ff3549c9c0ab0bec04f91d763f28bad2f0729f9304927f69b922463f596e2";
-var ACCESS_TOKEN = "a6f20bbf425f0ccd1ad8d1a1c521a0094fbd9d84113b2cc46d98236ce5b21d57833d34b4d794036e8336216277a635cbfe359fe493690d4cc2495e3e209d47e4";
-var DEVICE_ID = "12B1089D-8077-423E-8A8B-097A1394F180";
-*/
+
 
 // Define String.startsWith method
 if (!String.prototype.startsWith)
