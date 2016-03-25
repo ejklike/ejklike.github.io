@@ -305,12 +305,12 @@ function sendApiRequest_usages(period, start, end)
     // API url to send API request
     var apiUrl = "https://api.encoredtech.com:8082/1.2/devices/" + DEVICE_ID;
 
-
     // Append api name to it unless it's API for deviceInfo
     start = datetimeToUnix(start);
     end = datetimeToUnix(end);
     console.log('start' + start +', end'+end);
     apiUrl += '/' + 'usages?' + 'period=' + period + '&start=' + start + '&end=' + end;
+    console.log(apiUrl);
     
     httpRequest.open("GET", apiUrl);
     httpRequest.setRequestHeader("Authorization", "Bearer " + ACCESS_TOKEN);
