@@ -298,6 +298,7 @@ function sendApiRequest_usages(period, start, end)
     {
         if (httpRequest.readyState === 4 && httpRequest.status === 200)
         {   
+            console.log(httpRequest.responseTest)
             var response = JSON.parse(httpRequest.responseText);
 
             console.log(response);
