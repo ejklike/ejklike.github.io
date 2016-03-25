@@ -1,8 +1,8 @@
 initialize();
 
 // Global variables for keeping tokens and device id
-var AUTH_CODE = "eaff11bc073186b50a51106a502963e21b4e5abac7fc5c6607645eddb8f46697";
-var ACCESS_TOKEN = "e136f601b591698a028bf26b5e1a7a7b71e34eb7b97418c8f8e067591139c504eb58ae033ac09350f600187cd1bfb76f5265ca50e5953abfdad0441d8498d935";
+var AUTH_CODE = "c62ff3549c9c0ab0bec04f91d763f28bad2f0729f9304927f69b922463f596e2";
+var ACCESS_TOKEN;
 var DEVICE_ID;
 
 // TODO Please replace with your client_id, secret, and redirect URI
