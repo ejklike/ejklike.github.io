@@ -292,7 +292,7 @@ function sendApiRequest_usages(period, start, end)
             var response = JSON.parse(httpRequest.responseText);
 
             console.log(response);
-            updateApiElement(apiName, response);
+            updateApiElement('usages', response);
         }
         else
         {
@@ -306,10 +306,7 @@ function sendApiRequest_usages(period, start, end)
 
 
     // Append api name to it unless it's API for deviceInfo
-    if (apiName !== 'deviceInfo')
-    {
-        apiUrl += '/' + 'usages' + 'period=' + period + '&start=' + datetimeToUnix(start) + '&end=' + datetimeToUnix(end);
-    }
+    apiUrl += '/' + 'usages' + 'period=' + period + '&start=' + datetimeToUnix(start) + '&end=' + datetimeToUnix(end);
     
     httpRequest.open("GET", apiUrl);
     httpRequest.setRequestHeader("Authorization", "Bearer " + ACCESS_TOKEN);
