@@ -1,7 +1,7 @@
 initialize();
 
 // Global variables for keeping tokens and device id
-var AUTH_CODE; // b38b1392e4e769038dc01d1cfd7d4a5f0521883bfdad21a24ce19de3b4709851
+var AUTH_CODE = "eaff11bc073186b50a51106a502963e21b4e5abac7fc5c6607645eddb8f46697";
 var ACCESS_TOKEN;
 var DEVICE_ID;
 
