@@ -187,7 +187,7 @@ function updateApiElement(apiName, apiResult)
 {   
     console.log("updateApiView for " + apiName);
     console.log(apiResult);
-    
+
     var resultString = '';
     for (var param in apiResult)
     {
@@ -307,7 +307,10 @@ function sendApiRequest_usages(period, start, end)
 
 
     // Append api name to it unless it's API for deviceInfo
-    apiUrl += '/' + 'usages?' + 'period=' + period + '&start=' + datetimeToUnix(start) + '&end=' + datetimeToUnix(end);
+    start = datetimeToUnix(start);
+    end = datetimeToUnix(end);
+    console.log('start' + start +', end'+end);
+    apiUrl += '/' + 'usages?' + 'period=' + period + '&start=' + start + '&end=' + end;
     
     httpRequest.open("GET", apiUrl);
     httpRequest.setRequestHeader("Authorization", "Bearer " + ACCESS_TOKEN);
