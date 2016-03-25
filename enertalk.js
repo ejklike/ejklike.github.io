@@ -274,7 +274,7 @@ function retrieveDeviceIdAndSendApiRequest(apiName)
 function datetimeToUnix(timestring)
 {
     // '1995-12-17T03:24:00'
-    var unixtime = new Date(timestring).getTime()/1000;
+    var unixtime = new Date(timestring).getTime();
     return unixtime;
 }
 
