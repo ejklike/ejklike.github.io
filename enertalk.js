@@ -3,7 +3,7 @@
 // Global variables for keeping tokens and device id
 var AUTH_CODE = "c62ff3549c9c0ab0bec04f91d763f28bad2f0729f9304927f69b922463f596e2";
 var ACCESS_TOKEN = "a6f20bbf425f0ccd1ad8d1a1c521a0094fbd9d84113b2cc46d98236ce5b21d57833d34b4d794036e8336216277a635cbfe359fe493690d4cc2495e3e209d47e4";
-var DEVICE_ID;
+var DEVICE_ID = "12B1089D-8077-423E-8A8B-097A1394F180";
 
 // TODO Please replace with your client_id, secret, and redirect URI
 var CLIENT_ID = "ZXVuamlraW1AZG0uc251LmFjLmtyX3Rlc3Q=";
@@ -57,6 +57,7 @@ function enertalkLogin()
     window.open(loginUri, '_blank', 'location-no');
 }
  
+
 /**
  * Parse auth code from re-directed URL
  */
@@ -81,8 +82,6 @@ function parseAuthCodeFromUrl()
  */
 function updateLoginAndTokenElements()
 {
-    console.log(AUTH_CODE);
-    console.log(!AUTH_CODE);
     if(!AUTH_CODE)
     {
         console.error("Authorization Code NOT available");
@@ -265,6 +264,54 @@ function retrieveDeviceIdAndSendApiRequest(apiName)
         
     var deviceUuidUrl = "https://enertalk-auth.encoredtech.com/uuid";
     httpRequest.open("GET", deviceUuidUrl);
+    httpRequest.setRequestHeader("Authorization", "Bearer " + ACCESS_TOKEN);
+    
+    httpRequest.send();
+}
+
+
+function datetimeToUnix(timestring)
+{
+    // "24-Nov-2009 17:57:35"
+    var unixtime = Date.parse(timestring).getTime()/1000;
+    return unixtime;
+}
+
+
+/**
+ * Send API request with given API name // periodic usages
+ * @param {String} apiName
+ */
+function sendApiRequest_usages(period, start, end)
+{
+    var httpRequest = new XMLHttpRequest();
+    httpRequest.onload = function()
+    {
+        if (httpRequest.readyState === 4 && httpRequest.status === 200)
+        {   
+            var response = JSON.parse(httpRequest.responseText);
+
+            console.log(response);
+            updateApiElement(apiName, response);
+        }
+        else
+        {
+            console.log("httpRequest.readyState: " + httpRequest.readyState);
+            console.log("httpRequest.status: " + httpRequest.status);
+        }
+    }
+    
+    // API url to send API request
+    var apiUrl = "https://api.encoredtech.com:8082/1.2/devices/" + DEVICE_ID;
+
+
+    // Append api name to it unless it's API for deviceInfo
+    if (apiName !== 'deviceInfo')
+    {
+        apiUrl += '/' + 'usages' + 'period=' + period + '&start=' + datetimeToUnix(start) + '&end=' + datetimeToUnix(end);
+    }
+    
+    httpRequest.open("GET", apiUrl);
     httpRequest.setRequestHeader("Authorization", "Bearer " + ACCESS_TOKEN);
     
     httpRequest.send();
