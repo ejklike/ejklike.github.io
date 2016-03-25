@@ -81,6 +81,8 @@ function parseAuthCodeFromUrl()
  */
 function updateLoginAndTokenElements()
 {
+    console.log(AUTH_CODE);
+    console.log(!AUTH_CODE);
     if(!AUTH_CODE)
     {
         console.error("Authorization Code NOT available");
