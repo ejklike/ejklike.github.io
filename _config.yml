@@ -10,7 +10,10 @@ url: "http://ejklike.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+# highlighter: pygments
 gems:
   - jemoji
   - jekyll-paginate
