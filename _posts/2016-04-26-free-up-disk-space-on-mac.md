@@ -49,6 +49,5 @@ sudo tmutil disablelocal
 
 ## 4. 용량이 큰 Application 삭제
 
-나의 경우, Matlab을 삭제하면 약 7GB를 확보할 수 있었다.
-그러나 삭제하지 못하였다......
+나의 경우, Matlab을 삭제하면 약 7GB를 확보할 수 있었다. 상황에 따라 필요 없는 프로그램을 삭제하면 되겠다.
 
