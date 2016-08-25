@@ -37,7 +37,7 @@ C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\;C:\Program Files (x8
 ## 7. Theano 환경설정파일 만들기
 
 * 아래 내용의 `.theanorc.txt` 파일을 `$HOME` 폴더에 만듦
-* 참고로, `$Home` 폴더는 설정을 건드리지 않았다면 `C:\Users\로그인이름`일 것임 ([확인하는법](http://blogs.technet.com/b/heyscriptingguy/archive/2015/04/27/powertip-find-user-39-s-home-directory-in-powershell.aspx))
+* 참고로, `$Home` 폴더는 설정을 건드리지 않았다면 `C:\Users\로그인이름`일 것임
 
 {% highlight text %}
 [global]

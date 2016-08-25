@@ -192,6 +192,7 @@
 }
 
 .post-meta {
+    font-family: $date-font-family;
     font-size: $base-font-size;
     color: $grey-color;
 }
@@ -211,16 +212,16 @@
 }
 
 .post-title {
-    font-size: 32px;
+    font-size: $title-font-size;
     font-family: $post-title-font-family;
-    font-weight: 300;
+    font-weight: 900;
     letter-spacing: -1px;
     line-height: 1;
     text-align:center;
 }
 
 .post-date {
-  font: normal 10px $base-font-family;
+  font: normal 12px $date-font-family;
   margin: 5px 0 30px 0;
   color: #b2b9be;
   text-align: center;
