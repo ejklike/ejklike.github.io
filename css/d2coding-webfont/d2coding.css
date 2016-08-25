@@ -5,12 +5,12 @@
   font-family: 'D2 coding';
   font-style: normal;
   font-weight: 700;
-  src: url('D2Coding-Bold.eot');
+  src: url('D2CodingBold.eot');
   src: local('O'),
-       url('D2Coding-Bold.eot?#iefix') format('embedded-opentype'),
-       url('D2Coding-Bold.woff2') format('x-woff2'),
-       url('D2Coding-Bold.woff') format('woff'),
-       url('D2Coding-Bold.ttf') format('truetype');
+       url('D2CodingBold.eot?#iefix') format('embedded-opentype'),
+       url('D2CodingBold.woff2') format('x-woff2'),
+       url('D2CodingBold.woff') format('woff'),
+       url('D2CodingBold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'D2 coding';
