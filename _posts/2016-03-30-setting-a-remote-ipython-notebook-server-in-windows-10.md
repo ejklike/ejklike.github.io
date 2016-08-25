@@ -56,7 +56,9 @@ c.NotebookApp.port = 9999 #원하는 포트번호를 입력
 
 ## 3. 위 설정파일에 반영된 포트 열기
 
-[http://windows.microsoft.com/ko-kr/windows/open-port-windows-firewall#1TC=windows-7](http://windows.microsoft.com/ko-kr/windows/open-port-windows-firewall#1TC=windows-7)를 참고하여 `새 인바운드 규칙 마법사`을 연다. 
+단축키 `win+R`로 '실행' 창을 열어 `WF.msc`를 입력, '고급 보안이 포함된 Windows 방화벽'을 실행한다. 
+왼쪽 tab에서 `인바운드 규칙` 클릭, 오른쪽 작업 tab에서 `새 규칙` 클릭하면 `인바운드 규칙 마법사`가 실행된다.
+스텝 별로 선택해야 할 사항은 아래와 같다.
 
 1. `포트` 선택
 2. `TCP` 선택, 특정 로컬포트에 위 설정파일에 반영한 포트번호 입력
