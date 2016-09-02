@@ -1,7 +1,7 @@
 ---
 title: "Markdown and Visual Studio Code (VS code)" 
 layout: post
-tags: 
+tags: tags: ['markdown', 'VScode']
 ---
 
 코드 작업을 위한 에디터로 가볍다고 소문난 [Sublime Text 2](http://www.sublimetext.com/2)를 사용했었는데, [Visual Studio Code (VS Code)](https://code.visualstudio.com/b?utm_expid=101350005-27.GqBWbOBuSRqlazQC_nNSRg.1&utm_referrer=https%3A%2F%2Fcode.visualstudio.com%2Fdocs%2Fsetup%2Fwindows) 또한 가볍고 "안정적"이라는 호평이 많아 사용해보기로 했다. 기존에 Sublime Text에 설치한 패키지 문제로 사소한 버그를 여럿 겪었었기에 안정적이라는 단어에 마음이 동했다. 아직 많이 사용해본건 아니지만, 몇 가지 장점이 있어 계속 사용할 마음을 굳혔다. 생각나는대로 장점을 적어보자면, 
