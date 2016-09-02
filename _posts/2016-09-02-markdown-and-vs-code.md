@@ -1,5 +1,5 @@
 ---
-title: "Markdown and Visual Studio Code (VS code)" 
+title: Markdown and Visual Studio Code (VS code)
 layout: post
 tags: tags: ['markdown', 'VScode']
 ---
