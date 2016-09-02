@@ -16,7 +16,8 @@ tags: tags: ['markdown', 'VScode']
   - 윈도우 폴더 빈 공간에서 오른쪽 마우스 클릭 후 'Open with code' 선택해도 같음
 - json 파일 기반의 workspace setting, default setting 중 수정하고 싶은 부분만 settings.json에 명시하여 overwrite
   - Sublime Text도 json 기반이지만, default 세팅 파일을 백업해두고 수정을 해야하는 번거로움이 있음
-- 간단한 Git 연동 인터페이스로 손쉬운 commit 가능 (메시지 입력 후 `ctrl+enter`) 
+- 간단한 Git 연동 인터페이스로 손쉬운 commit 가능 (메시지 입력 후 `ctrl+enter`)
+  - 자세한 내용은 [여기](https://code.visualstudio.com/docs/editor/versioncontrol) 확인
 
 [공식 문서](https://code.visualstudio.com/docs/languages/markdown)에 따르면 VS code는 markdown preview를 기본으로 제공하며 (단축키: `Ctrl+Shift+V`), css 파일로 preview style 변경이 가능하다. 기본 style은 VS code theme인데, [Visual Studio Code 에서 깃헙 스타일 마크다운 사용하기](http://blog.aliencube.org/ko/2016/07/06/markdown-in-visual-studio-code/)를 참고하여 맑은고딕 한글폰트가 반영된 github theme로 수정하였다. 그리고 markdown 작업에 도움이 될만한 extension을 설치하였다.
 
