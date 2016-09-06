@@ -34,7 +34,7 @@ tags: ['markdown', 'VScode']
 // 설정을 이 파일에 넣어서 기본 설정을 덮어씁니다.
 {
     // 글꼴 패밀리를 제어합니다.
-    "editor.fontFamily": "Inconsolata, 'D2Coding', 'Malgun Gothic', 'Noto Sans CJK KR', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "Inconsolata, 'D2Coding', 'Malgun Gothic', Consolas, 'Courier New', monospace",
 
     // 글꼴 크기를 제어합니다.
     "editor.fontSize": 13,
