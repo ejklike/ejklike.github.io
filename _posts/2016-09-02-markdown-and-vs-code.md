@@ -49,7 +49,7 @@ tags: ['markdown', 'VScode']
     ]
 
     // 참고로, mac에서는 다음과 같이 절대경로를 입력해준다.
-    // 원래 mac에서는 폴더명에 띄어쓰기가 있는 경우 '\'를 사용하지만, Code에서는 사용하지 않아야한다.
+    // 주의해야할 점은, 원래 mac에서는 폴더명에 띄어쓰기가 있는 경우 '\'를 사용하지만, 여기서는 그렇지 않아서 헷갈릴 수 있다는 것이다.
     // "file:///Users\\유저명\\Library\\Application Support\\Code\\User\\style.css"
 
 }
