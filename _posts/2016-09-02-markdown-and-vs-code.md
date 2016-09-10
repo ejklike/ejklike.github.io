@@ -53,5 +53,3 @@ tags: ['markdown', 'VScode']
     // ]
 }
 {% endhighlight %}
-
-맥에서는 
