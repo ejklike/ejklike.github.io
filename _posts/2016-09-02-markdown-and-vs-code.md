@@ -47,5 +47,11 @@ tags: ['markdown', 'VScode']
     "markdown.styles": [
         "file:///C:\\Users\\dmlab\\AppData\\Roaming\\Code\\User\\style.css"
     ]
+    // mac에서는 다음과 같이 절대경로를 입력해준다. 원래 mac에서는 폴더명에 띄어쓰기가 있는 경우 '\'를 사용하지만, Code에서는 사용하지 않아야한다.
+    // "markdown.styles": [
+    //   "file:///Users\\ejk\\Library\\Application Support\\Code\\User\\Style.css"
+    // ]
 }
 {% endhighlight %}
+
+맥에서는 
