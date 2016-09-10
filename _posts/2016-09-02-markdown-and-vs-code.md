@@ -30,7 +30,7 @@ tags: ['markdown', 'VScode']
 
 참고로 editor style 개인설정은 아래와 같다. 폰트와 줄바꿈 정도만 수정했다.
 
-{% highlight css %}
+{% highlight json %}
 // 설정을 이 파일에 넣어서 기본 설정을 덮어씁니다.
 {
     // 글꼴 패밀리를 제어합니다.
@@ -45,11 +45,12 @@ tags: ['markdown', 'VScode']
     // Markdown
     // A list of URLs or local paths to CSS style sheets to use from the markdown preview. Relative paths are interpreted relative to the folder open in the explorer. If there is no open folder, they are interpreted relative to the location of the markdown file. All '\' need to be written as '\\'.
     "markdown.styles": [
-        "file:///C:\\Users\\dmlab\\AppData\\Roaming\\Code\\User\\style.css"
+        "file:///C:\\Users\\유저명\\AppData\\Roaming\\Code\\User\\style.css"
     ]
-    // mac에서는 다음과 같이 절대경로를 입력해준다. 원래 mac에서는 폴더명에 띄어쓰기가 있는 경우 '\'를 사용하지만, Code에서는 사용하지 않아야한다.
-    // "markdown.styles": [
-    //   "file:///Users\\ejk\\Library\\Application Support\\Code\\User\\Style.css"
-    // ]
+
+    // 참고로, mac에서는 다음과 같이 절대경로를 입력해준다.
+    // 원래 mac에서는 폴더명에 띄어쓰기가 있는 경우 '\'를 사용하지만, Code에서는 사용하지 않아야한다.
+    // "file:///Users\\유저명\\Library\\Application Support\\Code\\User\\style.css"
+
 }
 {% endhighlight %}
