@@ -117,15 +117,15 @@ Type "help", "copyright", "credits" or "license" for more information.
 GPU버전은 `import tensorflow as tf` 부분이 실행될 때 CUDA library의 loading 여부 메시지가 출력된다. 모든 모듈을 성공적으로 불러오면 tensorflow가 제대로 설치된 것이다. 또한, Session을 실행할 때 GPU를 제대로 인식하는지 확인하자.
 
 {% highlight bat %}
-(tensorflow) C:\> python
-Python 3.5.2 |Continuum Analytics, Inc.| (default, Jul  5 2016, 11:41:13) [MSC v.1900 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
 >>> import tensorflow as tf
 I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library cublas64_80.dll locally
 I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library cudnn64_5.dll locally
 I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library cufft64_80.dll locally
 I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library nvcuda.dll locally
 I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library curand64_80.dll locally
+{% endhighlight %}
+
+{% highlight bat %}
 >>> sess = tf.Session()
 I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core\common_runtime\gpu\gpu_device.cc:885] Found device 0 with properties:
 name: GeForce GTX 550 Ti
@@ -136,10 +136,6 @@ Free memory: 816.21MiB
 I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core\common_runtime\gpu\gpu_device.cc:906] DMA: 0
 I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core\common_runtime\gpu\gpu_device.cc:916] 0:   Y
 I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core\common_runtime\gpu\gpu_device.cc:948] Ignoring visible gpu device (device: 0, name: GeForce GTX 550 Ti, pci bus id: 0000:01:00.0) with Cuda compute capability 2.1. The minimum required Cuda capability is 3.0.
->>> a = tf.constant(3)
->>> b = tf.constant(2)
->>> sess.run(a+b)
-5
 {% endhighlight %}
 
 테스트 환경의 GPU는 GTX 550 Ti인데, Cuda compute capability가 2.1이기에 gpu 장치를 무시한다고 안내가 뜬다. 설마 했지만 역시나...
