@@ -139,3 +139,11 @@ I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core
 {% endhighlight %}
 
 테스트 환경의 GPU는 GTX 550 Ti인데, Cuda compute capability가 2.1이기에 gpu 장치를 무시한다고 안내가 뜬다. 설마 했지만 역시나...
+
+## (참고) jupyter notebook에서 tensorflow를 사용하고 싶다면?
+
+tensorflow용 conda 환경에서 jupyter notebook을 다시 설치해주자.
+
+{% highlight bat %}
+(tensorflow) C:\> pip install jupyter
+{% endhighlight %}
