@@ -11,11 +11,11 @@ tags: ['tensorflow','windows','cpu','gpu','cuda','python']
 
 먼저, 본인 PC에 설치된 GPU가 tensorflow 사용 가능한 GPU인지 확인해야 한다. (GPU가 없다면 당연히 CPU only 버전...) 아래 두 가지 조건을 충족하면 GPU 버전의 tensorflow를 설치하여 사용할 수 있다. 그렇지 않다면 GPU 버전의 tensorflow는 무용지물.
 
-**1. CUDA를 지원하는 GPU인가?**
+1. CUDA를 지원하는 GPU인가?
  - [여기](https://developer.nvidia.com/cuda-gpus)에 접속하여 본인 PC에 설치된 GPU를 찾아보자. 
  - 본인의 GPU가 목록에 있다면, 그 옆에 Compute Capability를 확인하고 2번으로 고고.
 
-**2. NVidia Compute Capability 3.0 이상인가?**
+2. NVidia Compute Capability 3.0 이상인가?
   - [Tensorflow 공식문서](https://www.tensorflow.org/get_started/os_setup#optional_install_cuda_gpus_on_linux)에 의하면 CUDA를 지원하더라도 NVidia Compute Capability가 3.0 이하이면 tensorflow를 사용할 수 없다.
 
 
@@ -23,11 +23,11 @@ tags: ['tensorflow','windows','cpu','gpu','cuda','python']
 
 위에서 확인한 결과 CUDA 사용 가능하고 Compute Capability 3.0 이상인 GPU가 장착되어있다면 Cuda toolkit과 cuDNN을 설치하여 tensorflow 설치를 위한 준비를 하자. (CPU only 버전을 설치한다면 넘어가자.)
 
-**CUDA toolkit 8.0 설치**
+### CUDA toolkit 8.0 설치
 
 <https://developer.nvidia.com/cuda-downloads>에서 Windows용 8.0 버전을 다운로드하여 설치한다. 이 때, CUDA가 설치되는 경로를 잘 기억해둬야 cuDNN 설치가 편해진다. 나의 경우는 `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0` 이었다.
 
-**cuDNN 5.1 설치**
+### cuDNN 5.1 설치
 
 <https://developer.nvidia.com/cudnn>에서 cuDNN 5.1 버전을 다운로드한다. (CUDA와 달리 계정을 만들어야 한다.) 다운로드한 파일의 압축을 풀면 `cuda`라는 폴더가 있고, 이 안에 세 개의 폴더가 있다. 
 
