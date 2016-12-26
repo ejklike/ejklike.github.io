@@ -41,7 +41,7 @@ tags: ['tensorflow','windows','cpu','gpu','cuda','python']
 
 명령 프롬프트(`cmd`)에서 `python`을 입력했을 때 아래와 같이 나타나면 설치 성공이다. (아래는 python 3.5 기준 성공화면)
 
-{% highlight bash %}
+{% highlight bat %}
 C:\> python
 Python 3.5.2 |Continuum Analytics, Inc.| (default, Jul  5 2016, 11:41:13) [MSC v.1900 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
@@ -54,7 +54,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 명령 프롬프트(`cmd`)를 켜고 1에서 설치한 파이썬 버전에 맞는 명령어를 실행한다.
 
-{% highlight bash %}
+{% highlight bat %}
 # Python 2.7
 C:\> conda create -n tensorflow python=2.7
 # Python 3.5
@@ -63,7 +63,7 @@ C:\> conda create -n tensorflow python=3.5
 
 pip 관련하여 패키지 설치 안내가 뜨면 `y`를 누르고 엔터를 입력한다. 설치 완료하면 아래와 같은 안내 메시지가 아랫부분에 출력된다.
 
-{% highlight bash %}
+{% highlight bat %}
 # To activate this environment, use:
 # > activate tensorflow
 #
@@ -75,7 +75,7 @@ tensorflow용 conda 환경을 활성화 하고 싶으면 `activate tensorflow`, 
 
 우리는 tensorflow용 conda 환경에 tensorflow를 설치하고 실행하는 게 목적이니 `activate tensorflow`를 실행하고 다음 단계로 넘어간다. 명령어를 실행하고 나면 경로 앞에 `(tensorflow)`가 나타남을 확인할 수 있다.
 
-{% highlight bash %}
+{% highlight bat %}
 C:\> activate tensorflow
 (tensorflow) C:\> 
 {% endhighlight %}
@@ -84,7 +84,7 @@ C:\> activate tensorflow
 
 아래 명령어를 실행하여 Tensorflow를 설치한다.
 
-{% highlight bash %}
+{% highlight bat %}
 # CPU only version
 (tensorflow) C:\> pip install --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-0.12.0-cp35-cp35m-win_amd64.whl
 # GPU version
@@ -100,7 +100,7 @@ C:\> activate tensorflow
 
 **CPU only 버전**
 
-{% highlight bash %}
+{% highlight bat %}
 (tensorflow) C:\> python
 Python 3.5.2 |Continuum Analytics, Inc.| (default, Jul  5 2016, 11:41:13) [MSC v.1900 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
@@ -116,7 +116,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 GPU버전은 `import tensorflow as tf` 부분이 실행될 때 CUDA library의 loading 여부 메시지가 출력된다. 모든 모듈을 성공적으로 불러오면 tensorflow가 제대로 설치된 것이다. 또한, Session을 실행할 때 GPU를 제대로 인식하는지 확인하자.
 
-{% highlight bash %}
+{% highlight bat %}
 (tensorflow) C:\> python
 Python 3.5.2 |Continuum Analytics, Inc.| (default, Jul  5 2016, 11:41:13) [MSC v.1900 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
