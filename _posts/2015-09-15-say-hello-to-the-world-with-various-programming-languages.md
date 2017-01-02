@@ -7,13 +7,21 @@ tags: python java javascript c++
 ---
 
 Python 
-{% highlight python %} print "hello world!" {% endhighlight %}
+```py
+print "hello world!"
+```
 
 Java 
-{% highlight java %} System.out.println("hello world!"); {% endhighlight %}
+```java
+System.out.println("hello world!");
+```
 
 JavaScript
-{% highlight javascript %} console.log("hello world!"); {% endhighlight %}
+```js
+console.log("hello world!");
+```
 
 c++ 
-{% highlight cpp %} cout << "Hello World!"; {% endhighlight %}
+```cpp
+cout << "Hello World!";
+```

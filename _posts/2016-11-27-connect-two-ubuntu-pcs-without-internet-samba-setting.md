@@ -12,21 +12,21 @@ tags: ['samba','ubuntu','git','nas']
 
 ### 1) samba 설치
 
-{% highlight bash %}
+```terminal
 $ sudo apt-get install samba
-{% endhighlight %}
+```
 
 ### 2) 공유폴더에 접속할 사용자 추가
 
-{% highlight bash %}
+```terminal
 $ sudo adduser user1 #user 이름은 원하는 대로
-{% endhighlight %}
+```
 
 ### 3) samba 접속 가능 사용자 등록, 공유폴더 접속 패스워드 설정
 
-{% highlight bash %}
+```terminal
 $ sudo smbpasswd -a user1
-{% endhighlight %}
+```
 
 참고로, 사용자 삭제는 `sudo smbpasswd -x user1`이다.
 
@@ -34,15 +34,15 @@ $ sudo smbpasswd -a user1
 
 'smb.conf'라는 samba 설정파일을 에디터로 연다.
 
-{% highlight bash %}
+```terminal
 $ sudo nano /etc/samba/smb.conf #nano 대신 gedit, vi 등 원하는 에디터 사용 가능
-{% endhighlight %}
+```
 
 아래 내용을 추가한다.
 
-{% highlight bash %}
-# 아래 내용 추가
-[user1_home] #user1에게 공유할 폴더 위치 및 권한 설정
+```markdown
+#user1에게 공유할 폴더 위치 및 권한 설정
+[user1_home]
     comment= shared folder (local) #공유 폴더 설명
     path = /home/asdf/share #공유할 폴더 위치 (당연히, 폴더가 존재해야 함)
     read only = no #읽기 권한만 부여할 지 여부
@@ -55,13 +55,13 @@ $ sudo nano /etc/samba/smb.conf #nano 대신 gedit, vi 등 원하는 에디터 �
 [global]
 create mask = 0644  #새로 생성한 파일에 대한 권한 설정
 directory mask = 0755 #새로 생성한 폴더에 대한 권한 설정
-{% endhighlight %}
+```
 
 ### 5) samba 서버 재시작
 
-{% highlight bash %}
+```terminal
 $ sudo /etc/init.d/samba reload
-{% endhighlight %}
+```
 
 ### 6) 접속이 되는지 확인
 

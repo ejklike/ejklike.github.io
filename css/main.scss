@@ -3,38 +3,42 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
-$site-title-font-family: Dancing Script;
-$base-font-family: 'Inconsolata', 'Spoqa Han Sans', sans-serif;
-$title-font-family: 'Spoqa Han Sans', sans-serif; //h1~3
-$post-title-font-family: 'Spoqa Han Sans', sans-serif;
+$site-title-font-family: 'Dancing Script', sans-serif;
+$base-font-family: 'Noto Sans KR', sans-serif;//'Spoqa Han Sans',  'KoPub Batang' 'Noto Sans KR' 'Nanum Gothic Coding'
+$title-font-family: 'Noto Sans KR', sans-serif; //h1~3
+$post-title-font-family: 'Noto Sans KR', sans-serif;
 $date-font-family: 'Inconsolata', sans-serif;
-$code-font-family: 'Inconsolata', sans-serif;
-$base-font-size:   14px;
-$title-font-size:  $base-font-size * 1.8;
+$code-font-family: 'Inconsolata', 'KoPub Batang', sans-serif;
+$base-font-size:   15px;
+$base-font-weight: 600;
+$title-font-size:  $base-font-size * 2.1;
 $small-font-size:  $base-font-size * 0.875;
-$code-font-size:  $base-font-size * 1.02;
+$code-font-size:   $base-font-size * 1.05;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-$link-color:       #e32d0e;
-$green:			   #18B888;
+$spacing-unit:     35px;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+$title-color:      $grey-color-dark;
+$text-color:       darken($grey-color, 10%);
+$blockquote-font-color: $grey-color;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+$link-color:       #cb4b16;
+$green:			   #18B888;
+$code-font-color:  #458;
+
+
+
 // Width of the content area
-$content-width:    640px;
+$content-width:    720px;
 
 $on-palm:          500px;
-$on-laptop:        640px;
+$on-laptop:        720px;
 
 
 
@@ -62,8 +66,10 @@ $on-laptop:        640px;
         url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css),
         url(https://fonts.googleapis.com/css?family=Dancing+Script:400),
         //url(http://fonts.googleapis.com/earlyaccess/jejugothic.css),
-        url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css),
-        //url(http://fonts.googleapis.com/earlyaccess/notosanskr.css),
-        //url(/css/d2coding-webfont/d2coding.css),
+        // url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css),
+        url(http://fonts.googleapis.com/earlyaccess/notosanskr.css),
+        // url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css),
+        // url(/css/d2coding-webfont/d2coding.css),
+        url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css),
         url(https://fonts.googleapis.com/css?family=Inconsolata)
 ;

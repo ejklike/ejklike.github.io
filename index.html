@@ -8,10 +8,10 @@ layout: default
     <a href="{{ site.baseurl }}">{{ site.title }}</a>
   </div>
 
-  <div align = "center"><img src ="/img/main.jpg"></div>
+  <div align = "center"><img src ="/img/particles.gif" height="250">&nbsp;&nbsp;<img src ="/img/swim.jpg" height="250"></div>
   <br>
   
-  <h4>
+  <main-text>
   "When the spirits are low, when the day appears dark, 
   when work becomes monotonous, 
   when hope hardly seems worth having, 
@@ -24,7 +24,7 @@ layout: default
   <br><br>
 
   I see. I know. I understand.---Just keep pedaling :bicyclist::+1:!
-  </h4>
+  </main-text>
 
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
@@ -41,15 +41,12 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-  <p align="right">
-    <a href onclick="filter('all'); return false;">Show all posts</a>
-    <br><br>
-  </p>
 
-
-  <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list" id="all-container">
+
+    <h1 class="page-heading">Posts</h1>
+
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %d, %Y" }}</span>
@@ -64,11 +61,14 @@ layout: default
     {% assign t = tag | first %}
     {% assign posts = tag | last %}
     <ul class="post-list hidden" id="{{ t }}-container">
+      <p align="right">
+        <a href onclick="filter('all'); return false;">Show all posts</a>
+      </p>
       {% assign numPosts = posts | size %}
         {% if numPosts == 1 %}
-          <p>{{ numPosts }} post containing tag <b>"{{ t }}"</b></p>
+          <br><p>{{ numPosts }} post containing tag <b>"{{ t }}"</b></p>
         {% else %}
-          <p>{{ numPosts }} posts containing tag <b>"{{ t }}"</b></p>
+          <br><p>{{ numPosts }} posts containing tag <b>"{{ t }}"</b></p>
         {% endif %}
 
       {% for post in posts %}
@@ -80,15 +80,13 @@ layout: default
           </li>
         {% endif %}
       {% endfor %}
-      <p align="right">
+      <!--<p align="right">
         <a href onclick="filter('all'); return false;">Show all posts</a>
-      </p>
+      </p>-->
     </ul>
   {% endfor %}
 
 </div>
-
-
 
 
 <script type="text/javascript">
