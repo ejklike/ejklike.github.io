@@ -71,7 +71,17 @@ pip 관련하여 패키지 설치 안내가 뜨면 `y`를 누르고 엔터를 �
 # > deactivate tensorflow
 ```
 
-tensorflow용 conda 환경을 활성화 하고 싶으면 `activate tensorflow`, 비활성화 하고 싶다면 `deactivate tensorflow`를 입력해주면 된다.
+tensorflow용 conda 환경을 활성화 하고 싶으면 `activate tensorflow`, 비활성화 하고 싶다면 `deactivate tensorflow`, 혹은 `deactivate`만 입력해주면 된다.
+
+conda 환경 목록은 아래의 명령어를 통해 확인할 수 있다. (보다 자세한 내용은 [여기](http://conda.pydata.org/docs/using/envs.html) 참고)
+
+```posh
+C:\> conda info --envs    #conda env list도 가능
+# conda environments:
+#
+tensorflow               C:\Users\dmlab\Anaconda3\envs\tensorflow
+root                  *  C:\Users\dmlab\Anaconda3
+```
 
 우리는 tensorflow용 conda 환경에 tensorflow를 설치하고 실행하는 게 목적이니 `activate tensorflow`를 실행하고 다음 단계로 넘어간다. 명령어를 실행하고 나면 경로 앞에 `(tensorflow)`가 나타남을 확인할 수 있다.
 
@@ -151,5 +161,5 @@ I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core
 tensorflow용 conda 환경에서 jupyter notebook을 다시 설치해주자.
 
 ```posh
-(tensorflow) C:\> pip install jupyter
+(tensorflow) C:\> conda install jupyter
 ```
