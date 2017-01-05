@@ -1,5 +1,5 @@
 ---
-title: "Windows 10에 tensorflow 설치하기 (Both CPU or GPU version)" 
+title: "Windows 10에 tensorflow 설치하기" 
 layout: post
 tags: ['tensorflow','windows','cpu','gpu','cuda','python']
 ---
