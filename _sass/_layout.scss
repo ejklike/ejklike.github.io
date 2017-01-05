@@ -226,6 +226,7 @@
 .post-header {
     margin-bottom: $spacing-unit;
     font-family: $code-font-family;
+    font-weight: $code-font-weight;
 }
 
 .post-title {
@@ -282,8 +283,10 @@
 
 main-text {
     font-family: $code-font-family;
-    // font-weight: 500;
-    font-size: 15px bold;
+    font-weight: $code-font-weight;
+    font-size: 15px;
+    font-style: normal;
+	font-variant: normal;
 }
 
 .post_tag_box {
@@ -296,6 +299,7 @@ main-text {
 
         a {
             font-family: $code-font-family;
+            font-weight: $code-font-weight;
             color: $code-font-color;
             padding: 3px 6px;
             margin: 3px;
@@ -320,7 +324,9 @@ main-text {
 
         a {
             font-family: $code-font-family;
+            font-weight: $code-font-weight;
             color: $code-font-color;
+            font-weight: $code-font-weight;
             padding: 3px 6px;
             margin: 3px;
             line-height: 28px;
