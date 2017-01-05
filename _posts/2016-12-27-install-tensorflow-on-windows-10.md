@@ -50,70 +50,22 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 > 선호하는 파이썬 버전이 없다면 Python 3를 다운받자. 이는 예외상황(예: Python 3에서 작동하지 않는 Python 2 전용 패키지를 사용)이 없다는 가정 하의 추천이다. 만약 파이썬 버전 선택에 대해 더 알아보고 싶다면 [이 글](http://bit.ly/python2-or-python3)을 읽어보자.
 
-## 2. Tensorflow용 conda 환경 생성, 활성화
-
-명령 프롬프트(`cmd`)를 켜고 1에서 설치한 파이썬 버전에 맞는 명령어를 실행한다.
-
-```posh
-# Python 2.7
-C:\> conda create -n tensorflow python=2.7
-# Python 3.5
-C:\> conda create -n tensorflow python=3.5
-```
-
-pip 관련하여 패키지 설치 안내가 뜨면 `y`를 누르고 엔터를 입력한다. 설치 완료하면 아래와 같은 안내 메시지가 아랫부분에 출력된다.
-
-```posh
-# To activate this environment, use:
-# > activate tensorflow
-#
-# To deactivate this environment, use:
-# > deactivate tensorflow
-```
-
-tensorflow용 conda 환경을 활성화 하고 싶으면 `activate tensorflow`, 비활성화 하고 싶다면 `deactivate tensorflow`, 혹은 `deactivate`만 입력해주면 된다.
-
-conda 환경 목록은 아래의 명령어를 통해 확인할 수 있다. (보다 자세한 내용은 [여기](http://conda.pydata.org/docs/using/envs.html) 참고)
-
-```posh
-C:\> conda info --envs    #conda env list도 가능
-# conda environments:
-#
-tensorflow               C:\Users\dmlab\Anaconda3\envs\tensorflow
-root                  *  C:\Users\dmlab\Anaconda3
-```
-
-우리는 tensorflow용 conda 환경에 tensorflow를 설치하고 실행하는 게 목적이니 `activate tensorflow`를 실행하고 다음 단계로 넘어간다. 명령어를 실행하고 나면 경로 앞에 `(tensorflow)`가 나타남을 확인할 수 있다.
-
-```posh
-C:\> activate tensorflow
-(tensorflow) C:\> 
-```
-
-## 3. Tensorflow 설치
+## 2. Tensorflow 설치
 
 아래 명령어를 실행하여 Tensorflow를 설치한다.
 
 ```posh
 # CPU only version
-(tensorflow) C:\> pip install --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-0.12.0-cp35-cp35m-win_amd64.whl
+C:\> pip install --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-0.12.0-cp35-cp35m-win_amd64.whl
 # GPU version
-(tensorflow) C:\> pip install --upgrade https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-0.12.0-cp35-cp35m-win_amd64.whl
+C:\> pip install --upgrade https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-0.12.0-cp35-cp35m-win_amd64.whl
 ```
 
-> 처음에 setuptools 관련 `FileNotFoundError`가 발생했으나, 다시 해보니 설치되었다(!) 
-> 좀 더 자세히 기록해두자면, `conda install setuptools`를 사용하여 setuptools 설치여부를 재확인한 결과 이미 설치되어 있었고, 위 설치 명령어를 재실행하니 성공하였다. 뭐지...
+> 만약 설치가 이미 되어있다는 문구와 함께 오류(나의 경우는 `Found existing installation: setuptools 27.2.0. Cannot remove entries from nonexistent file c:\users\dmlab\anaconda3\lib\site-packages\easy-install.pth`와 같았음)가 난다면, `--ignore-installed` 태그를 뒤에 붙여서 재시도해보자. 
 
-## 4. Tensorflow 테스트
+## 3. Tensorflow 테스트
 
-설치가 완료되면 아래 코드를 실행해보자. (여전히 tensorflow용 conda 환경에서 파이썬을 실행하고 있음에 주목하자.)
-
-```posh
-(tensorflow) C:\> python
-Python 3.5.2 |Continuum Analytics, Inc.| (default, Jul  5 2016, 11:41:13) [MSC v.1900 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
->>>
-```
+설치가 완료되면 아래 코드를 실행해보자.
 
 ### CPU only 버전
 
@@ -155,11 +107,3 @@ I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core
 ```
 
 테스트 환경의 GPU는 GTX 550 Ti인데, Cuda compute capability가 2.1이기에 gpu 장치를 무시한다고 안내가 뜬다. 설마 했지만 역시나...
-
-## (참고) jupyter notebook에서 tensorflow를 사용하고 싶다면?
-
-tensorflow용 conda 환경에서 jupyter notebook을 다시 설치해주자.
-
-```posh
-(tensorflow) C:\> conda install jupyter
-```
