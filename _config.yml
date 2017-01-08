@@ -20,6 +20,8 @@ compress_html:
   startings: [html, head, body]
   # profile: true
   
+exclude: [img]
+
 
 # github_username:  ejklike
 # description: "machine learning, statistical learning, pattern recognition, deep learning, data, datamining, data mining, data scientist, python, programming"

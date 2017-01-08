@@ -21,9 +21,8 @@ layout: default
 {% endunless %}  
 
 <p class="left-pagi">
-  <li><i class="icon-chevron-right"></i></li>
 {% if page.next %}
-  <span class="darkicon"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}"><i class="fa fa-step-forward"></i>{{ page.next.title }}</a></span>
+  <a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}"><i class="fa fa-angle-double-left"></i>-Next: {{ page.next.title }}</a>
 {% else %}
   <a>&nbsp;&nbsp;</a>
 {% endif %}
@@ -31,7 +30,7 @@ layout: default
 
 <p class="right-pagi">
 {% if page.previous %}
-  <span class="darkicon"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">order-<i class="fa fa-angle-double-right"></i></a></span>
+  <a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">Previous: {{ page.previous.title }}-<i class="fa fa-angle-double-right"></i></a>
 {% else %}
   <a>&nbsp;&nbsp;</a>
 {% endif %}
