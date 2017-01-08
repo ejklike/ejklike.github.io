@@ -11,9 +11,13 @@ excerpt_separator: <!--more-->
 sass:
   sass_dir: _sass
   style: compressed
-assets:
-  sources:
-    - assets/NotoSans-subset
+
+
+
+
+# assets:
+#   sources:
+#     - assets/NotoSans-subset
 
 
   # js_compressor:  uglifier
