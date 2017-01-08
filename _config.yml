@@ -8,6 +8,9 @@ markdown: kramdown
 gems:
   - jemoji
 
+sass:
+  style: compressed
+
 # github_username:  ejklike
 # description: "machine learning, statistical learning, pattern recognition, deep learning, data, datamining, data mining, data scientist, python, programming"
 # baseurl: "" # the subpath of your site, e.g. /blog/

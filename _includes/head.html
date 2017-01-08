@@ -7,68 +7,6 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="icon" type="image/ico" href="/img/fav.ico"/>
-
-  <!-- mathjax config -->
-  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-  <!-- MathJax -->
-  <script type="text/x-mathjax-config">
-	  MathJax.Hub.Config({
-	    TeX: {
-        Macros: {
-              // \def\R{\mathbb R}
-              R: "{\\mathbb R}",
-              E: ["{\\mathbb{E} \\left[ {#1} \\right]}",1],
-              EE: ["{\\mathbb{E}_{#1} \\left[ {#2} \\right]}",2],
-              D: "{\\mathscr D}",
-              x: "{\\textbf x}",
-              y: "{\\textbf y}",
-              z: "{\\textbf z}",
-              bold: ["{\\bf #1}",1]
-            },
-	      equationNumbers: {
-	        autoNumber: "AMS"
-	      },
-        noErrors: {
-            multiLine: true,             // false for TeX on all one line
-            style: {
-              "font-size":   "90%",
-              "text-align":  "left",
-              "color":       "black",
-              "padding":     "1px 3px",
-              "border":      "1px solid"
-              // add any additional CSS styles that you want
-              //  (be sure there is no extra comma at the end of the last item)
-            }
-        }
-	    },
-      "HTML-CSS": {
-        availableFonts: ["STIX", "TeX"],   // Add "STIX" for Word style formula
-        preferredFont: "TeX",
-        linebreaks: { automatic:true },
-        <!--styles: {".MathJax": {color: "#444"}},-->
-        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
-      },
-	    tex2jax: {
-	      inlineMath: [["$", "$"], ["\\(","\\)"]],
-	      displayMath: [ ['$$','$$'], ['\\[', '\\]'] ]
-	    }
-	  });
-  </script>
-
-
-  <!-- google analytics -->
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-67445215-1', 'auto');
-  ga('send', 'pageview');
-
- </script>
-
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />

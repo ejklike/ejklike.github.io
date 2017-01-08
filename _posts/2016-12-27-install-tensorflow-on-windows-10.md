@@ -31,7 +31,7 @@ tags: ['tensorflow','windows','cpu','gpu','cuda','python']
 
 <https://developer.nvidia.com/cudnn>에서 cuDNN 5.1 버전을 다운로드한다. (CUDA와 달리 계정을 만들어야 한다.) 다운로드한 파일의 압축을 풀면 `cuda`라는 폴더가 있고, 이 안에 세 개의 폴더가 있다. 
 
-자, 이제 CUDA가 설치된 경로인 `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0`에 같은 이름의 세 폴더가 존재하는지 확인한다. 존재한다면 압축 해제했던 `cuda` 폴더 안의 세 폴더를 CUDA가 설치된 경로인 `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0`에 붙여넣기 한다.
+자, 이제 CUDA가 설치된 경로인 `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0`에 같은 이름의 세 폴더가 존재하는지 확인한다. 존재한다면 압축 해제했던 `cuda` 폴더 안의 세 폴더를 CUDA가 설치된 경로인 `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0`에 붙여넣어 기존 파일을 덮어쓴다.
 
 이제 GPU 버전의 tensorflow를 위한 준비과정은 끝났다!
 
