@@ -7,8 +7,9 @@ url: "http://ejklike.github.io" # the base hostname & protocol for your site
 markdown: kramdown
 gems:
   - jemoji
-
+excerpt_separator: <!--more-->
 sass:
+  sass_dir: _sass
   style: compressed
 # compress_html:
 #   clippings: all

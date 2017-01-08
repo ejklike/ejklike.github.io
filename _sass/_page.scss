@@ -1,0 +1,13 @@
+/**
+ * Page content and heading
+ */
+.page-content {
+    margin-top: $spacing-unit*2;
+    padding: $spacing-unit 0;
+}
+
+.page-heading {
+    font-size: $base-font-size*1.3;
+    border-bottom: 1px solid $grey-color-light;
+    padding-top: $spacing-unit;
+}

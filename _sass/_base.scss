@@ -8,6 +8,39 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $code-font-size;
+}
+
+
 /**
  * mark (custom)
  */
@@ -15,23 +48,39 @@ mark {
   background-color: $mark-color;
 }
 
-/* notice */
-.notice {
-    padding: 8px 12px;
-    font-size: $code-font-size;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eed;
-    margin-top: 15px;
-    margin-bottom: 15px;
 
-    p, dl, dd, ol, ul, figure {
-        margin-top:0;
-        margin-bottom: 0;
-        padding-top:0;
-        padding-bottom: 0;
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: $spacing-unit * 0.4;
     }
 }
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    color: $base-font-color;
+}
+
+
+/**
+ * Links
+ */
+a {
+    color: $link-color;
+    text-decoration: none;
+}
+
 
 
 /**
@@ -50,140 +99,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-kerning: normal;
 }
-
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-}
-
-
-
-/**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: middle;
-}
-
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $code-font-size;
-}
-
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
-}
-
-li {
-    > ul,
-    > ol {
-         margin-bottom: $spacing-unit * 0.4;
-    }
-}
-
-
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-    color: $base-font-color;
-}
-
-/**
- * Links
- */
-a {
-    color: $link-color;
-    // font-weight: 500;
-    text-decoration: none;
-
-    &:visited {
-        color: $link-color;
-    }
-
-    &:hover {
-        color: $link-color;
-        text-decoration: 1px dashed $grey-color;
-    }
-}
-
-
-
-/**
- * Blockquotes
- */
-blockquote {
-    color: $blockquote-font-color;
-    border-left: 3px solid $green;
-    padding-left: $spacing-unit / 2;
-    font-size: $base-font-size;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
-
-
-
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: $code-font-size;
-    font-family: $code-font-family;
-    font-weight: $code-font-weight;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-}
-
-code {
-    font-size: $code-font-size;
-    padding: 1px 5px;
-}
-
-code.highlighter-rouge {
-    color: $code-font-color;
-}
-
-pre {
-    padding: 8px 12px;
-    /* overflow-x: scroll; */
-    white-space: pre-wrap; 
-    word-break: break-all; 
-    word-wrap: break-word; 
-    overflow: auto;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
 
 
 /**
@@ -207,7 +122,6 @@ pre {
 }
 
 
-
 /**
  * Clearfix
  */
@@ -222,19 +136,45 @@ pre {
 
 
 
+
+
+
+
+
+
+
+
+
 /**
- * Icons
+ * Code formatting
  */
-.icon {
+pre,
+code {
+    font-size: $code-font-size;
+    font-family: $code-font-family;
+    font-weight: $code-font-weight;
+    border: 1px solid $grey-color-light;
+    border-radius: 3px;
+}
 
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
+code {
+    font-size: $code-font-size;
+    padding: 1px 5px;
+}
 
-        path {
-            fill: $grey-color;
-        }
+pre {
+    padding: 8px 12px;
+    /* overflow-x: scroll; */
+    white-space: pre-wrap; 
+    word-break: break-all; 
+    word-wrap: break-word; 
+    overflow: auto;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
     }
 }
+
+

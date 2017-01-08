@@ -65,7 +65,13 @@ $on-laptop:        640px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
-        "layout",
+        "header",
+        "footer",
+        "page",
+        "index",
+        "blog",
+        "post",
+        // "layout",
         "pygments-solarized-light",
         // url(//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css),
         url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css),

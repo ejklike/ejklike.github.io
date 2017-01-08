@@ -1,0 +1,48 @@
+/**
+ * Main photo and text (custom)
+ */
+.main-photos {
+  position: relative;
+  margin-left: 0px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.photo {
+  display: inline-block;
+  margin-right: 5px;
+  // float: left;
+  .p1{
+    
+    img {
+      height: 180px;
+    }
+  }
+  .p2{
+    margin-right: 10px;
+    img {
+      height: 180px;
+    }
+  }
+  @media screen and (max-width: $on-palm) {
+    .p1{
+      margin-right: 0px;
+      display: none;
+    }
+    .p2{
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  
+}
+
+.main-text {
+    font-family: $code-font-family;
+    font-weight: $code-font-weight;
+    font-size: $code-font-size;
+    font-style: normal;
+    font-variant: normal;
+}
