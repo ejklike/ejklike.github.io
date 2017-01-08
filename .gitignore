@@ -4,6 +4,7 @@ __backup
 .sass-cache
 _post.txt
 _drafts
+_tmp
 
 /.buildpath
 /build/

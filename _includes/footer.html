@@ -1,10 +1,7 @@
-<div class="wrapper">
-	<footer class="site-footer">
-		&copy; {{ site.time | date: '%Y' }} {{ site.author }}
-		with help from <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>
-			<br>
-		<a href="http://instagram.com/ejklike/" target="_blank"><i class="fa fa-instagram"></i></a>
-		<a href="mailto:eunjikim@dm.snu.ac.kr" target="_blank"><i class="fa fa-envelope-square"></i></a>
-		<a href="https://kr.linkedin.com/pub/eunji-kim/61/ba4/132" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-	</footer>
-</div>
+&copy; 2015-{{ site.time | date: '%Y' }} {{ site.author }}
+with help from <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>
+	<br>
+<a href="http://instagram.com/ejklike/" target="_blank"><i class="fa fa-instagram"></i></a>
+<a href="mailto:eunjikim@dm.snu.ac.kr" target="_blank"><i class="fa fa-envelope-square"></i></a>
+<a href="https://kr.linkedin.com/pub/eunji-kim/61/ba4/132" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+<a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss-square"></i></a>

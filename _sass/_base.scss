@@ -8,7 +8,12 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
+/**
+ * mark (custom)
+ */
+mark {
+  background-color: $mark-color;
+}
 
 /**
  * Basic styling
@@ -18,12 +23,13 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: $base-font-weight;
-    color: $text-color;
+    color: $base-font-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-font-kerning: normal;
 }
 
 
@@ -83,7 +89,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 500;
+    font-weight: 400;
     color: $title-color;
 }
 
@@ -143,6 +149,7 @@ code {
 
 code.highlighter-rouge {
     color: $code-font-color;
+    // font-size: $base-font-size;
     // background-color: #eed;
 }
 

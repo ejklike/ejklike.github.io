@@ -4,18 +4,31 @@
 @charset "utf-8";
 
 // Our variables
-$site-title-font-family: 'Dancing Script', sans-serif;
-$base-font-family: 'Noto Sans KR', sans-serif;//'Spoqa Han Sans',  'KoPub Batang' 'Noto Sans KR' 'Nanum Gothic Coding'
-$title-font-family: 'Noto Sans KR', sans-serif; //h1~3
-$post-title-font-family: 'Noto Sans KR', sans-serif;
-$date-font-family: 'Inconsolata', sans-serif;
+$base-ko-font-family: 'Noto Sans KR', sans-serif;
+
+$base-font-family: $base-ko-font-family;//'Spoqa Han Sans',  'KoPub Batang' 'Noto Sans KR' 'Nanum Gothic Coding'
+$base-font-size:   14px;
+$base-font-weight: 300;
+$base-font-color: #000;
+
 $code-font-family: 'Inconsolata', 'KoPub Batang', monospace;
-$base-font-size:   15px;
-$base-font-weight: 600;
-$title-font-size:  $base-font-size * 2.1;
+$code-font-size:   13px;
+$code-font-weight: 400;
+$code-font-color:  #458;
+
+$post-title-font-family: 'Noto Sans KR', sans-serif;
+$post-title-font-size:  $base-font-size * 2;
+$post-title-font-weight: 500;
+
+
+// $title-font-family: 'Noto Sans KR', sans-serif; //h1~3
+
+$site-title-font-family: 'Dancing Script', sans-serif;
+$site-title-font-size:  $base-font-size * 2.7;
+$site-title-font-weight: 600;
+
 $small-font-size:  $base-font-size * 0.875;
-$code-font-size:   15px;
-$code-font-weight: 700;
+
 $base-line-height: 1.5;
 
 $spacing-unit:     35px;
@@ -24,22 +37,21 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-$title-color:      $grey-color-dark;
-$text-color:       darken($grey-color, 10%);
+$title-color:      #000;
 $blockquote-font-color: $grey-color;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 $link-color:       #cb4b16;
 $green:			   #18B888;
-$code-font-color:  #458;
+$mark-color:       #F5FFCD;
 
 
 
 // Width of the content area
-$content-width:    720px;
+$content-width:    640px;
 
 $on-palm:          500px;
-$on-laptop:        720px;
+$on-laptop:        640px;
 
 
 
@@ -63,7 +75,8 @@ $on-laptop:        720px;
         "base",
         "layout",
         url(/css/pygments-solarized-light.css),
-        url(/css/icons.css),
+        // url(/css/icons.css),
+        // url(//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css),
         url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css),
         url(https://fonts.googleapis.com/css?family=Dancing+Script:400),
         //url(http://fonts.googleapis.com/earlyaccess/jejugothic.css),
@@ -73,5 +86,6 @@ $on-laptop:        720px;
         // url(/css/d2coding-webfont/d2coding.css),
         url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css),
         // url('https://fonts.googleapis.com/css?family=Source+Code+Pro'),
+        // url(https://fonts.googleapis.com/css?family=Josefin+Slab),
         url(https://fonts.googleapis.com/css?family=Inconsolata)
 ;

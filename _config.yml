@@ -1,37 +1,36 @@
 # Site settings
 title: Study Note
 email: eunjikim@dm.snu.ac.kr
-description: "machine learning, statistical learning, pattern recognition, deep learning, data, datamining, data mining, data scientist, python, programming"
-baseurl: "" # the subpath of your site, e.g. /blog/
-author: Eunji Kim
 url: "http://ejklike.github.io" # the base hostname & protocol for your site
-# twitter_username: jekyllrb
-# github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-# highlighter: pygments
 gems:
   - jemoji
-  - jekyll-paginate
-paginate: 1
-paginate_path: "/page:num/"
-encoding: utf-8
 
-post:
-  template: _post.txt
-  extension: md
+# github_username:  ejklike
+# description: "machine learning, statistical learning, pattern recognition, deep learning, data, datamining, data mining, data scientist, python, programming"
+# baseurl: "" # the subpath of your site, e.g. /blog/
+# kramdown:
+  # input: GFM
+  # syntax_highlighter: rouge
+
+  # - jekyll-paginate
+# paginate: 1
+# paginate_path: "/page:num/"
+
+# post:
+#   template: _post.txt
+#   extension: md
+
 # page:
-  # template: _page.txt
-  # extension: md
-editor: gvim
-git:
-  branch: master
-transfer:
-  command: rsync
-  settings: -av
-  source: _site/
-  destination: ~/Git/username.github.com/
+#   template: _page.txt
+#   extension: md
+# editor: gvim
+# git:
+#   branch: master
+# transfer:
+#   command: rsync
+#   settings: -av
+#   source: _site/
+#   destination: ~/Git/username.github.com/
