@@ -20,7 +20,7 @@ sass:
 
 # assets:
 #   sources:
-#     - assets/NotoSans-subset
+#     - assets/NotoSans
 
 
   # js_compressor:  uglifier
