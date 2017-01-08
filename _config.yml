@@ -17,7 +17,7 @@ compress_html:
   ignore:
     envs: [local]
   blanklines: false
-  profile: true
+  # profile: true
   startings: [html, head, body]
 
 # github_username:  ejklike
