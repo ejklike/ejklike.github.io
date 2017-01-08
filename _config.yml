@@ -2,16 +2,17 @@
 title: Study Note
 email: eunjikim@dm.snu.ac.kr
 url: "http://ejklike.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
 
 # Build settings
 markdown: kramdown
 gems:
   - jemoji
+  - jekyll-assets
 excerpt_separator: <!--more-->
 sass:
   sass_dir: _sass
   style: compressed
-
 
 
 
@@ -37,7 +38,7 @@ exclude: [img]
 
 # github_username:  ejklike
 # description: "machine learning, statistical learning, pattern recognition, deep learning, data, datamining, data mining, data scientist, python, programming"
-# baseurl: "" # the subpath of your site, e.g. /blog/
+
 # kramdown:
   # input: GFM
   # syntax_highlighter: rouge
