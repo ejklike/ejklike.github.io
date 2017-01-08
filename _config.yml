@@ -8,11 +8,13 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 markdown: kramdown
 gems:
   - jemoji
-  - jekyll-assets
 excerpt_separator: <!--more-->
 sass:
   sass_dir: _sass
   style: compressed
+
+
+
 
 
 

@@ -89,10 +89,10 @@ $on-laptop:        640px;
     font-style: normal;
     font-weight: 300;
     // src: local('Noto Sans Light'), local('Noto Sans Light'), local('Noto Sans Light');
-    src: url(/assets/NotoSans-subset/NotoSans-Light.eot);
-    src: url(/assets/NotoSans-subset/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
-    url(/assets/NotoSans-subset/NotoSans-Light.woff) format('woff'),
-    url(/assets/NotoSans-subset/NotoSans-Light.otf) format('truetype');
+    src: url(../assets/NotoSans-subset/NotoSans-Light.eot);
+    src: url(../assets/NotoSans-subset/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+    url(../assets/NotoSans-subset/NotoSans-Light.woff) format('woff'),
+    url(../assets/NotoSans-subset/NotoSans-Light.otf) format('truetype');
 }
 //400: regular, 700: bold
 @font-face {
@@ -100,18 +100,18 @@ $on-laptop:        640px;
     font-style: normal;
     font-weight: 400;
     // src: local('Noto Sans Regular'), local('Noto Sans Regular'), local('Noto Sans Regular');
-    src: url(/assets/NotoSans-subset/NotoSans-Regular.eot);
-    src: url(/assets/NotoSans-subset/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
-    url(/assets/NotoSans-subset/NotoSans-Regular.woff) format('woff'),
-    url(/assets/NotoSans-subset/NotoSans-Regular.otf) format('truetype');
+    src: url(../assets/NotoSans-subset/NotoSans-Regular.eot);
+    src: url(../assets/NotoSans-subset/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../assets/NotoSans-subset/NotoSans-Regular.woff) format('woff'),
+    url(../assets/NotoSans-subset/NotoSans-Regular.otf) format('truetype');
 }
 @font-face {
     font-family: 'NotoSans';
     font-style: normal;
     font-weight: 500;
     // src: local('Noto Sans Medium'), local('Noto Sans Medium'), local('Noto Sans Medium');
-    src: url(/assets/NotoSans-subset/NotoSans-Medium.eot);
-    src: url(/assets/NotoSans-subset/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
-    url(/assets/NotoSans-subset/NotoSans-Medium.woff) format('woff'),
-    url(/assets/NotoSans-subset/NotoSans-Medium.otf) format('truetype');
+    src: url(../assets/NotoSans-subset/NotoSans-Medium.eot);
+    src: url(../assets/NotoSans-subset/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+    url(../assets/NotoSans-subset/NotoSans-Medium.woff) format('woff'),
+    url(../assets/NotoSans-subset/NotoSans-Medium.otf) format('truetype');
 }
