@@ -17,8 +17,9 @@ compress_html:
   ignore:
     envs: [local]
   blanklines: false
-  # profile: true
   startings: [html, head, body]
+  # profile: true
+  
 
 # github_username:  ejklike
 # description: "machine learning, statistical learning, pattern recognition, deep learning, data, datamining, data mining, data scientist, python, programming"
