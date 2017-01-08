@@ -303,26 +303,6 @@ z-index: 50;
     font-variant: normal;
 }
 
-
-
-/* notice */
-.notice {
-    padding: 8px 12px;
-    font-size: $small-font-size;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eed;
-    margin-top: 15px;
-    margin-bottom: 15px;
-
-    p, dl, dd, ol, ul, figure {
-        margin-top:0;
-        margin-bottom: 0;
-        padding-top:0;
-        padding-bottom: 0;
-    }
-}
-
 // /* darken favicons */
 // .darkicon {
 //     a, a:active, a:visited, a:hover {
@@ -335,14 +315,14 @@ z-index: 50;
     float: left;
     a, a:active, a:visited, a:hover {
         color: $grey-color-dark;
-        font-size: $small-font-size;
+        font-size: $code-font-size;
     }
 }
 .right-pagi {
     float: right;
     a, a:active, a:visited, a:hover {
         color: $grey-color-dark;
-        font-size: $small-font-size;
+        font-size: $code-font-size;
     }
 }
 

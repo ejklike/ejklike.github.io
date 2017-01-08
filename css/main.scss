@@ -20,32 +20,24 @@ $post-title-font-family: 'Noto Sans KR', sans-serif;
 $post-title-font-size:  $base-font-size * 2;
 $post-title-font-weight: 500;
 
-
-// $title-font-family: 'Noto Sans KR', sans-serif; //h1~3
-
 $site-title-font-family: 'Dancing Script', sans-serif;
 $site-title-font-size:  $base-font-size * 2.7;
 $site-title-font-weight: 600;
 
-$small-font-size:  $base-font-size * 0.875;
-
 $base-line-height: 1.5;
-
 $spacing-unit:     35px;
 
+$background-color: #fdfdfd;
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-$title-color:      #000;
 $blockquote-font-color: $grey-color;
-$background-color: #fdfdfd;
+$mark-color:       #F5FFCD;
+
 $brand-color:      #2a7ae2;
 $link-color:       #cb4b16;
 $green:			   #18B888;
-$mark-color:       #F5FFCD;
-
-
 
 // Width of the content area
 $content-width:    640px;

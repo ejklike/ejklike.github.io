@@ -15,6 +15,25 @@ mark {
   background-color: $mark-color;
 }
 
+/* notice */
+.notice {
+    padding: 8px 12px;
+    font-size: $code-font-size;
+    border: 1px solid $grey-color-light;
+    border-radius: 3px;
+    background-color: #eed;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    p, dl, dd, ol, ul, figure {
+        margin-top:0;
+        margin-bottom: 0;
+        padding-top:0;
+        padding-bottom: 0;
+    }
+}
+
+
 /**
  * Basic styling
  */
@@ -64,7 +83,7 @@ figure > img {
 }
 
 figcaption {
-    font-size: $small-font-size;
+    font-size: $code-font-size;
 }
 
 
@@ -90,7 +109,7 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
-    color: $title-color;
+    color: $base-font-color;
 }
 
 /**
@@ -134,12 +153,11 @@ blockquote {
  */
 pre,
 code {
-    font-size: $small-font-size;
+    font-size: $code-font-size;
     font-family: $code-font-family;
     font-weight: $code-font-weight;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    // background-color: #eed;
 }
 
 code {
@@ -149,8 +167,6 @@ code {
 
 code.highlighter-rouge {
     color: $code-font-color;
-    // font-size: $base-font-size;
-    // background-color: #eed;
 }
 
 pre {
