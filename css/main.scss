@@ -83,35 +83,37 @@ $on-laptop:        640px;
         url(https://fonts.googleapis.com/css?family=Dancing+Script:400|Inconsolata),
         url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css)
 ;
-
-@font-face {
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Noto Sans Light'), local('Noto Sans Light'), local('Noto Sans Light');
-    src: url(../assets/NotoSans-subset/NotoSans-Light.eot);
-    src: url(../assets/NotoSans-subset/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
-    url(../assets/NotoSans-subset/NotoSans-Light.woff) format('woff'),
-    url(../assets/NotoSans-subset/NotoSans-Light.otf) format('truetype');
-}
-//400: regular, 700: bold
-@font-face {
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Noto Sans Regular'), local('Noto Sans Regular'), local('Noto Sans Regular');
-    src: url(../assets/NotoSans-subset/NotoSans-Regular.eot);
-    src: url(../assets/NotoSans-subset/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
-    url(../assets/NotoSans-subset/NotoSans-Regular.woff) format('woff'),
-    url(../assets/NotoSans-subset/NotoSans-Regular.otf) format('truetype');
-}
-@font-face {
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 500;
-    src: local('Noto Sans Medium'), local('Noto Sans Medium'), local('Noto Sans Medium');
-    src: url(../assets/NotoSans-subset/NotoSans-Medium.eot);
-    src: url(../assets/NotoSans-subset/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
-    url(../assets/NotoSans-subset/NotoSans-Medium.woff) format('woff'),
-    url(../assets/NotoSans-subset/NotoSans-Medium.otf) format('truetype');
+// file: https://github.com/ttimsmith/ttimsmith.com/blob/7-move-over-to-jekyll-assets-for-compiling/_assets/stylesheets/_redbat/_mixins.scss
+@mixin embed-font($font-name, $font-filepath-and-name){
+    @font-face {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Noto Sans Light'), local('Noto Sans Light'), local('Noto Sans Light');
+        src: url(../assets/NotoSans-subset/NotoSans-Light.eot);
+        src: url(../assets/NotoSans-subset/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+        url(../assets/NotoSans-subset/NotoSans-Light.woff) format('woff'),
+        url(../assets/NotoSans-subset/NotoSans-Light.otf) format('truetype');
+    }
+    //400: regular, 700: bold
+    @font-face {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Noto Sans Regular'), local('Noto Sans Regular'), local('Noto Sans Regular');
+        src: url(../assets/NotoSans-subset/NotoSans-Regular.eot);
+        src: url(../assets/NotoSans-subset/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+        url(../assets/NotoSans-subset/NotoSans-Regular.woff) format('woff'),
+        url(../assets/NotoSans-subset/NotoSans-Regular.otf) format('truetype');
+    }
+    @font-face {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 500;
+        src: local('Noto Sans Medium'), local('Noto Sans Medium'), local('Noto Sans Medium');
+        src: url(../assets/NotoSans-subset/NotoSans-Medium.eot);
+        src: url(../assets/NotoSans-subset/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+        url(../assets/NotoSans-subset/NotoSans-Medium.woff) format('woff'),
+        url(../assets/NotoSans-subset/NotoSans-Medium.otf) format('truetype');
+    }
 }
