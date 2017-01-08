@@ -12,7 +12,6 @@ permalink: /blog/
 
 <ul class="tags-list">
   {% assign sorted_tags = site.tags | sort %}
-  <!--{% assign sorted_tags =  site.tags | site.posts.size %}-->
 
   {% for tag in sorted_tags %}
     {% assign this_t = tag | first %}
@@ -51,9 +50,6 @@ permalink: /blog/
   {% assign posts = tag | last %}
 
   <ul class="post-list hidden" id="{{ t }}-container">
-    <!--<p align="right">
-      <a href onclick="filter('all'); return false;">Show all posts</a>
-    </p>-->
     {% assign numPosts = posts | size %}
       {% if numPosts == 1 %}
         <br><p>{{ numPosts }} post containing tag <b>"{{ t }}"</b></p>
@@ -70,9 +66,6 @@ permalink: /blog/
         </li>
       {% endif %}
     {% endfor %}
-    <!--<p align="right">
-      <a href onclick="filter('all'); return false;">Show all posts</a>
-    </p>-->
   </ul>
 {% endfor %}
 
@@ -93,12 +86,12 @@ function unfilter(tag) {
 }
 
 function resetAll(){
-  // loop through all items and remove active class
+  /* loop through all items and remove active class */
   var items = document.getElementsByClassName('tag-item');
   for(var i=0; i < items.length; i++) {
     items[i].setAttribute('class', 'tag-item');
   }
-  // loop through all items and remove active class
+  /* loop through all items and remove active class */
   var items = document.getElementsByClassName('tag-link');
   for(var i=0; i < items.length; i++) {
     var tag = items[i].id;
@@ -109,12 +102,12 @@ function resetAll(){
 }
 function setActiveTag(tag) {
   resetAll();
-  // set the selected tag's item to active (for styling)
+  /* set the selected tag's item to active (for styling) */
   var item = document.getElementById(tag + '-item');
   if(item) {
     item.setAttribute('class', 'tag-item active');
   }
-  // change the selected tag's link for filtering
+  /* change the selected tag's link for filtering */
   var item = document.getElementById(tag);
   var linkurl = 'unfilter(\'' + tag + '\'); return false;';
   if(item) {
@@ -124,7 +117,7 @@ function setActiveTag(tag) {
 }
 function deActiveTag(tag) {
   resetAll();
-  // change the selected tag's link for filtering
+  /* change the selected tag's link for filtering */
   var item = document.getElementById(tag);
   var linkurl = 'filter(\'' + tag + '\'); return false;';
   if(item) {
@@ -133,25 +126,13 @@ function deActiveTag(tag) {
   }
 }
 function showContainer(tag) {
-  // loop through all lists and hide them
+  /* loop through all lists and hide them */
   var lists = document.getElementsByClassName('post-list');
   for(var i=0; i < lists.length; i++) {
     lists[i].setAttribute('class', 'post-list hidden');
   }
-  // remove the hidden class from the list corresponding to the selected tag
+  /* remove the hidden class from the list corresponding to the selected tag */
   var list = document.getElementById(tag + '-container');
-  if(list) {
-    list.setAttribute('class', 'post-list');
-  }
-}
-function showAllContainer() {
-  // loop through all lists and hide them
-  var lists = document.getElementsByClassName('post-list');
-  for(var i=0; i < lists.length; i++) {
-    lists[i].setAttribute('class', 'post-list hidden');
-  }
-  // remove the hidden class from the list corresponding to the selected tag
-  var list = document.getElementById('all-container');
   if(list) {
     list.setAttribute('class', 'post-list');
   }
