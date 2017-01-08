@@ -13,7 +13,7 @@ sass:
   style: compressed
 assets:
   sources:
-    - assets/NotoSans-subset
+    - _assets/NotoSans-subset
 
 
   # js_compressor:  uglifier
