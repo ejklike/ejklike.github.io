@@ -68,10 +68,19 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-    color: $base-font-color;
+    font-weight: $heading-font-weight;
 }
 
+/**
+ * ---
+ */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $grey-color-light;
+    padding-top: $spacing-unit/2;
+}
 
 /**
  * Links

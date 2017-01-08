@@ -22,7 +22,7 @@ layout: default
 
 <p class="left-pagi">
 {% if page.next %}
-  <a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}"><i class="fa fa-angle-double-left"></i>-Next: {{ page.next.title }}</a>
+  <a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}"><i class="fa fa-angle-double-left"></i> {{ page.next.title }}</a>
 {% else %}
   <a>&nbsp;&nbsp;</a>
 {% endif %}
@@ -30,7 +30,7 @@ layout: default
 
 <p class="right-pagi">
 {% if page.previous %}
-  <a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">Previous: {{ page.previous.title }}-<i class="fa fa-angle-double-right"></i></a>
+  <a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }} <i class="fa fa-angle-double-right"></i></a>
 {% else %}
   <a>&nbsp;&nbsp;</a>
 {% endif %}

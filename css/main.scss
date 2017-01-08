@@ -4,19 +4,21 @@
 @charset "utf-8";
 
 // Our variables
-$base-ko-font-family: 'Noto Sans KR', sans-serif;
+$base-ko-font-family: 'Noto Sans', sans-serif;
 
 $base-font-family: $base-ko-font-family;//'Spoqa Han Sans',  'KoPub Batang' 'Noto Sans KR' 'Nanum Gothic Coding'
 $base-font-size:   14px;
 $base-font-weight: 300;
 $base-font-color: #000;
 
+$heading-font-weight: 400;
+
 $code-font-family: 'Inconsolata', 'KoPub Batang', monospace;
 $code-font-size:   13px;
 $code-font-weight: 400;
 $code-font-color:  #458;
 
-$post-title-font-family: 'Noto Sans KR', sans-serif;
+$post-title-font-family: 'Noto Sans', sans-serif;
 $post-title-font-size:  $base-font-size * 2;
 $post-title-font-weight: 500;
 
@@ -71,14 +73,45 @@ $on-laptop:        640px;
         "index",
         "blog",
         "post",
-        // "layout",
+        // "font",
         "pygments-solarized-light",
         // url(//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css),
         //url(http://fonts.googleapis.com/earlyaccess/jejugothic.css),
         // url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css),
-        url(http://fonts.googleapis.com/earlyaccess/notosanskr.css),
+        // url(http://fonts.googleapis.com/earlyaccess/notosanskr.css),
         url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css),
-        // url('https://fonts.googleapis.com/css?family=Source+Code+Pro'),
-        // url(https://fonts.googleapis.com/css?family=Dancing+Script:400|Inconsolata),
+        url(https://fonts.googleapis.com/css?family=Dancing+Script:400|Inconsolata),
         url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css)
 ;
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Noto Sans Light'), local('Noto Sans Light'), local('Noto Sans Light');
+    src: url(../assets/NotoSans-subset/NotoSans-Light.eot);
+    src: url(../assets/NotoSans-subset/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+    url(../assets/NotoSans-subset/NotoSans-Light.woff) format('woff'),
+    url(../assets/NotoSans-subset/NotoSans-Light.otf) format('truetype');
+}
+//400: regular, 700: bold
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans Regular'), local('Noto Sans Regular'), local('Noto Sans Regular');
+    src: url(../assets/NotoSans-subset/NotoSans-Regular.eot);
+    src: url(../assets/NotoSans-subset/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../assets/NotoSans-subset/NotoSans-Regular.woff) format('woff'),
+    url(../assets/NotoSans-subset/NotoSans-Regular.otf) format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Noto Sans Medium'), local('Noto Sans Medium'), local('Noto Sans Medium');
+    src: url(../assets/NotoSans-subset/NotoSans-Medium.eot);
+    src: url(../assets/NotoSans-subset/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+    url(../assets/NotoSans-subset/NotoSans-Medium.woff) format('woff'),
+    url(../assets/NotoSans-subset/NotoSans-Medium.otf) format('truetype');
+}
