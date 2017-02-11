@@ -19,7 +19,7 @@ I am familiar with Python and Matlab, and have experience with Java, R, C++, and
 
 ## Education
 
-- Ph.D. student, Industrial Engineering, Seoul National University.
+- Ph.D. candidate, Industrial Engineering, Seoul National University.
 - B.S., in Mathematical Sciences, Seoul National University.
 
 ---
