@@ -85,9 +85,54 @@ blockquote {
     }
 }
 
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    font-size: $code-font-size;
+    padding: 0; 
+    margin-top: 15px;
+    margin-bottom: 30px;
+border-collapse: collapse;
+}
+table tr { //row
+    border-top: 1px solid #cccccc;
+    margin: 0;
+    padding: 0; 
+}
+// table tr:nth-child(2n) {
+//     background-color: #f8f8f8; 
+// }
+table tr th { //header
+    font-weight: bold;
+    background: #f8f8f8;
+    border: 1px solid #cccccc;
+    text-align: center;
+    margin: 0;
+    padding: 6px 6px; 
+}
+table tr td {
+    border: 1px solid #cccccc;
+    text-align: left;
+    margin: 0;
+    padding: 6px 6px; 
+}
+// table tr th :first-child, table tr td :first-child {
+//     margin-top: 0; 
+// }
+// table tr th :last-child, table tr td :last-child {
+//     margin-bottom: 0; 
+// }
+
+
 code.highlighter-rouge {
     color: $code-font-color;
 }
+
 
 /* mathjax settings */
 code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
