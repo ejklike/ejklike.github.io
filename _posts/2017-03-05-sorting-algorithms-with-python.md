@@ -15,7 +15,7 @@ Name | Best | Worst | Stable | Memory
 병합정렬 | $n\log n$ | $n\log n$ | True | $n$
 퀵정렬 | $n\log n$ | $n\log n$ ~ $n^2$ | False | $\log n$ ~ $n$
 
-아래에 각 정렬 알고리즘을 차례로 설명하였다.
+아래에 각 정렬 알고리즘을 차례로 설명하였다. 꿀벌이 꽃을 옮기는 비유가 꽤 맘에 들어 가져왔는데, 선택정렬, 병합정렬, 퀵정렬에 해당하는 비유는 없어서 아쉽다.
 
 ## Bubble Sort (버블정렬)
 
@@ -60,6 +60,7 @@ def selectionSort(x):
 아직 정렬되지 않은 값을 이미 정렬된 배열 사이에 끼워 넣는 과정을 반복한다. 여전히 $O(n^2)$이지만 평균적으로 삽입정렬이 선택정렬과 버블정렬에 비해 빠르다. 
 
 ![insertionsort]({{base}}/assets/20170301/insertionsort.gif "insertionsort")
+![insertionsort_old]({{base}}/assets/20170301/insertionsort_old.gif "insertionsort_old")
 
 버블정렬과 마찬가지로 데이터가 이미 정렬되어 있다면 $O(n)$이다. 그러나, 데이터가 역순으로 정렬된 상태라면 삽입을 위해 값을 하나씩 뒤로 밀어내는 과정을 아주 많이 반복해야 하므로 느리다..
 
