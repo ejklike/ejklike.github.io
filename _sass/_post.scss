@@ -50,6 +50,10 @@
         font-size: $base-font-size*1.2;
         border-bottom: 1px solid $grey-color-light;
     }
+
+    h4 {
+        font-size: $base-font-size*1.05;
+    }
 }
 
 
@@ -96,11 +100,14 @@ img {
 }
 
 table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
     font-size: $code-font-size;
     padding: 0; 
     margin-top: 15px;
     margin-bottom: 30px;
-border-collapse: collapse;
+    border-collapse: collapse;
 }
 table tr { //row
     border-top: 1px solid #cccccc;

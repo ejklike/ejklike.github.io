@@ -59,7 +59,7 @@ ul, ol {
 li {
     > ul,
     > ol {
-         margin-bottom: $spacing-unit * 0.4;
+         margin-bottom: $spacing-unit * 0.2;
     }
 }
 
@@ -88,6 +88,7 @@ hr {
 a {
     color: $link-color;
     text-decoration: none;
+    target: '_blank';
 }
 
 
