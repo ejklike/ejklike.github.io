@@ -72,6 +72,7 @@ I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow devi
 먼저 텐서플로 저장소로부터 소스코드를 다운받자. 적당한 폴더 위치에서 아래와 같이 터미널에 입력하고, 파일복사가 끝나고 나면 새로 생기는 `tensorflow`라는 폴더로 이동하자.
 
 ```terminal
+$ sudo apt-get install git
 $ git clone https://github.com/tensorflow/tensorflow
 $ cd tensorflow
 ```
@@ -146,3 +147,5 @@ $ pip install /tmp/tensorflow_pkg/tensorflow*
 >> ImportError: /home/dmlab/anaconda3/bin/../lib/libstdc++.so.6: version 'CXXABI_1.3.8' not found (required by /home/dmlab/anaconda3/lib/python3.6/site-packages/tensorflow/python/_pywrap_tensorflow.so)
 > 
 > 처음에는 내가 뭘 잘못한거지? 라고 멘붕했는데, [#5017 이슈](https://github.com/tensorflow/tensorflow/issues/5017)를 보니 설치과정상 잘못된 내용은 없고, Anaconda의 변경사항이 텐서플로에 반영이 되지 않은 것 같다. `cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /home/your_id/anaconda3/lib/` 명령어 하나로 해결했다.
+
+> ImportError: cannot import name pywrap_tensorflow #3217

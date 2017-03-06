@@ -17,7 +17,7 @@ $ bash Anaconda3-4.3.0-Linux-x86_64.sh
 설치가 완료되면 터미널에 아래와 같이 입력하여 업데이트된 환경변수 내용을 시스템에 적용한다.
 
 ```terminal
-$ soucre ~/.bashrc
+$ source ~/.bashrc
 ```
 
 이제 파이썬을 실행하면 아래와 같이 뜬다.
@@ -51,13 +51,17 @@ $ sudo apt-get install oracle-java8-installer
 
 ```terminal
 $ echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
+$ sudo apt install curl # if you did not install curl
 $ curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
 ```
 
 URI를 추가했으니 업데이트 후 바젤을 설치하자.
 ```terminal
 $ sudo apt-get update && sudo apt-get install bazel
-$ sudo apt-get upgrade bazel # if you want newer version of Bazel
+$ bazel version
+Extracting Bazel installation...
+Build label: 0.4.4
+...
 ```
 
 드디어 [다음 포스트]({{ BASE_PATH }}{{ page.next.url }})에서 텐서플로를 설치한다.

@@ -25,9 +25,10 @@ NVIDIA 그래픽 드라이버를 배포하는 PPA를 설치하고 업데이트�
 ```terminal
 $ sudo add-apt-repository ppa:graphics-drivers/ppa
 $ sudo apt-get update
+$ sudo apt-get nvidia-375 #long term version
 ```
 
-Preferences 실행 -> Software & update 선택 ->  Additional drivers 선택 -> NVIDIA Corporation 그래픽 드라이버 목록 중 [367.4x 버전 이상](http://stackoverflow.com/questions/30820513/what-is-version-of-cuda-for-nvidia-304-125/30820690)의 최신 버전을 선택하여 설치한다 (나는 375.26 버전으로 설치했는데, 꽤 오래 기다려야 했다). 
+[367.4x 버전 이상](http://stackoverflow.com/questions/30820513/what-is-version-of-cuda-for-nvidia-304-125/30820690)의 최신 버전이면 상관없는데, 375 버전이 long term support 버전이다.
 
 설치가 끝나면 재부팅한다.
 
