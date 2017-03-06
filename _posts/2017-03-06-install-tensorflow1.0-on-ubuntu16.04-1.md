@@ -20,15 +20,13 @@ tags: ['install', 'ubuntu', 'tensorflow', 'nvidia', 'gpu']
 
 우분투 설치를 마친 직후 부팅해보면 운영체제에서 그래픽카드를 아직 인식하지 못한 상태이기 때문에 해상도가 매우 낮을 수 있다. 이 때, 그래픽 드라이버를 설치하면 고해상도가 된다.
 
-NVIDIA 그래픽 드라이버를 배포하는 PPA를 설치하고 업데이트를 한다.
+NVIDIA 그래픽 드라이버를 배포하는 PPA를 설치하고 업데이트를 한다. ([367.4x 버전 이상](http://stackoverflow.com/questions/30820513/what-is-version-of-cuda-for-nvidia-304-125/30820690)의 최신 버전이어야 함)
 
 ```terminal
 $ sudo add-apt-repository ppa:graphics-drivers/ppa
 $ sudo apt-get update
-$ sudo apt-get nvidia-375 #long term version
+$ sudo apt-get nvidia-375
 ```
-
-[367.4x 버전 이상](http://stackoverflow.com/questions/30820513/what-is-version-of-cuda-for-nvidia-304-125/30820690)의 최신 버전이면 상관없는데, 375 버전이 long term support 버전이다.
 
 설치가 끝나면 재부팅한다.
 
