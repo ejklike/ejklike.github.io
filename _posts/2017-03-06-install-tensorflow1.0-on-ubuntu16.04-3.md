@@ -133,19 +133,20 @@ $ bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
 
 ## 2-3. pip 패키지 설치
 
-아래와 같이 터미널에 입력하되, 별표시 이전까지만 입력하고 `tab`키를 누르자. 나머지 파일명이 자동완성된다. (빌드되는 파일명이 일정하지 않다.)
+아래와 같이 터미널에 입력하되, 별표시 이전까지만 입력하고 `tab`키를 누르자. 나머지 파일명이 자동완성된다. (빌드되는 파일명이 일정하지 않아 이렇게 해야한다.)
 
 ```terminal
 $ pip install /tmp/tensorflow_pkg/tensorflow*
+```
+
+아나콘다에서 한 가지 빠진 파일이 있어([#5017 이슈](https://github.com/tensorflow/tensorflow/issues/5017) 참고) 아래의 명령어로 붙여넣어준다. (`your_id` = 우분투 로그인 계정명)
+
+```terminal
+$ cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /home/your_id/anaconda3/lib/
 ```
 
 ## 2-4. 테스트
 
 1-2.를 참고하여 설치가 제대로 됐는지 테스트해보자. 
 
-> `import tensorflow as tf`를 입력하니 아래 오류메시지가 나타났다!
->> ImportError: /home/dmlab/anaconda3/bin/../lib/libstdc++.so.6: version 'CXXABI_1.3.8' not found (required by /home/dmlab/anaconda3/lib/python3.6/site-packages/tensorflow/python/_pywrap_tensorflow.so)
-> 
-> 처음에는 내가 뭘 잘못한거지? 라고 멘붕했는데, [#5017 이슈](https://github.com/tensorflow/tensorflow/issues/5017)를 보니 설치과정상 잘못된 내용은 없고, Anaconda의 변경사항이 텐서플로에 반영이 되지 않은 것 같다. `cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /home/your_id/anaconda3/lib/` 명령어 하나로 해결했다.
-
-> ImportError: cannot import name pywrap_tensorflow #3217
+> `ImportError: cannot import name pywrap_tensorflow` 오류가 뜬다면 파이썬을 `tensorflow` 폴더 밖에서 실행하자. ([#3217 이슈](https://github.com/tensorflow/tensorflow/issues/3217))
