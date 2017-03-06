@@ -1,5 +1,5 @@
 ---
-title: "우분투 16.04에 텐서플로 1.0 설치하기 (1) Nvidia 소프트웨어 설치 (feat. GTX 970)"
+title: "우분투 16.04에 텐서플로 1.0 설치하기 (1) Nvidia 소프트웨어 설치 (ft. GTX 970)"
 layout: post
 tags: ['install', 'ubuntu', 'tensorflow', 'nvidia', 'gpu']
 ---
@@ -129,7 +129,6 @@ Cuda compilation tools, release 8.0, V8.0.61
 $ which nvcc
 /usr/local/cuda-8.0/bin/nvcc
 ```
-
 
 # 3. CuDNN v5.1 설치
 
