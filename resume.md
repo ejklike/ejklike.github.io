@@ -28,6 +28,7 @@ I am familiar with Python and Matlab, and have experience with Java, R, C++, and
 
 ### Teaching
 
+- Instructor, Analytical Languages : R & Python (데이터처리언어), Seoul National University of Science and Technology, Spring 2017.
 - Instructor, Big data analysis in public relations and advertising, Sookmyung Women's Univ., Fall 2016.
 - Instructor, Big Data Advanced course, Samsung SDS Multicampus, Aug 2016.
 
