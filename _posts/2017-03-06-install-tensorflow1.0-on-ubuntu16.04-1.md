@@ -25,7 +25,7 @@ NVIDIA 그래픽 드라이버를 배포하는 PPA를 설치하고 업데이트�
 ```terminal
 $ sudo add-apt-repository ppa:graphics-drivers/ppa
 $ sudo apt-get update
-$ sudo apt-get nvidia-375
+$ sudo apt-get install nvidia-375
 ```
 
 설치가 끝나면 재부팅한다.
