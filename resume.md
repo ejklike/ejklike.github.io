@@ -20,7 +20,7 @@ I am familiar with Python and Matlab, and have experience with Java, R, C++, and
 ## Education
 
 - Ph.D. candidate, Industrial Engineering, Seoul National University.
-- B.S., in Mathematical Sciences, Seoul National University.
+- B.S., Mathematical Sciences, Seoul National University.
 
 ---
 
@@ -72,6 +72,7 @@ I am familiar with Python and Matlab, and have experience with Java, R, C++, and
 
 ### Domestic Conferences
 
+- "Detecting Credit Card Frauds with Deep learning", <u>김은지</u>, 이제혁, 신훈식, 양호성, 조성준, 남승관, 송영미, 윤정아, 김종일, 정우호, 라경모, 고강신, 대한산업공학회 2017 춘계공동학술대회.
 - "AS 서비스 데이터를 활용한 제품 불량 원인 도출", 강석호, <u>김은지</u>, 심재웅, 조성준, 한국BI데이터마이닝학회 2015 추계학술대회.
 - "소비자가 원하는 주요 기능 및 특징 파악을 위한 온라인 리뷰내 등장단어의 제품군별 정서 분석", <u>김은지</u>, 조현창, 조성준, 대한산업공학회 2015 춘계공동학술대회.
 - "Hybrid approach with centroid based classification and SVM for multi-class text classification", 심재웅, <u>김은지</u>, 강석호, 조성준, 2014 한국BI데이터마이닝학회 추계학술대회, 2014년 11월.
