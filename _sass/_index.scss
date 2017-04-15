@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-.photo {
+.main-photo {
   display: inline-block;
   margin-right: 5px;
   // float: left;
@@ -45,4 +45,57 @@
     font-size: $code-font-size;
     font-style: normal;
     font-variant: normal;
+}
+
+/* photos and captions */
+/* ref: muan.github.com */
+
+.photos,
+.caption {
+  &:before, &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.photos {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.photo {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  float: left;
+
+  img {
+    background-color: #f0f0f0;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+  }
+
+  &.p-0:hover ~ .c-0,
+  &.p-l:hover ~ .c-l,
+  &.p-1:hover ~ .c-1,
+  &.p-2:hover ~ .c-2,
+  &.p-3:hover ~ .c-3,
+  &.p-4:hover ~ .c-4,
+  &.p-5:hover ~ .c-5,
+  &.p-6:hover ~ .c-6,
+  &.p-7:hover ~ .c-7,
+  &.p-8:hover ~ .c-8, 
+  &.p-9:hover ~ .c-9, {
+    display: block;
+  }
+}
+
+.caption {
+  display: none;
+  top: 100%;
+  line-height: 1;
+  font-size: 0.95em;
+  position: absolute;
 }
