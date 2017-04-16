@@ -7,11 +7,11 @@ permalink: /me/
 ## Eunji Kim
 
 <div class="myphotos"> 
-    <a href="{{base_url}}/me" class="p-0 myphoto"><img src="/assets/mine/me.jpeg"></a>
-    <a href="{{base_url}}/me" class="p-l myphoto"><img src="/assets/mine/smallheart.png"></a>
-    <a href="{{base_url}}/me" class="p-1 myphoto"><img src="/assets/mine/beer2.jpeg"></a>
-    <a href="{{base_url}}/me" class="p-2 myphoto"><img src="/assets/mine/latte2.jpeg"></a>
-    <a href="{{base_url}}/me" class="p-3 myphoto"><img src="/assets/mine/track.jpg"></a>
+    <a href="{{page.url}}" class="p-0 myphoto"><img src="/assets/mine/me.jpeg"></a>
+    <a href="{{page.url}}" class="p-l myphoto"><img src="/assets/mine/smallheart.png"></a>
+    <a href="{{page.url}}" class="p-1 myphoto"><img src="/assets/mine/beer2.jpeg"></a>
+    <a href="{{page.url}}" class="p-2 myphoto"><img src="/assets/mine/latte2.jpeg"></a>
+    <a href="{{page.url}}" class="p-3 myphoto"><img src="/assets/mine/track.jpg"></a>
     <div class="caption c-0">Me.</div>
     <div class="caption c-l">:raised_hands:</div>
     <div class="caption c-1">Free and easy atmosphere.</div>
