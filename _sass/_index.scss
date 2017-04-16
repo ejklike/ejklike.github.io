@@ -50,7 +50,7 @@
 /* photos and captions */
 /* ref: muan.github.com */
 
-.photos,
+.myphotos,
 .caption {
   &:before, &:after {
     content: "";
@@ -59,12 +59,12 @@
   }
 }
 
-.photos {
+.myphotos {
   position: relative;
   margin-bottom: 15px;
 }
 
-.photo {
+.myphoto {
   display: inline-block;
   margin-right: 15px;
   margin-bottom: 15px;

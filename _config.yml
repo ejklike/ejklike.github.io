@@ -1,5 +1,6 @@
 # Site settings
-title: Study Note
+title: Study Notesa
+author: Eunji Kim
 email: eunjikim@dm.snu.ac.kr
 url: "http://ejklike.github.io" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
