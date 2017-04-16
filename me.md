@@ -1,6 +1,6 @@
 ---
 layout: resume
-title: About Me
+title: AboutMe
 permalink: /me/
 ---
 
