@@ -14,7 +14,18 @@ tags: ['install', 'ubuntu', 'tensorflow', 'nvidia', 'gpu']
 - CUDA 8.0과 호환되는 Nvidia 그래픽 드라이버
 - CuDNN v5.1
 
-> tensorflow가 본인의 GPU를 지원하지 않는다면 텐서플로 GPU버전을 깔아도 GPU를 사용하지 않는다. 자세한 내용은 [이 글]({{ site.baseurl }}{% link _posts/2016-12-27-install-tensorflow-on-windows-10.md %})을 참고하자.
+> tensorflow가 본인의 GPU를 지원하지 않는다면 텐서플로 GPU버전을 깔아도 GPU를 사용하지 않는다. 먼저 이를 확인해보자.
+
+# 0. GPU 버전을 설치할까? CPU only 버전을 설치할까?
+
+먼저, 본인 PC에 설치된 GPU가 tensorflow 사용 가능한 GPU인지 확인해야 한다. (GPU가 없다면 당연히 CPU only 버전...) 아래 두 가지 조건을 충족하면 GPU 버전의 tensorflow를 설치하여 사용할 수 있다. 그렇지 않다면 GPU 버전의 tensorflow는 무용지물.
+
+1. CUDA를 지원하는 GPU인가?
+ - [여기](https://developer.nvidia.com/cuda-gpus)에 접속하여 본인 PC에 장착된 GPU를 찾아보자. 
+ - 본인의 GPU가 목록에 있다면, 그 옆에 Compute Capability를 확인하고 2번으로 고고.
+
+2. NVidia Compute Capability 3.0 이상인가?
+  - [Tensorflow 공식문서](https://www.tensorflow.org/get_started/os_setup#optional_install_cuda_gpus_on_linux)에 의하면 CUDA를 지원하더라도 NVidia Compute Capability가 3.0 이하이면 tensorflow를 사용할 수 없다.
 
 # 1. Nvidia 그래픽 드라이버 설치
 
