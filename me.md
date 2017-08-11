@@ -64,6 +64,7 @@ I am familiar with Python and Matlab, and have experience with Java, R, C++, and
 
 ## Projects
 
+- (PM) Deep Learning-based Route and Destination Prediction, Hyundai Motors, 2017.08 - 2017.12.
 - (PM) Deep Learning-based Credit Card Fraud Detection (Pilot), KB Card, 2017.03 - 2017.04.
 - (PM) Deep Learning-based Credit Card Fraud Detection, Shinhan Card, 2016.09 - 2017.02.
 - Developing Models to predict Customer Complaints, Hyundai Card, 2016.09 - 2017.01.
@@ -74,6 +75,7 @@ I am familiar with Python and Matlab, and have experience with Java, R, C++, and
 - Machine Learning Algorithm Exploration for Automotive Senosr Data, Hyundai Motors, 2013.12 - 2014.03.
 
 <!--
+- (PM) 딥러닝 기반 근미래 주행 경로 및 목적지 예측, 현대자동차, 2017.08 - 2017.12.
 - (PM) 딥러닝을 활용한 해외 오프라인 사기탐지 pilot 모형 개발, 국민카드, 2017.03 - 2017.04.
 - (PM) 딥러닝을 활용한 해외 오프라인 사기탐지 모형 고도화, 신한카드, 2016.09 - 2017.02.
 - 민원 발생가능 고객 사전 예측, 현대카드, 2016.09 - 2017.01.
@@ -90,7 +92,7 @@ I am familiar with Python and Matlab, and have experience with Java, R, C++, and
 
 ### International Journals
 
-- Seokho Kang, <u>Eunji Kim</u>, Jaewoong Shim, Sungzoon Cho*, Wonsang Chang, Junhwan Kim (2017+), "Mining the relationship between the production and customer service data for failure analysis of industrial products", Computers & Industrial Engineering, Accepted. (SCIE)
+- Seokho Kang, <u>Eunji Kim</u>, Jaewoong Shim, Sungzoon Cho*, Wonsang Chang, Junhwan Kim (2017), "Mining the relationship between the production and customer service data for failure analysis of industrial products", Computers & Industrial Engineering, Accepted. (SCIE)
 
 ### International Conferences
 

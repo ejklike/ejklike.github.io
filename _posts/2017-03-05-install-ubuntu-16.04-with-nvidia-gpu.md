@@ -29,6 +29,7 @@ x64 데스크탑에 nvidia GTX 970을 장착한 뒤, 우분투 14.04.3 LTS에서
 1. Terminal에서 `gksudo gedit /etc/default/grub` 입력
 2. 파일 내용 중 `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"` 찾기
 3. `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"` 으로 수정 후 저장
+4. Terminal 명령줄에 `sudo update-grub`을 입력하여 boot 파티션이나 efi 파티션에 있는 grub 업데이트 (태훈선배, 감사합니다!)
 
 재부팅하여 자동 적용되는지, 즉, 정상적으로 부팅이 잘 되는지 확인한다. 
 
