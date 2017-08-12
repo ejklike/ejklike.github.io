@@ -64,4 +64,6 @@ Build label: 0.4.4
 ...
 ```
 
+> 2017년 8월 12일 기준으로 Bazel 최신 버전(0.5.3)에서 tensorflow 패키지 빌드 오류가 보고된 사례를 수 차례 발견했다. 혹시 [다음 포스트]({{ BASE_PATH }}{{ page.next.url }})에서 패키지 빌드시 [이러한 오류](https://github.com/tensorflow/tensorflow/issues/11859)를 접한다면, Bazel 최신 버전이 아닌 0.5.2버전을 설치하도록 하자.
+
 드디어 [다음 포스트]({{ BASE_PATH }}{{ page.next.url }})에서 텐서플로를 설치한다.
