@@ -150,3 +150,5 @@ $ cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /home/your_id/anaconda3/lib/
 1-2.를 참고하여 설치가 제대로 됐는지 테스트해보자. 
 
 > `ImportError: cannot import name pywrap_tensorflow` 오류가 뜬다면 파이썬을 `tensorflow` 폴더 밖에서 실행하자. ([#3217 이슈](https://github.com/tensorflow/tensorflow/issues/3217))
+
+> `kernel version 367.44.0 does not match DSO version 352.99.0`과 같은 오류가 뜬다면 재부팅을 해보자! ([#4349 이슈](https://github.com/tensorflow/tensorflow/issues/4349))
