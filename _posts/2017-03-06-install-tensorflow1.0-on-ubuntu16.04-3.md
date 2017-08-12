@@ -152,3 +152,5 @@ $ cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /home/your_id/anaconda3/lib/
 > `ImportError: cannot import name pywrap_tensorflow` 오류가 뜬다면 파이썬을 `tensorflow` 폴더 밖에서 실행하자. ([#3217 이슈](https://github.com/tensorflow/tensorflow/issues/3217))
 
 > `kernel version 367.44.0 does not match DSO version 352.99.0`과 같은 오류가 뜬다면 재부팅을 해보자! ([#4349 이슈](https://github.com/tensorflow/tensorflow/issues/4349))
+
+> 원격 Jupyter Notebook Server 접속시 `ImportError: libcudart.so.8.0: cannot open shared object file: No such file or directory` 오류가 뜬다면 `sudo ldconfig /usr/local/cuda-8.0/lib64`를 실행해보자. ([#5343 이슈](https://github.com/tensorflow/tensorflow/issues/5343))
