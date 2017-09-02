@@ -25,9 +25,12 @@ Currently Ph.D. candidate in [SNU Data Mining Lab.](http://dm.snu.ac.kr/)
 
 I am interested in
 
-- Sequence generative models
+- Adopting deep learning models to solve real-world problems
+    - Real world problems including fraud detection, driving route prediction, root-cause identification, and so on.
 - Learning from tensor-shaped data
     - Tensors are high dimensional generalizations of vectors and matrices.
+    - E.g., sensor signal, image, video, ...
+- Optimization, Regularization
 
 I am familiar with Python and Matlab, and have experience with Java, R, C++, and D3.js.
 

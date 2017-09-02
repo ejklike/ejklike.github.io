@@ -84,21 +84,22 @@ def insertionSort(x):
 간격 정의에 따라 성능이 제각각이라 시간복잡도 분석이 쉽지 않다. 배열이 이미 정렬되어 있다면 $O(n\log n)$이고 최악의 경우 아래 구현처럼 간격을 절반씩 줄인다면 $O(n^2)$이다. 다른 간격 정의를 사용한다 하더라도 현재까지 알려진 바로는 $O(n \log ^2 n)$이 최선이다.
 
 ```python
+def gapInsertionSort(x, start, gap):
+    for target in range(start+gap, len(x), gap):
+        val = x[target]
+        i = target
+        while i > start:
+            if x[i-gap] > val:
+                x[i] = x[i-gap]
+            else:
+                break
+            i -= gap
+        x[i] = val
+
 def shellSort(x):
     gap = len(x) // 2
     while gap > 0:
         for start in range(gap):
-            def gapInsertionSort(x, start, gap):
-                for target in range(start+gap, len(x), gap):
-                    val = x[target]
-                    i = target
-                    while i > start:
-                        if x[i-gap] > val:
-                            x[i] = x[i-gap]
-                        else:
-                            break
-                        i -= gap
-                    x[i] = val
             gapInsertionSort(x, start, gap)
         gap = gap // 2
 ```
