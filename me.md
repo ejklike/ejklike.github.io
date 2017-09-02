@@ -67,15 +67,15 @@ I am familiar with Python and Matlab, and have experience with Java, R, C++, and
 
 ## Projects
 
-- (PM) Deep Learning-based Route and Destination Prediction, Hyundai Motors, 2017.08 - 2017.12.
-- (PM) Deep Learning-based Credit Card Fraud Detection (Pilot), KB Card, 2017.03 - 2017.04.
+- (PM) Driving Route and Destination Prediction based on Deep Learning, Hyundai Motors, 2017.08 - 2017.12.
+- (PM) Deep Learning-based Credit Card Fraud Detection, KB Card, 2017.03 - 2017.04.
 - (PM) Deep Learning-based Credit Card Fraud Detection, Shinhan Card, 2016.09 - 2017.02.
 - Developing Models to predict Customer Complaints, Hyundai Card, 2016.09 - 2017.01.
 - (PM) Machine Learning-based Diagnosis and Failure Prediction for Semiconductor Manufacturing, Samsung Electronics, 2015.07 - 2016.06.
 - Data Mining for Product Quality Management of Home Appliances, Samsung Electronics, 2015.03 - 2015.08.
 - Yield Prediction using FDC sensor data for Semiconductor Manufacturing, Samsung Electronics, 2014.10 - 2015.04.
 - Automotive Parts Design & Verification Text Analysis, Hyundai Motors, 2014.04 - 2014.09.
-- Machine Learning Algorithm Exploration for Automotive Senosr Data, Hyundai Motors, 2013.12 - 2014.03.
+- Machine Learning Algorithm Exploration for Automotive Sensor Data, Hyundai Motors, 2013.12 - 2014.03.
 
 <!--
 - (PM) 딥러닝 기반 근미래 주행 경로 및 목적지 예측, 현대자동차, 2017.08 - 2017.12.
