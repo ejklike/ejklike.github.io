@@ -25,7 +25,7 @@ Currently Ph.D. candidate in [SNU Data Mining Lab.](http://dm.snu.ac.kr/)
 
 I am interested in
 
-- Adopting deep learning models to solve real-world problems
+- Adopting deep learning models to various real world problems
     - Real world problems including fraud detection, driving route prediction, root-cause identification, and so on.
 - Learning from tensor-shaped data
     - Tensors are high dimensional generalizations of vectors and matrices.
