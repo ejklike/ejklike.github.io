@@ -154,3 +154,5 @@ $ cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /home/your_id/anaconda3/lib/
 > `kernel version 367.44.0 does not match DSO version 352.99.0`과 같은 오류가 뜬다면 재부팅을 해보자! ([#4349 이슈](https://github.com/tensorflow/tensorflow/issues/4349))
 
 > 원격 Jupyter Notebook Server 접속시 `ImportError: libcudart.so.8.0: cannot open shared object file: No such file or directory` 오류가 뜬다면 `sudo ldconfig /usr/local/cuda-8.0/lib64`를 실행해보자. ([#5343 이슈](https://github.com/tensorflow/tensorflow/issues/5343))
+
+> `'CXXABI_1.3.8' not found` 오류가 뜬다면 `conda update libgcc`를 실행해보자. ([#5107 이슈](https://github.com/tensorflow/tensorflow/issues/5017))
