@@ -95,20 +95,26 @@ I am familiar with Python and Matlab, and have experience with Java, R, C++, and
 
 ### International Journals
 
-- Seokho Kang, <u>Eunji Kim</u>, Jaewoong Shim, Sungzoon Cho*, Wonsang Chang, Junhwan Kim (2017), "Mining the relationship between the production and customer service data for failure analysis of industrial products", Computers & Industrial Engineering, Accepted. (SCIE)
+- Jiwon Yang, <u>Eunji Kim</u>, Minhoe Hur, Sungzoon Cho*, Myungbin Han, and Iksang Seo (2018). "Knowledge extraction and visualization of digital design process." Expert Systems with Applications 92: 206-215. (SCIE)
+- Seokho Kang, <u>Eunji Kim</u>, Jaewoong Shim, Sungzoon Cho*, Wonsang Chang, Junhwan Kim (2017), "Mining the relationship between the production and customer service data for failure analysis of industrial products", Computers & Industrial Engineering 106: 137-146. (SCIE)
 
 ### International Conferences
 
 - <u>Eunji Kim</u>, Hyun-Chang Cho, Jinwon An, Sungzoon Cho*, Byeongeon Lee, Kyungchun Lim and Taehoon Kim, "Sequential Root Cause Identification in High Dimensional Time-series Sensor Data", The 8th Asian Conference on Machine Learning, Nov. 2016, Hamilton, New Zealand.
 - <u>Eunji Kim</u>, Hyunchang Cho, Sungzoon Cho*, "Automatic sentiment words extraction from online reviews for product comparison", INFORMS, Nov. 2015, Philadelphia, USA.
-- Minhoe Hur, Jiwon Yang, <u>Eunji Kim</u>, Sungzoon Cho*, "Knowledge Discovery in Pre-assembly Design Review Database", March 2015, The 7th International Conferences on Pervasive Patterns and Applications, Nice, France.
+- Minhoe Hur, Jiwon Yang, <u>Eunji Kim</u>, Sungzoon Cho*, "Knowledge Discovery in Pre-assembly Design Review Database", The 7th International Conferences on Pervasive Patterns and Applications, March 2015, Nice, France.
 
 ### Domestic Conferences
 
-- <u>Eunji Kim</u>, Jehyuk Lee, Hunsik Shin, Hoseong Yang, Sungzoon Cho*, Seung-kwan Nam, Young Mi Song, Jeong A Yoon, Jong Il Kim, Wooho Jung, Kyungmo La, Kangshin Ko, "Detecting Credit Card Frauds with Deep learning", 2017 Spring Conference of Korean Institute of Industrial Engineers (KIIE), April 2017, Yeosu, Korea.
+- <u>Eunji Kim</u>, Jehyuk Lee, Hunsik Shin, Hoseong Yang, Sungzoon Cho*, Seung-kwan Nam, Young Mi Song, Jeong A Yoon, Jong Il Kim, Wooho Jung, Kyungmo La, Kangshin Ko, "Detecting Credit Card Frauds with Deep learning", 2017 Spring Conference of Korean Institute of Industrial Engineers (KIIE), April 2017.
 - Seokho Kang, <u>Eunji Kim</u>, Jaewoong Shim, Sungzoon Cho*, "Identifying the cause of product defects using after-sales service data", 2015 Fall Conference of Korea Business Intelligence Data Mining Society (KDMS), November 2015.
-- <u>Eunji Kim</u>, Hyun-chang Cho, Sungzoon Cho*, "Online Review Sentiment Analysis for Finding Features and Aspects of Products", 2015 Spring Conference of Korean Institute of Industrial Engineers (KIIE), April 2015, Jeju, Korea.
+- <u>Eunji Kim</u>, Hyun-chang Cho, Sungzoon Cho*, "Online Review Sentim.ent Analysis for Finding Features and Aspects of Products", 2015 Spring Conference of Korean Institute of Industrial Engineers (KIIE), April 2015
 - Jaewoong Shim, <u>Eunji Kim</u>, Seokho Kang, Sungzoon Cho*, "Hybrid approach with centroid based classification and SVM for multi-class text classification", 2014 Fall Conference of Korea Business Intelligence Data Mining Society (KDMS), November 2014.
+
+
+### Books
+
+- Kenneth Reitz and Tanya Schlusser. The Hitchhiker's Guide to Python: Best Practices for Development. Translation to Korean ("파이썬을 여행하는 히치하이커를 위한 안내서: 모범 사례와 실용 라이브러리로 더 파이썬답게!". 도서출판 인사이트. 2017.)
 
 <!--
 
