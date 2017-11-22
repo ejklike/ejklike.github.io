@@ -100,6 +100,7 @@ I am familiar with Python and Matlab, and have experience with Java, R, C++, and
 
 ### International Conferences
 
+- <u>Eunji Kim</u>, Jehyuk Lee, Hunsik Shin, Hoseong Yang, Sungzoon Cho*, Seung-kwan Nam, Young Mi Song, Jeong A Yoon, Jong Il Kim, Wooho Jung, Kyungmo La, Kangshin Ko, "Multiple Densely Connected Neural Networks for Credit Card Fraud Detection", Women in Machine Learning (WiML), December 2017.
 - <u>Eunji Kim</u>, Hyun-Chang Cho, Jinwon An, Sungzoon Cho*, Byeongeon Lee, Kyungchun Lim and Taehoon Kim, "Sequential Root Cause Identification in High Dimensional Time-series Sensor Data", The 8th Asian Conference on Machine Learning, Nov. 2016, Hamilton, New Zealand.
 - <u>Eunji Kim</u>, Hyunchang Cho, Sungzoon Cho*, "Automatic sentiment words extraction from online reviews for product comparison", INFORMS, Nov. 2015, Philadelphia, USA.
 - Minhoe Hur, Jiwon Yang, <u>Eunji Kim</u>, Sungzoon Cho*, "Knowledge Discovery in Pre-assembly Design Review Database", The 7th International Conferences on Pervasive Patterns and Applications, March 2015, Nice, France.
