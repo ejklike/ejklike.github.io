@@ -90,27 +90,40 @@ I am familiar with Python and Matlab, and have experience with Java, R, C++, and
 -->
 
 ---
-
+ 
 ## Publications
 
-### International Journals
+### Journals
 
-- Jiwon Yang, <u>Eunji Kim</u>, Minhoe Hur, Sungzoon Cho*, Myungbin Han, and Iksang Seo (2018). "Knowledge extraction and visualization of digital design process." Expert Systems with Applications 92: 206-215. (SCIE)
-- Seokho Kang, <u>Eunji Kim</u>, Jaewoong Shim, Sungzoon Cho*, Wonsang Chang, Junhwan Kim (2017), "Mining the relationship between the production and customer service data for failure analysis of industrial products", Computers & Industrial Engineering 106: 137-146. (SCIE)
+ <ul>
+{% for item in site.data.journals %}
+  <li>
+      {{ item.author | replace: 'Eunji Kim', '<u>Eunji Kim</u>' }} ({{ item.year }}), "{{ item.title }}." {{ item.journal }} {{ item.volnopage }}. ({{ item.sci }})
+  </li>
+{% endfor %}
+</ul>  
 
-### International Conferences
+<!-- - Jiwon Yang, <u>Eunji Kim</u>, Minhoe Hur, Sungzoon Cho*, Myungbin Han, and Iksang Seo (2018). "Knowledge extraction and visualization of digital design process." Expert Systems with Applications 92: 206-215. (SCIE)
+- Seokho Kang, <u>Eunji Kim</u>, Jaewoong Shim, Sungzoon Cho*, Wonsang Chang, Junhwan Kim (2017), "Mining the relationship between the production and customer service data for failure analysis of industrial products", Computers & Industrial Engineering 106: 137-146. (SCIE) -->
 
+### Conferences
+
+ <ul>
+{% for item in site.data.conferences %}
+  <li>
+      {{ item.author | replace: 'Eunji Kim', '<u>Eunji Kim</u>' }}, "{{ item.title }}", {{ item.conf }}, {{ item.month }}, {{ item.year }}.
+  </li>
+{% endfor %}
+</ul> 
+<!-- 
 - <u>Eunji Kim</u>, Jehyuk Lee, Hunsik Shin, Hoseong Yang, Sungzoon Cho*, Seung-kwan Nam, Young Mi Song, Jeong A Yoon, Jong Il Kim, Wooho Jung, Kyungmo La, Kangshin Ko, "Multiple Densely Connected Neural Networks for Credit Card Fraud Detection", Women in Machine Learning (WiML), December 2017.
 - <u>Eunji Kim</u>, Hyun-Chang Cho, Jinwon An, Sungzoon Cho*, Byeongeon Lee, Kyungchun Lim and Taehoon Kim, "Sequential Root Cause Identification in High Dimensional Time-series Sensor Data", The 8th Asian Conference on Machine Learning, Nov. 2016, Hamilton, New Zealand.
 - <u>Eunji Kim</u>, Hyunchang Cho, Sungzoon Cho*, "Automatic sentiment words extraction from online reviews for product comparison", INFORMS, Nov. 2015, Philadelphia, USA.
 - Minhoe Hur, Jiwon Yang, <u>Eunji Kim</u>, Sungzoon Cho*, "Knowledge Discovery in Pre-assembly Design Review Database", The 7th International Conferences on Pervasive Patterns and Applications, March 2015, Nice, France.
-
-### Domestic Conferences
-
 - <u>Eunji Kim</u>, Jehyuk Lee, Hunsik Shin, Hoseong Yang, Sungzoon Cho*, Seung-kwan Nam, Young Mi Song, Jeong A Yoon, Jong Il Kim, Wooho Jung, Kyungmo La, Kangshin Ko, "Detecting Credit Card Frauds with Deep learning", 2017 Spring Conference of Korean Institute of Industrial Engineers (KIIE), April 2017.
 - Seokho Kang, <u>Eunji Kim</u>, Jaewoong Shim, Sungzoon Cho*, "Identifying the cause of product defects using after-sales service data", 2015 Fall Conference of Korea Business Intelligence Data Mining Society (KDMS), November 2015.
 - <u>Eunji Kim</u>, Hyun-chang Cho, Sungzoon Cho*, "Online Review Sentim.ent Analysis for Finding Features and Aspects of Products", 2015 Spring Conference of Korean Institute of Industrial Engineers (KIIE), April 2015
-- Jaewoong Shim, <u>Eunji Kim</u>, Seokho Kang, Sungzoon Cho*, "Hybrid approach with centroid based classification and SVM for multi-class text classification", 2014 Fall Conference of Korea Business Intelligence Data Mining Society (KDMS), November 2014.
+- Jaewoong Shim, <u>Eunji Kim</u>, Seokho Kang, Sungzoon Cho*, "Hybrid approach with centroid based classification and SVM for multi-class text classification", 2014 Fall Conference of Korea Business Intelligence Data Mining Society (KDMS), November 2014. -->
 
 
 ### Books
