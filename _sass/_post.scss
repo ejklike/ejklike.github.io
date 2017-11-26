@@ -99,6 +99,24 @@ img {
     display: inline;
 }
 
+.footnote { padding-top: 56px; }
+a.footnote:before {   
+ content: "[";
+}
+a.footnote:after {   
+ content: "]";
+}
+.footnotes {
+    font-size: $code-font-size;
+    ol{
+        li{
+            // position: relative;
+            margin-top: -$header-height;
+            padding-top: $header-height;
+        }
+    }
+}
+
 table {
     margin-left: auto;
     margin-right: auto;
