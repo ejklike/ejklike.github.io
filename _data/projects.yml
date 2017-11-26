@@ -1,0 +1,71 @@
+- position: PM
+  kotitle: 딥러닝 기반 근미래 주행 경로 및 목적지 예측
+  entitle: Driving Route and Destination Prediction based on Deep Learning
+  koorg: 현대자동차
+  enorg: Hyundai Motors
+  duration: 2017.08 - 2017.12
+
+- position: PM
+  kotitle: 딥러닝을 활용한 해외 오프라인 사기탐지 모형 개발
+  entitle: Deep Learning-based Credit Card Fraud Detection
+  koorg: 국민카드
+  enorg: KB Card
+  duration: 2017.03 - 2017.04
+
+- position: PM
+  kotitle: 딥러닝을 활용한 해외 오프라인 사기탐지 모형 고도화
+  entitle: Deep Learning-based Credit Card Fraud Detection
+  koorg: 신한카드
+  enorg: Shinhan Card
+  duration: 2016.09 - 2017.02
+
+- position: PL
+  kotitle: 민원 발생가능 고객 사전 예측
+  entitle: Developing Models to predict Customer Complaints
+  koorg: 현대카드
+  enorg: Hyundai Card
+  duration: 2016.09 - 2017.01
+
+- position: PM
+  kotitle: 기계학습을 활용한 데이터 기반 진단, 고장예지 및 내구성평가 기술 연구
+  entitle: Machine Learning-based Diagnosis and Failure Prediction for Semiconductor Manufacturing
+  koorg: 삼성전자
+  enorg: Samsung Electronics
+  duration: 2015.07 - 2016.06
+
+- position: PL
+  kotitle: 가전제품 필드 failure와 검사항목 관계 이해
+  entitle: Data Mining for Product Quality Management of Home Appliances
+  koorg: 삼성전자
+  enorg: Samsung Electronics
+  duration: 2015.03 - 2015.08
+
+- position: PL
+  kotitle: FDC 센서 값을 활용한 수율 예측 및 관리
+  entitle: Yield Prediction using FDC sensor data for Semiconductor Manufacturing
+  koorg: 삼성전자
+  enorg: Samsung Electronics
+  duration: 2014.10 - 2015.04
+
+- position: PE
+  kotitle: 자동차 부품 설계 검증 데이터 텍스트 분석
+  entitle: Automotive Parts Design & Verification Text Analysis
+  koorg: 현대자동차
+  enorg: Hyundai Motors
+  duration: 2014.04 - 2014.09
+
+- position: PE
+  kotitle: 자동차 센서 데이터의 분석 방향 및 가용 알고리즘 탐색
+  entitle: Machine Learning Algorithm Exploration for Automotive Sensor Data
+  koorg: 현대자동차
+  enorg: Hyundai Motors
+  duration: 2013.12 - 2014.03
+
+# - position: 
+#   kotitle: 
+#   entitle: 
+#   koorg: 
+#   enorg: 
+#   duration: 
+
+  
