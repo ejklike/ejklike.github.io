@@ -4,7 +4,12 @@ layout: post
 tags: ['book', 'python']
 ---
 
-![hitchhiker-python]({{base}}/assets/20171125/hitchhiker-python.jpg "파이썬을 여행하는 히치하이커를 위한 안내서")
+<!-- ![hitchhiker-python]({{base}}/assets/20171125/hitchhiker-python.jpg "파이썬을 여행하는 히치하이커를 위한 안내서") -->
+
+<center>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">My book was translated into Korean with an AMAZING cover!! <a href="https://t.co/ybL7ygb9G6">https://t.co/ybL7ygb9G6</a> <a href="https://t.co/m6s8URZxTu">pic.twitter.com/m6s8URZxTu</a></p>&mdash; Kenneth Reitz 🐍 (@kennethreitz) <a href="https://twitter.com/kennethreitz/status/938448981063069696?ref_src=twsrc%5Etfw">December 6, 2017</a></blockquote>
+</center>
 
 그간 번역해온 책 ['파이썬을 여행하는 히치하이커를 위한 안내서'](http://book.naver.com/bookdb/book_detail.nhn?bid=12692345)가 이번 달에 출간되었다. '은하수를 여행하는 히치하이커를 위한 안내서'라는 소설의 컨셉이 녹아있는[^1] 이 책에는 백 명이 넘는 파이썬 커뮤니티 일원이 참여한 오픈소스 프로젝트인 ['The Hitchhiker’s Guide to Python'](http://docs.python-guide.org)의 내용이 담겨 있다. (참고로, 이 프로젝트는 현재진행형이다.)
 
