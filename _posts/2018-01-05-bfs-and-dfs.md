@@ -1,17 +1,17 @@
 ---
-title: "파이썬을 사용한 너비 우선 탐색과 깊이 우선 탐색 구현"
+title: "파이썬을 사용한 그래프의 너비 우선 탐색과 깊이 우선 탐색 구현"
 layout: post
 tags: ['algorithm', 'data structure']
 ---
 
 아래와 같은 그래프가 있다고 가정하자. 노드 `A`에서 시작하여 그래프의 모든 노드를 방문하려면 어떻게 해야 할까?
 
-![]({{base}}/assets/20180106/graph.png "graph")
+![]({{base}}/assets/20180106/graph.png "graph"){: width="230px"}
 
 먼저, 그래프의 노드 간 연결관계를 표현해보자. 표현 방법으로는 크게 [Adjacency list (인접 리스트)](https://en.wikipedia.org/wiki/Adjacency_list)와 [Adjacency matrix (인접 행렬)](https://en.wikipedia.org/wiki/Adjacency_matrix)가 있다. 여기서는 인접 리스트를 사용해보았다.
 
-```
-# undirected graph (무향 그래프)
+```python
+# undirected graph
 graph = {'A': set(['B', 'C']),
          'B': set(['A', 'D', 'E']),
          'C': set(['A', 'F']),
@@ -82,7 +82,7 @@ def bfs_paths(graph, start, goal):
 
 ![](https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif "https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif"){: width="270px"}
 
-깊이 우선 탐색은 이름 그대로 진행 가능한 노드가 없을 때까지 깊게 파고들며 방문하는 방식이며, 더이상 방문 가능한 노드가 없다면 이전의 위치로 돌아와 다른 방향으로 깊게 파고들며 방문한다. 매우 큰 그래프에서, 탐색을 시작한 노드로부터 너무 멀어지게 되면 즉시 그만두고 싶을 때 사용하면 효과적이다. 전순회를 비롯한 트리 순회 기법은 전부 깊이 우선 탐색이다.
+깊이 우선 탐색은 이름 그대로 진행 가능한 노드가 없을 때까지 깊게 파고들며 방문하는 방식이며, 더이상 방문 가능한 노드가 없다면 이전의 위치로 돌아와 다른 방향으로 깊게 파고들며 방문한다. 매우 큰 그래프에서, 탐색을 시작한 노드로부터 너무 멀어지게 되면 즉시 그만두고 싶을 때 사용하면 효과적이다. 트리 순회 기법은 전부 깊이 우선 탐색이다.
 
 과거 위치의 인접 노드보다 현재 위치의 인접 노드를 먼저 방문한다는 특징을 가지므로, 아래와 같이 스택(stack)을 사용해 구현할 수 있다.
 
@@ -133,7 +133,7 @@ def dfs_paths(graph, start, goal):
 [['D', 'B', 'A', 'C', 'F'], ['D', 'B', 'E', 'F']]
 ```
 
-너비 우선 탐색과는 달리 최단 경로를 가장 먼저 찾지 못할 수도 있다.
+깊이 우선 탐색은 너비 우선 탐색과는 달리 최단 경로를 가장 먼저 찾지 못할 수도 있다.
 
 ### 출처
 
