@@ -21,7 +21,7 @@ permalink: /me/
 <br>
 
 
-Currently Ph.D. candidate in [SNU Data Mining Lab.](http://dm.snu.ac.kr/) and intern in [Clova AI](https://clova.ai/ko)
+Currently Ph.D. candidate in [SNU Data Mining Lab.](http://dm.snu.ac.kr/) and intern in [Naver Clova AI](https://clova.ai/ko)
 
 I am interested in
 
