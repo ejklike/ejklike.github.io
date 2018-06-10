@@ -27,6 +27,8 @@ I am interested in
 
 - Adopting deep learning models to various real world problems
     - Real world problems including fraud detection, driving route prediction, root-cause identification, and so on.
+- Enhancing quality of generative modeling for face swapping
+    - Swapping identity in facial image while keeping facial expression and pose.
 - Learning from tensor-shaped data
     - Tensors are high dimensional generalizations of vectors and matrices.
     - E.g., sensor signal, image, video, ...
