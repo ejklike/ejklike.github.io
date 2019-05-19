@@ -1,3 +1,24 @@
+- author: Eunji Kim, Sungzoon Cho*, Byeongeon Lee, Myoungsu Cho
+  title: "Fault Detection and Diagnosis Using Self-Attentive Convolutional Neural Networks for Variable-length Sensor Data in Semiconductor Manufacturing"
+  conf: 2019 Spring Conference of Korean Institute of Industrial Engineers (KIIE)
+  year: 2019
+  month: April
+  place: Gwangju, Korea
+  
+- author: Eunji Kim, Sungzoon Cho*
+  title: "Fake face detection model combining content and trace feature extractors"
+  conf: 2018 Fall Conference of Korea Business Intelligence Data Mining Society (KDMS)
+  year: 2018
+  month: November
+  place: Seoul, Korea
+  
+- author: Eunji Kim, Taewook Kim, Jihyung Moon, Sungzoon Cho*, Minhoe Hur
+  title: "Personalized driving destination prediction based on deep learning"
+  conf: 2018 Spring Conference of Korean Institute of Industrial Engineers (KIIE)
+  year: 2018
+  month: April
+  place: Gyeongju, Korea
+
 - author: Eunji Kim, Jehyuk Lee, Hunsik Shin, Hoseong Yang, Sungzoon Cho*, Seung-kwan Nam, Young Mi Song, Jeong A Yoon, Jong Il Kim, Wooho Jung, Kyungmo La, Kangshin Ko
   title: Multiple Densely Connected Neural Networks for Credit Card Fraud Detection
   conf: Women in Machine Learning (WiML)
