@@ -21,7 +21,7 @@ permalink: /me/
 <br>
 
 
-Currently Ph.D. candidate in [SNU Data Mining Lab.](http://dm.snu.ac.kr/) and intern in [Naver Clova AI](https://clova.ai/ko)
+Currently Ph.D. candidate in [SNU Data Mining Lab.](http://dm.snu.ac.kr/) and will graduate in August 2019.
 
 I am interested in
 
@@ -63,7 +63,7 @@ I am familiar with Python and Matlab, and have experience with Java, R, C++, and
 
 ###  Company
 
-- Intern, Naver Clova AI, Mar 2018-Current.
+- Intern, Naver Clova AI, Mar-Jun 2018.
 - Actuary, Kyobo Life Insurance, 2011-2013.
 
 ---
