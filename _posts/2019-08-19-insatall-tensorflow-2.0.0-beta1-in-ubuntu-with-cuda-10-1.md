@@ -73,6 +73,28 @@ $ sudo ln -s /usr/local/cuda-10.0/lib64/libcusparse.so.10.1.168 /usr/local/cuda-
 $ sudo ln -s /usr/lib/x86_64-linux-gnu/libcublas.so.10.2.0.168 /usr/local/cuda-10.0/lib64/libcublas.so.10.0
 ```
 
+### 3. `PATH`, `LD_LIBRARY_PATH`를 수정한다.
+
+각자 환경에 따라 `.bashrc` (혹은 `.zshrc`)에서  `PATH`와 `LD_LIBRARY_PATH` 부분의 `cuda-10.1` 부분을 `cuda-10.0`으로 수정한다.
+
+```
+...
+export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-10.0/extras/CUPTI/lib64:$LD_LIBRARY_PATH
+...
+```
+
+수정한 결과를 적용한다.
+
+```terminal
+$ source ~/.bashrc
+# or
+$ source ~/.zshrc
+```
+
+
+
 그리고 결과는... 성공! 얏호!
 
 ```python
