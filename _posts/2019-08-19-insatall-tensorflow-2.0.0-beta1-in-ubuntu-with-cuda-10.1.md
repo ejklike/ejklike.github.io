@@ -6,7 +6,7 @@ tags: ['install', 'ubuntu', 'tensorflow', 'cuda', 'gpu']
 
 최근 tensorflow `r2.0`이 배포되었다. 잠깐 살펴보니 API가 무척 pytorch스러워졌고, 호기심이 생겨서 바로 깔아보기로 결심했다.
 
-공식문서에 따르면 아래 한 줄로 gpu용 tensorflow `r2.0' 설치가 끝난다.
+공식문서에 따르면 아래 한 줄로 gpu용 tensorflow `r2.0` 설치가 끝난다.
 
 ```terminal
 $ pip install tensorflow-gpu==2.0.0-beta1
@@ -47,7 +47,7 @@ ile or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.0/extras/CUPTI/lib64:/usr/
 
 오류 메시지를 찬찬히 읽어보면, GPU 인식은 하지만 cuda와 관련된 library 파일을 찾지 못하였기에 CPU를 사용한다는 내용이다.
 
-어떻게 할까 고민하다가 시간을 그리 많이 할애하긴 아까워서 아래와 같은 야매 편법을 썼다. 
+어떻게 할까 고민하다가 시간을 많이 할애하긴 아까워서 아래와 같은 **야매 편법**을 썼다. 
 (CUDA `10.1`이나 `10.0`이나 파일 내용이 크게 다르진 않을 것 같아서... 더 좋은 방법이 있으면 제보해주세요!)
 
 ### 1. CUDA 10.0 폴더를 강제로 만들어준다.
