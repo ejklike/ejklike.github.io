@@ -77,8 +77,8 @@
     border-radius: 10px;
   }
 
-  &.p-0:hover ~ .c-0,
   &.p-l:hover ~ .c-l,
+  &.p-0:hover ~ .c-0,
   &.p-1:hover ~ .c-1,
   &.p-2:hover ~ .c-2,
   &.p-3:hover ~ .c-3,
@@ -87,7 +87,38 @@
   &.p-6:hover ~ .c-6,
   &.p-7:hover ~ .c-7,
   &.p-8:hover ~ .c-8, 
-  &.p-9:hover ~ .c-9, {
+  &.p-9:hover ~ .c-9, 
+  &.p-10:hover ~ .c-10,
+  &.p-11:hover ~ .c-11,
+  &.p-12:hover ~ .c-12,
+  &.p-13:hover ~ .c-13,
+  &.p-14:hover ~ .c-14,
+  &.p-15:hover ~ .c-15,
+  &.p-16:hover ~ .c-16,
+  &.p-17:hover ~ .c-17,
+  &.p-18:hover ~ .c-18, 
+  &.p-19:hover ~ .c-19, 
+  &.p-20:hover ~ .c-20,
+  &.p-21:hover ~ .c-21,
+  &.p-22:hover ~ .c-22,
+  &.p-23:hover ~ .c-23,
+  &.p-24:hover ~ .c-24,
+  &.p-25:hover ~ .c-25,
+  &.p-26:hover ~ .c-26,
+  &.p-27:hover ~ .c-27,
+  &.p-28:hover ~ .c-28, 
+  &.p-29:hover ~ .c-29,
+  &.p-30:hover ~ .c-30,
+  &.p-31:hover ~ .c-31,
+  &.p-32:hover ~ .c-32,
+  &.p-33:hover ~ .c-33,
+  &.p-34:hover ~ .c-34,
+  &.p-35:hover ~ .c-35,
+  &.p-36:hover ~ .c-36,
+  &.p-37:hover ~ .c-37,
+  &.p-38:hover ~ .c-38, 
+  &.p-39:hover ~ .c-39,
+  {
     display: block;
   }
 }
