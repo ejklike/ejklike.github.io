@@ -91,28 +91,11 @@ permalink: /music/
 
 <h2 class="page-heading">Favorite Music</h2>
 
-<!-- <center><img src="/assets/tumblr_lgyfbvMXry1qe0xnj.jpg" height=150></center> -->
-<!-- <center><img src="/assets/sale_img_elvis_n_me.jpg" height=200></center> -->
-<!-- <center><img src="/assets/1294306571263597.jpeg" height=150></center> -->
-<!-- <center><img src="/assets/tamara_lichtenstein_03.jpg" height=150><img src="/assets/tamara_lichtenstein_02.jpg" height=150></center> -->
-<!-- <center></center> -->
-
-
-<!-- <div class="main-photos">
-  <div class="main-photo"> <div class="p1">
-    <img src ="/assets/tamara_lichtenstein_03.jpg">
-  </div></div>
-
-  <div class="main-photo"> <div class="p2">
-    <img src ="/assets/tamara_lichtenstein_02.jpg">
-  </div></div>
-</div> -->
-
 <div class="row">
-  <div class="column1">
+  <span class="left">
     <img src="/assets/tumblr_lgp7rlBMqO1qe0xnj-min.jpg" height=180>
-  </div>
-  <div class="column2">
+  </span>
+  <span class="right" id="column">
     <ul class="tags-list">
       {% for tag in sorted_tags %}
         {% assign tag_count = 0 %}
@@ -127,29 +110,8 @@ permalink: /music/
         </li>
       {% endfor %}
     </ul>
-  </div>
+  </span>
 </div>
-
-
-
-<!-- <center><img src="/assets/tumblr_lgp7rlBMqO1qe0xnj-min.jpg" height=200></center>
-
-<center>
-<ul class="tags-list">
-  {% for tag in sorted_tags %}
-    {% assign tag_count = 0 %}
-    {% for item in sorted_albums %}
-      {% if item.tag contains tag %}
-      {% assign tag_count = tag_count | plus:1 %}
-      {% endif %}
-    {% endfor %}
-
-    <li class="tag-item" id="{{ tag }}-item">
-      <a href onclick="filter('{{ tag }}'); return false;" class="tag-link" id="{{ tag }}">{{ tag }}<span>{{ tag_count }}</span></a>
-    </li>
-  {% endfor %}
-</ul>
-</center> -->
 
 <h1 class="page-heading"></h1>
 
@@ -172,7 +134,7 @@ permalink: /music/
     {% elsif imgsize == 8 %}
         {% assign img1 = imgstr | slice: 0, 3 %}
     {% endif %}
-    <a href="https://www.melon.com/album/detail.htm?albumId={{item.img}}" class="img-{{ item.idx }} myalbum"><img src="https://cdnimg.melon.co.kr/cm/album/images/{{ img1 }}/{{ img2 }}/{{ img3 }}/{{ imgstr }}_500.jpg"></a>
+    <a href="https://www.melon.com/album/detail.htm?albumId={{item.img}}" class="img-{{ item.idx }} myalbum" target="_blank"><img src="https://cdnimg.melon.co.kr/cm/album/images/{{ img1 }}/{{ img2 }}/{{ img3 }}/{{ imgstr }}_500.jpg"></a>
   {% endfor %}
 
   {% for item in sorted_albums %}
@@ -227,7 +189,7 @@ permalink: /music/
             {% assign img1 = imgstr | slice: 0, 3 %}
         {% endif %}
     
-        <a href="https://www.melon.com/album/detail.htm?albumId={{item.img}}" class="img-{{ item.idx }} myalbum"><img src="https://cdnimg.melon.co.kr/cm/album/images/{{ img1 }}/{{ img2 }}/{{ img3 }}/{{ imgstr }}_500.jpg"></a>
+        <a href="https://www.melon.com/album/detail.htm?albumId={{item.img}}" class="img-{{ item.idx }} myalbum" target="_blank"><img src="https://cdnimg.melon.co.kr/cm/album/images/{{ img1 }}/{{ img2 }}/{{ img3 }}/{{ imgstr }}_500.jpg"></a>
 
       {% endif %}
     {% endfor %}

@@ -44,17 +44,26 @@
  */
  .row {
   display: flex;
-}
-/* Create two equal columns that sits next to each other */
-.column1 {
-  flex: none;
-  padding: 10px;
-}
-.column2 {
-  // flex: 50%;
-  padding: 10px;
-}
 
+  .left {
+    width: 50%;
+    float: left;
+    padding: 10px;
+  }
+  .right {
+    width: 50%;
+    float: right;
+    padding: 10px;
+  }
+  @media only screen and (max-width: $on-palm) {
+    display: block;
+    .left, .right {
+        float: none;
+        width: 100%;
+        padding: 10px;
+    }
+  }
+}
 
 .main-text {
     font-family: $code-font-family;
