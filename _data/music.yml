@@ -1,89 +1,194 @@
 - idx: 0
-  img: https://upload.wikimedia.org/wikipedia/en/5/51/Kendrick_Lamar_-_Damn.png
+  img: 10051191
   artist: Kendrick Lamar
   title: DAMN.
   caption: 
+  tag: hip-hop grammy
   
 - idx: 1
-  img: https://upload.wikimedia.org/wikipedia/en/7/70/Drake_-_More_Life_cover.jpg
+  img: 10047237
   artist: Drake 
   title: More Life
-  caption: 
+  tag: hip-hop
 
 - idx: 2
-  img: https://upload.wikimedia.org/wikipedia/en/f/fd/Wolf_Cover2.jpg
+  img: 2179857
   artist: Tyler, the Creater
   title: Wolf
   caption: 
+  tag: hip-hop
 
 - idx: 3
-  img: http://cmsimg.mnet.com/clipimage/album/480/000/155/155973.jpg
+  img: 2296588
   artist: The Quiett
   title: The Real Me
   caption: 
+  tag: hip-hop
 
 - idx: 4
-  img: http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/161/097/81161097_1550472224009_1_600x600.JPG
+  img: 10252289
   artist: Cosmic Boy
   title: Can I Love ?
+  tag: chill
 
 - idx: 5
-  img: https://upload.wikimedia.org/wikipedia/ko/a/a6/12_%28%EB%B9%88%EC%A7%80%EB%85%B8%EC%9D%98_%EC%9D%8C%EB%B0%98%29.jpg
+  img: 2688064
   artist: Beenzino
   title: '12'
+  tag: hip-hop
 
 - idx: 6
-  img: http://cmsimg.mnet.com/clipimage/album/240/002/090/2090241.jpg
-  artist: Beenzion
+  img: 2134788
+  artist: Beenzino
   title: '24:26'
+  tag: hip-hop
 
 - idx: 7
-  img: https://upload.wikimedia.org/wikipedia/en/5/55/Charlie_Puth_Voicenotes.png
+  img: 10057083
   artist: Charlie Puth
   title: Voicenotes
+  tag: pop
 
 - idx: 8
-  img: http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/675/131/80675131_1440574139010_1_600x600.JPG
+  img: 2336976
   artist: E SENS
   title: The Anecdote
+  tag: hip-hop
 
 - idx: 9
-  img: http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/787/277/80787277_1454491652701_1_600x600.JPG
+  img: 2665812
   artist: Nucksal
   title: The God Of Small Things
+  tag: hip-hop
 
 - idx: 10
-  img: https://upload.wikimedia.org/wikipedia/en/c/cc/Justin_Bieber_Journals.png
+  img: 2223066
   artist: Justin Bieber
   title: Journals
-
+  tag: r&b
 
 - idx: 11
-  img: https://upload.wikimedia.org/wikipedia/en/b/ba/Jorja_Smith_-_Lost_%26_Found.png
+  img: 10173581
   artist: Jorja Smith
   title: Lost & Found
+  tag: r&b
 
 - idx: 12
-  img: http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/733/736/80733736_1446689453242_1_600x600.JPG
+  img: 2648944
   artist: Jay Park
   title: WORLDWIDE
+  tag: hip-hop
 
 - idx: 13
-  img: https://upload.wikimedia.org/wikipedia/en/7/72/Stoneyalbum.jpg
+  img: 2710254
   artist: Post Malone
   title: Stoney
+  tag: hip-hop
 
 - idx: 14
-  img: https://ww.namu.la/s/521a755e97612023c3ef8fb69d2a7873efa506822333501f529a0750ffbc23b6b7617810f62f5b22df42b9753d08d5a6a1d2ab5a80a052b54b0a71905c14e5d0d362226f5350817bfa8943163a2e35c142960b1eb7bbdb780ff35c6c076d4450
+  img: 2696745
   artist: XXX
   title: KYOMI
+  tag: hip-hop
 
 - idx: 15
-  img: http://cmsimg.mnet.com/clipimage/album/480/000/016/16252.jpg
+  img: 27232
   artist: 
   title: Sleepless In Seattle OST
+  tag: calm ost
 
 - idx: 16
-  img: http://cmsimg.mnet.com/clipimage/album/240/000/465/465605.jpg
+  img: 2325255
   artist: PEEJAY
   title: WALKIN Vol. 1
+  tag: chill
+
+- idx: 17
+  img: 2709060
+  artist: Aminé
+  title: Good for You
+  tag: hip-hop
+
+# - idx: 18
+#   img: https://cps-static.rovicorp.com/3/JPG_400/MI0002/758/MI0002758431.jpg?partner=allrovi.com
+#   artist: Chet Baker Quartet
+#   title: 'Jazz In Paris, Vol. 53: Chet Baker Quartet Playes Standars'
+#   tag: calm jazz
+
+- idx: 19
+  img: 10255292
+  artist: Mac Ayres
+  title: Something To Feel
+  tag: chill
+
+- idx: 20
+  img: 10121548
+  artist: Yaeji
+  title: EP2
+  tag: midnight chill
+
+- idx: 21
+  img: 2287778
+  artist: Taylor Swift
+  title: '1989'
+  tag: pop
+
+- idx: 22
+  img: 2651660
+  artist: Nick Jonas
+  title: Nick Jonas X2
+  tag: pop
+
+- idx: 23
+  img: 717960
+  artist: Creed
+  title: Greatest Hits
+  tag: rock
+
+- idx: 24
+  img: 5652937
+  artist: The Cardigans
+  title: Emmerdale
+  tag: pop rock
+
+- idx: 25
+  img: 10215798
+  artist: Major Lazer
+  title: Major Lazer Essentials
+  tag: electronic pop
+
+- idx: 26
+  img: 10146906
+  artist: MUZIE
+  title: I Can't Let You Go
+  tag: pop
+
+- idx: 27
+  img: 23249
+  artist: Dream Theater
+  title: Awake
+  tag: rock
+
+- idx: 28
+  img: 32804
+  artist: Muse
+  title: Absolution
+  tag: rock
+
+- idx: 29
+  img: 20299
+  artist: Radiohead
+  title: OK Computer
+  tag: cynical rock
+
+- idx: 30
+  img: 10023598
+  artist: Goldlink
+  title: Crew (Feat. Shy Glizzy)
+  tag: hip-hop
+
+- idx: 31
+  img: 4328106
+  artist: Bobby Caldwell
+  title: What You Won`t Do for Love
+  tag: jazz

@@ -1,0 +1,316 @@
+---
+layout: resume
+title:  
+permalink: /music/
+---
+
+<!-- get album data -->
+{% assign sorted_albums = (site.data.music | sort: 'artist') %}
+
+<!-- generate tag list -->
+{% assign mytagstr = '' %}
+{% for item in site.data.music %}
+  {% if item.tag != None %}
+      {% assign tmp = mytagstr | append: ' ' %}
+      {% assign mytagstr = tmp | append: item.tag %}
+  {% endif %}
+{% endfor %}
+{% assign sorted_tags = mytagstr | split: ' ' | uniq %}
+
+
+<style>
+/* .myphotos:before,
+.myphotos:after,
+.caption:before,
+.caption:after{
+  content:"";display:block;clear:both
+}
+.myphotos{
+  position:relative;margin-bottom:15px
+}
+
+.myphoto{
+  display:inline-block;margin-right:15px;margin-bottom:15px;float:left
+}
+
+.myphoto img{
+  background-color:#f0f0f0;width:50px;height:50px;border-radius:10px}
+
+.myphoto.p-l:hover ~ .c-l,.myphoto.p-0:hover ~ .c-0,.myphoto.p-1:hover ~ .c-1,.myphoto.p-2:hover ~ .c-2,.myphoto.p-3:hover ~ .c-3,.myphoto.p-4:hover ~ .c-4,.myphoto.p-5:hover ~ .c-5,.myphoto.p-6:hover ~ .c-6,.myphoto.p-7:hover ~ .c-7,.myphoto.p-8:hover ~ .c-8,.myphoto.p-9:hover ~ .c-9,.myphoto.p-10:hover ~ .c-10,.myphoto.p-11:hover ~ .c-11,.myphoto.p-12:hover ~ .c-12,.myphoto.p-13:hover ~ .c-13,.myphoto.p-14:hover ~ .c-14,.myphoto.p-15:hover ~ .c-15,.myphoto.p-16:hover ~ .c-16,.myphoto.p-17:hover ~ .c-17,.myphoto.p-18:hover ~ .c-18,.myphoto.p-19:hover ~ .c-19,.myphoto.p-20:hover ~ .c-20,.myphoto.p-21:hover ~ .c-21,.myphoto.p-22:hover ~ .c-22,.myphoto.p-23:hover ~ .c-23,.myphoto.p-24:hover ~ .c-24,.myphoto.p-25:hover ~ .c-25,.myphoto.p-26:hover ~ .c-26,.myphoto.p-27:hover ~ .c-27,.myphoto.p-28:hover ~ .c-28,.myphoto.p-29:hover ~ .c-29,.myphoto.p-30:hover ~ .c-30,.myphoto.p-31:hover ~ .c-31,.myphoto.p-32:hover ~ .c-32,.myphoto.p-33:hover ~ .c-33,.myphoto.p-34:hover ~ .c-34,.myphoto.p-35:hover ~ .c-35,.myphoto.p-36:hover ~ .c-36,.myphoto.p-37:hover ~ .c-37,.myphoto.p-38:hover ~ .c-38,.myphoto.p-39:hover ~ .c-39
+{display:block}
+
+.caption{display:none;top:100%;line-height:1;font-size:0.95em;position:absolute}
+
+.post-list{
+  margin-left:0;list-style:none
+}
+.post-list>li{
+  vertical-align:middle;margin-bottom:17.5px
+}
+.hidden{display:none !important;visibility:hidden !important} */
+
+
+
+.myalbums:before,
+.myalbums:after,
+.albumcaption:before,
+.albumcaption:after{
+    content:"";
+    display:block;
+    clear:both}
+    
+.myalbums{
+    position:relative;
+    margin-bottom:15px}
+    
+.myalbum{
+    display:inline-block;
+    margin-right:15px;
+    margin-bottom:15px;
+    float:left}
+    
+.myalbum img{
+    background-color:#f0f0f0;
+    width:50px;
+    height:50px;
+    border-radius:10px}
+
+  {% for item in sorted_albums %}
+    .myalbum.img-{{ item.idx }}:hover ~ .cap-{{ item.idx }}{% if forloop.last == false %},{% endif %}
+  {% endfor %} 
+  {display:block}
+
+/* .post-list>li{vertical-align:middle;margin-bottom:17.5px} */
+.albumcaption, .albumcaption2{
+  display:none;
+  top:100%;
+  line-height:1;
+  font-size:0.95em;
+  position:absolute}
+</style>
+
+<h2 class="page-heading">Favorite Music</h2>
+
+<!-- <center><img src="/assets/tumblr_lgyfbvMXry1qe0xnj.jpg" height=150></center> -->
+<!-- <center><img src="/assets/sale_img_elvis_n_me.jpg" height=200></center> -->
+<!-- <center><img src="/assets/1294306571263597.jpeg" height=150></center> -->
+<!-- <center><img src="/assets/tamara_lichtenstein_03.jpg" height=150><img src="/assets/tamara_lichtenstein_02.jpg" height=150></center> -->
+<!-- <center></center> -->
+
+
+<!-- <div class="main-photos">
+  <div class="main-photo"> <div class="p1">
+    <img src ="/assets/tamara_lichtenstein_03.jpg">
+  </div></div>
+
+  <div class="main-photo"> <div class="p2">
+    <img src ="/assets/tamara_lichtenstein_02.jpg">
+  </div></div>
+</div> -->
+
+<div class="row">
+  <div class="column">
+    <img src="/assets/tumblr_lgp7rlBMqO1qe0xnj-min.jpg" height=180>
+  </div>
+  <div class="column">
+    <ul class="tags-list">
+      {% for tag in sorted_tags %}
+        {% assign tag_count = 0 %}
+        {% for item in sorted_albums %}
+          {% if item.tag contains tag %}
+          {% assign tag_count = tag_count | plus:1 %}
+          {% endif %}
+        {% endfor %}
+    
+        <li class="tag-item" id="{{ tag }}-item">
+          <a href onclick="filter('{{ tag }}'); return false;" class="tag-link" id="{{ tag }}">{{ tag }}<span>{{ tag_count }}</span></a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+
+
+<!-- <center><img src="/assets/tumblr_lgp7rlBMqO1qe0xnj-min.jpg" height=200></center>
+
+<center>
+<ul class="tags-list">
+  {% for tag in sorted_tags %}
+    {% assign tag_count = 0 %}
+    {% for item in sorted_albums %}
+      {% if item.tag contains tag %}
+      {% assign tag_count = tag_count | plus:1 %}
+      {% endif %}
+    {% endfor %}
+
+    <li class="tag-item" id="{{ tag }}-item">
+      <a href onclick="filter('{{ tag }}'); return false;" class="tag-link" id="{{ tag }}">{{ tag }}<span>{{ tag_count }}</span></a>
+    </li>
+  {% endfor %}
+</ul>
+</center> -->
+
+<h1 class="page-heading"></h1>
+
+<div class="myalbums" id='all-container'>
+  {% for item in sorted_albums %}
+    {% assign imgstr = item.img | downcase %}
+
+    {% assign img2 = imgstr | slice: -5, 2 %}
+    {% assign img3 = imgstr | slice: -3, 3 %}
+
+    {% assign imgsize = imgstr.size %}
+    {% if imgsize == 5 %}
+        {% assign img1 = "000" %}
+    {% elsif imgsize == 6 %}
+        {% assign prefix = imgstr | slice: 0, 1 %}
+        {% assign img1 = "00" | append: prefix %}
+    {% elsif imgsize == 7 %}
+        {% assign prefix = imgstr | slice: 0, 2 %}
+        {% assign img1 = "0" | append: prefix %}
+    {% elsif imgsize == 8 %}
+        {% assign img1 = imgstr | slice: 0, 3 %}
+    {% endif %}
+    <a href="https://www.melon.com/album/detail.htm?albumId={{item.img}}" class="img-{{ item.idx }} myalbum"><img src="https://cdnimg.melon.co.kr/cm/album/images/{{ img1 }}/{{ img2 }}/{{ img3 }}/{{ imgstr }}_500.jpg"></a>
+  {% endfor %}
+
+  {% for item in sorted_albums %}
+    <div class="albumcaption cap-{{ item.idx }}">
+      {% if item.artist == None %} {% else %} {{ item.artist }} - {% endif %}{{ item.title }} {% if item.caption == None %}{% else %}| {{ item.caption }}{% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+
+<!-- Reference: http://www.jokecamp.com/blog/listing-jekyll-posts-by-tag/ -->
+{% for tag in sorted_tags %}
+  {% assign album_ids = '' %}
+  {% for item in sorted_albums %}
+    {% if item.tag contains tag %}
+      {% if album_ids == '' %}
+        {% assign album_ids = album_ids | append: '' | append: item.idx %}
+      {% else %}
+        {% assign album_ids = album_ids | append: '|' | append: item.idx %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  <!-- <br>>>>>>>> {{ tag }} : {{ album_ids }} <<<<<<<<br>
+  {% assign album_ids = album_ids | split: '|' %} -->
+
+  <div class="myalbums hidden" id="{{ tag }}-container">
+    {% assign num_albums = album_ids | size %}
+      {% if num_albums == 1 %}
+        <br><p>{{ num_albums }} album related to <b>"{{ tag }}"</b></p>
+      {% else %}
+        <br><p>{{ num_albums }} albums related to <b>"{{ tag }}"</b></p>
+      {% endif %}
+
+    {% for item in sorted_albums %}
+      {% if item.tag contains tag %}
+          
+        {% assign imgstr = item.img | downcase %}
+
+        {% assign img2 = imgstr | slice: -5, 2 %}
+        {% assign img3 = imgstr | slice: -3, 3 %}
+    
+        {% assign imgsize = imgstr.size %}
+        {% if imgsize == 5 %}
+            {% assign img1 = "000" %}
+        {% elsif imgsize == 6 %}
+            {% assign prefix = imgstr | slice: 0, 1 %}
+            {% assign img1 = "00" | append: prefix %}
+        {% elsif imgsize == 7 %}
+            {% assign prefix = imgstr | slice: 0, 2 %}
+            {% assign img1 = "0" | append: prefix %}
+        {% elsif imgsize == 8 %}
+            {% assign img1 = imgstr | slice: 0, 3 %}
+        {% endif %}
+    
+        <a href="https://www.melon.com/album/detail.htm?albumId={{item.img}}" class="img-{{ item.idx }} myalbum"><img src="https://cdnimg.melon.co.kr/cm/album/images/{{ img1 }}/{{ img2 }}/{{ img3 }}/{{ imgstr }}_500.jpg"></a>
+
+      {% endif %}
+    {% endfor %}
+
+  {% for item in sorted_albums %}
+    {% if item.tag contains tag %}
+    <div class="albumcaption cap-{{ item.idx }}">
+      {% if item.artist == None %} {% else %} {{ item.artist }} - {% endif %}{{ item.title }} {% if item.caption == None %}{% else %}| {{ item.caption }}{% endif %}
+    </div>
+    {% endif %}
+  {% endfor %}
+  </div>
+{% endfor %}
+
+
+
+
+
+<script type="text/javascript">
+if(window.location.hash) {
+  var tag = window.location.hash.split('#')[1];
+  filter(tag);
+}
+
+function filter(tag) {
+  setActiveTag(tag);
+  showContainer(tag);
+}
+function unfilter(tag) {
+  deActiveTag(tag);
+  showContainer('all');
+}
+
+function resetAll(){
+  /* loop through all items and remove active class */
+  var items = document.getElementsByClassName('tag-item');
+  for(var i=0; i < items.length; i++) {
+    items[i].setAttribute('class', 'tag-item');
+  }
+  /* loop through all items and remove active class */
+  var items = document.getElementsByClassName('tag-link');
+  for(var i=0; i < items.length; i++) {
+    var tag = items[i].id;
+    var linkurl = 'filter(\'' + tag + '\'); return false;';
+    items[i].setAttribute('class', 'tag-link');
+    items[i].setAttribute('onclick', linkurl);
+  }
+}
+function setActiveTag(tag) {
+  resetAll();
+  /* set the selected tag's item to active (for styling) */
+  var item = document.getElementById(tag + '-item');
+  if(item) {
+    item.setAttribute('class', 'tag-item active');
+  }
+  /* change the selected tag's link for filtering */
+  var item = document.getElementById(tag);
+  var linkurl = 'unfilter(\'' + tag + '\'); return false;';
+  if(item) {
+    item.setAttribute('class', 'tag-link active');
+    item.setAttribute('onclick', linkurl);
+  }
+}
+function deActiveTag(tag) {
+  resetAll();
+  /* change the selected tag's link for filtering */
+  var item = document.getElementById(tag);
+  var linkurl = 'filter(\'' + tag + '\'); return false;';
+  if(item) {
+    item.setAttribute('class', 'tag-link');
+    item.setAttribute('onclick', linkurl);
+  }
+}
+function showContainer(tag) {
+  /* loop through all lists and hide them */
+  var lists = document.getElementsByClassName('myalbums');
+  for(var i=0; i < lists.length; i++) {
+    lists[i].setAttribute('class', 'myalbums hidden');
+  }
+  /* remove the hidden class from the list corresponding to the selected tag */
+  var list = document.getElementById(tag + '-container');
+  if(list) {
+    list.setAttribute('class', 'myalbums');
+  }
+}
+</script>

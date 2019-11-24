@@ -21,14 +21,13 @@ permalink: /me/
 <br>
 
 
-Currently Ph.D. candidate in [SNU Data Mining Lab.](http://dm.snu.ac.kr/) and will graduate in August 2019.
+Currently a research staff in [Samsung Advanced Institute of Technology (SAIT)](https://www.sait.samsung.co.kr/saithome/main/main.do).
 
 I am interested in
 
 - Adopting deep learning models to various real world problems
-    - Real world problems including fraud detection, driving route prediction, root-cause identification, and so on.
-- Enhancing quality of generative modeling for face swapping
-    - Swapping identity in facial image while keeping facial expression and pose.
+    - Real world problems including fraud detection, fault detection, driving route prediction, root-cause identification, retrosynthesis, human activity recognition, and so on.
+    - Interpretability in modeling for both data scientists and domain experts.
 - Learning from tensor-shaped data
     - Tensors are high dimensional generalizations of vectors and matrices.
     - E.g., sensor signal, image, video, ...
@@ -40,7 +39,8 @@ I am familiar with Python and Matlab, and have experience with Java, R, C++, and
 
 ## Education
 
-- Ph.D. candidate, Industrial Engineering, Seoul National University.
+- Ph.D., Industrial Engineering, Seoul National University (Advisor: Sungzoon Cho).
+    - Dissertation: Supervised Deep Learning-based Anomaly Detection Models and Their Applications in Finance, Manufacturing, and Media
 - B.S., Mathematical Sciences, Seoul National University.
 
 ---
@@ -63,8 +63,17 @@ I am familiar with Python and Matlab, and have experience with Java, R, C++, and
 
 ###  Company
 
+- Intern, Samsung Fire & Marine Insurance, Jul 2019.
+- Guest Consultant, Deloitte, May-Jun 2019.
 - Intern, Naver Clova AI, Mar-Jun 2018.
 - Actuary, Kyobo Life Insurance, 2011-2013.
+
+---
+
+## Awards
+
+- Grand Prize in 2019 Industry-Academic Cooperation Excellence Paper Award, Seoul National University & Samsung Electronics, 2019.
+- Best Paper Award in 2018 Fall Conference of Korea Business Intelligence Data Mining Society, Korea Data Mining Society, 2018.
 
 ---
 
@@ -104,4 +113,4 @@ I am familiar with Python and Matlab, and have experience with Java, R, C++, and
 
 ### Books
 
-- Kenneth Reitz and Tanya Schlusser. The Hitchhiker's Guide to Python: Best Practices for Development. Translation to Korean ("파이썬을 여행하는 히치하이커를 위한 안내서: 모범 사례와 실용 라이브러리로 더 파이썬답게!". 도서출판 인사이트. 2017.)
+- Kenneth Reitz and Tanya Schlusser. The Hitchhiker's Guide to Python: Best Practices for Development. Translation to Korean ("파이썬을 여행하는 히치하이커를 위한 안내서: 모범 사례와 실용 라이브러리로 더 파이썬답게!". 도서출판 인사이트. 2017. ISBN: 9788966264070)
