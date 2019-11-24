@@ -1,110 +1,92 @@
-- idx: 0
-  img: 10051191
+- img: 10051191
   artist: Kendrick Lamar
   title: DAMN.
   caption: 
   tag: hip-hop grammy
   
-- idx: 1
-  img: 10047237
+- img: 10047237
   artist: Drake 
   title: More Life
   tag: hip-hop
 
-- idx: 2
-  img: 2179857
+- img: 2179857
   artist: Tyler, the Creater
   title: Wolf
   caption: 
   tag: hip-hop
 
-- idx: 3
-  img: 2296588
+- img: 2296588
   artist: The Quiett
   title: The Real Me
   caption: 
   tag: hip-hop
 
-- idx: 4
-  img: 10252289
+- img: 10252289
   artist: Cosmic Boy
   title: Can I Love ?
   tag: chill
 
-- idx: 5
-  img: 2688064
+- img: 2688064
   artist: Beenzino
   title: '12'
   tag: hip-hop
 
-- idx: 6
-  img: 2134788
+- img: 2134788
   artist: Beenzino
   title: '24:26'
   tag: hip-hop
 
-- idx: 7
-  img: 10057083
+- img: 10057083
   artist: Charlie Puth
   title: Voicenotes
   tag: pop
 
-- idx: 8
-  img: 2336976
+- img: 2336976
   artist: E SENS
   title: The Anecdote
   tag: hip-hop
 
-- idx: 9
-  img: 2665812
+- img: 2665812
   artist: Nucksal
   title: The God Of Small Things
   tag: hip-hop
 
-- idx: 10
-  img: 2223066
+- img: 2223066
   artist: Justin Bieber
   title: Journals
   tag: r&b
 
-- idx: 11
-  img: 10173581
+- img: 10173581
   artist: Jorja Smith
   title: Lost & Found
   tag: r&b
 
-- idx: 12
-  img: 2648944
+- img: 2648944
   artist: Jay Park
   title: WORLDWIDE
   tag: hip-hop
 
-- idx: 13
-  img: 2710254
+- img: 2710254
   artist: Post Malone
   title: Stoney
   tag: hip-hop
 
-- idx: 14
-  img: 2696745
+- img: 2696745
   artist: XXX
   title: KYOMI
   tag: hip-hop
 
-- idx: 15
-  img: 27232
+- img: 27232
   artist: 
   title: Sleepless In Seattle OST
   tag: calm ost
 
-- idx: 16
-  img: 2325255
+- img: 2325255
   artist: PEEJAY
   title: WALKIN Vol. 1
   tag: chill
 
-- idx: 17
-  img: 2709060
+- img: 2709060
   artist: Aminé
   title: Good for You
   tag: hip-hop
@@ -115,80 +97,332 @@
 #   title: 'Jazz In Paris, Vol. 53: Chet Baker Quartet Playes Standars'
 #   tag: calm jazz
 
-- idx: 19
-  img: 10255292
+- img: 10255292
   artist: Mac Ayres
   title: Something To Feel
   tag: chill
 
-- idx: 20
-  img: 10121548
+- img: 10121548
   artist: Yaeji
   title: EP2
   tag: midnight chill
 
-- idx: 21
-  img: 2287778
+- img: 2287778
   artist: Taylor Swift
   title: '1989'
   tag: pop
 
-- idx: 22
-  img: 2651660
+- img: 2651660
   artist: Nick Jonas
   title: Nick Jonas X2
   tag: pop
 
-- idx: 23
-  img: 717960
+- img: 717960
   artist: Creed
   title: Greatest Hits
-  tag: rock
+  tag: rock grunge
 
-- idx: 24
-  img: 5652937
+- img: 5652937
   artist: The Cardigans
   title: Emmerdale
-  tag: pop rock
+  tag: pop rock calm
 
-- idx: 25
-  img: 10215798
+- img: 10215798
   artist: Major Lazer
   title: Major Lazer Essentials
-  tag: electronic pop
+  tag: electronic pop energetic
 
-- idx: 26
-  img: 10146906
+- img: 10146906
   artist: MUZIE
   title: I Can't Let You Go
   tag: pop
 
-- idx: 27
-  img: 23249
+- img: 23249
   artist: Dream Theater
   title: Awake
   tag: rock
 
-- idx: 28
-  img: 32804
+- img: 32804
   artist: Muse
   title: Absolution
   tag: rock
 
-- idx: 29
-  img: 20299
+- img: 20299
   artist: Radiohead
   title: OK Computer
   tag: cynical rock
 
-- idx: 30
-  img: 10023598
+- img: 10023598
   artist: Goldlink
   title: Crew (Feat. Shy Glizzy)
   tag: hip-hop
 
-- idx: 31
-  img: 4328106
+- img: 4328106
   artist: Bobby Caldwell
   title: What You Won`t Do for Love
-  tag: jazz
+  tag: jazz 1970s
+
+- img: 5655865
+  artist: Player
+  title: Player
+  tag: rock 1970s
+
+- img: 30954
+  artist: Evanescence
+  title: Fallen
+  tag: rock
+
+- img: 10084781
+  artist: Cigarettes After Sex
+  title: igarettes After Sex
+  tag: dreamy rock
+
+- img: 2176139
+  artist: The Quiett
+  title: AMBITIQN
+  tag: hip-hop 0to100
+
+- img: 2645051
+  artist: The Quiett
+  title: 1 Life 2 Live
+  tag: hip-hop 0to100
+
+- img: 42076
+  artist: Hamasaki Ayumi
+  title: I Am...
+  tag: j-pop motivating
+
+- img: 2202008
+  artist: 김간지x하헌진
+  title: 김간지x하헌진
+  tag: blues indie rock
+
+- img: 2307764
+  artist: Jack U
+  title: Skrillex And Diplo Present Jack U
+  tag: Electronic
+
+- img: 10211420
+  artist: QUAVO
+  title: QUAVO HUNCHO
+  tag: hip-hop
+
+- img: 4163973
+  artist: Huncho Jack, Travis Scott, Quavo
+  title: Huncho Jack, Jack Huncho
+  tag: hip-hop
+
+- img: 10011914
+  artist: Migos
+  title: Culture
+  tag: hip-hop
+
+- img: 10191224
+  artist: Travis Scott
+  title: ASTROWORLD
+  tag: hip-hop
+
+- img: 10267565
+  artist: Billie Eilish
+  title: WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?
+  tag: pop
+
+- img: 10089733
+  artist: Billie Eilish
+  title: dont smile at me
+  tag: pop
+
+- img: 16713
+  artist: BoA
+  title: Miracle
+  tag: pop
+
+- img: 2175786
+  artist: Sultan of the Disco
+  title: The Golden Age
+  tag: dance disco indie
+
+- img: 10242129
+  artist: Angelo De Augustine
+  title: Tomb
+  tag: alternative
+
+- img: 10235768
+  artist: Bad Bunny
+  title: X 100PRE
+  tag: hip-hop
+
+- img: 2153261
+  artist: BoA
+  title: Younique Album LOOKIN`
+  tag: pop
+
+- img: 301972
+  artist: BoA
+  title: メリクリ / Merry-Chri
+  tag: ballad
+
+- img: 10269853
+  artist: BoA
+  title: スキだよ -MY LOVE-／SUKIDAYO -MY LOVE-
+  tag: j-pop
+
+- img: 169
+  artist: Buena Vista Social Club
+  title: Buena Vista Social Club
+  tag: world
+
+- img: 10286304
+  artist: C JAMM
+  title: 킁 (Keung)
+  tag: hip-hop
+
+- img: 10042493
+  artist: Calvin Harris
+  title: Funk Wav Bounces Vol.1
+  tag: pop electronica
+
+- img: 20189
+  artist: The Cardigans
+  title: First Band On The Moon
+  tag: rock pop
+
+- img: 10302058
+  artist: Charlotte Gainsbourg
+  title: "5:55"
+  tag: alternative
+
+- img: 10020316
+  artist: Childish Gambino
+  title: "`Awaken, My Love!`"
+  tag: r&b soul
+
+- img: 10184511
+  artist: Childish Gambino
+  title: Summer Pack
+  tag: summer r&b soul
+
+- img: 10313400
+  artist: Clairo
+  title: Immunity
+  tag: pop alternative
+
+- img: 228
+  artist: Coldplay
+  title: Parachutes
+  tag: rock alternative
+
+- img: 2185777
+  artist: Daft Punk
+  title: Random Access Memories
+  tag: electronic pop
+
+- img: 2187465
+  artist: Disclosure
+  title: Settle
+  tag: electronic
+
+- img: 10298248
+  artist: Divino Niño
+  title: Foam
+  tag: indie rock
+
+- img: 33571
+  artist: DJ DOC
+  title: The Life... DOC Blues 5%
+  tag: blues hip-hop ballad
+
+- img: 10263715
+  artist: Earth, Wind & Fire
+  title: Greatest Hits
+  tag: r&b soul
+
+- img: 625659
+  artist: Toto
+  title: Fahrenheit
+  tag: calm
+
+- img: 342094
+  artist: Toto
+  title: Toto IV
+  tag: pop
+
+- img: 10044817
+  artist: Elliott Smit
+  title: Either/Or
+  tag: rock folk
+
+- img: 24633
+  artist: Eminem
+  title: The Eminem Show
+  tag: hip-hop
+
+- img: 1030451
+  artist: Gain
+  title: Step 2/4
+  tag: pop
+
+- img: 133841
+  artist: George Harrison
+  title: All Things Must Pass
+  tag: rock pop 1970s
+
+- img: 2688058
+  artist: GIRIBOY
+  title: Mechanical Album
+  tag: pop hip-hop
+
+- img: 19794
+  artist: Guns N' Roses
+  title: Appetite for Destruction
+  tag: hardrock
+
+- img: 27730
+  artist: Guns N' Roses
+  title: Use Your Illusion I
+  tag: hardrock
+
+- img: 24180
+  artist: Guns N' Roses
+  title: Use Your Illusion II
+  tag: hardrock
+
+- img: 10038238
+  artist: HOMESHAKE
+  title: Midnight Snack
+  tag: indie rock midnight chill
+
+- img: 2327837
+  artist: The Internet
+  title: Ego Death
+  tag: r&b soul
+
+- img: 2337419
+  artist: Justin Bieber
+  title: Purpose
+  tag: pop
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 

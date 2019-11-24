@@ -60,7 +60,9 @@ permalink: /music/
     clear:both}
     
 .myalbums{
+    margin-left: 30px;
     position:relative;
+    text-align: center;
     margin-bottom:15px}
     
 .myalbum{
@@ -76,12 +78,12 @@ permalink: /music/
     border-radius:10px}
 
   {% for item in sorted_albums %}
-    .myalbum.img-{{ item.idx }}:hover ~ .cap-{{ item.idx }}{% if forloop.last == false %},{% endif %}
+    .myalbum.img-{{ item.img }}:hover ~ .cap-{{ item.img }}{% if forloop.last == false %},{% endif %}
   {% endfor %} 
   {display:block}
 
 /* .post-list>li{vertical-align:middle;margin-bottom:17.5px} */
-.albumcaption, .albumcaption2{
+.albumcaption{
   display:none;
   top:100%;
   line-height:1;
@@ -113,7 +115,8 @@ permalink: /music/
   </span>
 </div>
 
-<h1 class="page-heading"></h1>
+<br>
+<hr>
 
 <div class="myalbums" id='all-container'>
   {% for item in sorted_albums %}
@@ -123,7 +126,10 @@ permalink: /music/
     {% assign img3 = imgstr | slice: -3, 3 %}
 
     {% assign imgsize = imgstr.size %}
-    {% if imgsize == 5 %}
+    {% if imgsize == 3 %}
+        {% assign img1 = "000" %}
+        {% assign img2 = "00" %}
+    {% elsif imgsize == 5 %}
         {% assign img1 = "000" %}
     {% elsif imgsize == 6 %}
         {% assign prefix = imgstr | slice: 0, 1 %}
@@ -134,11 +140,11 @@ permalink: /music/
     {% elsif imgsize == 8 %}
         {% assign img1 = imgstr | slice: 0, 3 %}
     {% endif %}
-    <a href="https://www.melon.com/album/detail.htm?albumId={{item.img}}" class="img-{{ item.idx }} myalbum" target="_blank"><img src="https://cdnimg.melon.co.kr/cm/album/images/{{ img1 }}/{{ img2 }}/{{ img3 }}/{{ imgstr }}_500.jpg"></a>
+    <a href="https://www.melon.com/album/detail.htm?albumId={{item.img}}" class="img-{{ item.img }} myalbum" target="_blank"><img src="https://cdnimg.melon.co.kr/cm/album/images/{{ img1 }}/{{ img2 }}/{{ img3 }}/{{ imgstr }}_500.jpg"></a>
   {% endfor %}
 
   {% for item in sorted_albums %}
-    <div class="albumcaption cap-{{ item.idx }}">
+    <div class="albumcaption cap-{{ item.img }}">
       {% if item.artist == None %} {% else %} {{ item.artist }} - {% endif %}{{ item.title }} {% if item.caption == None %}{% else %}| {{ item.caption }}{% endif %}
     </div>
   {% endfor %}
@@ -151,9 +157,9 @@ permalink: /music/
   {% for item in sorted_albums %}
     {% if item.tag contains tag %}
       {% if album_ids == '' %}
-        {% assign album_ids = album_ids | append: '' | append: item.idx %}
+        {% assign album_ids = album_ids | append: '' | append: item.img %}
       {% else %}
-        {% assign album_ids = album_ids | append: '|' | append: item.idx %}
+        {% assign album_ids = album_ids | append: '|' | append: item.img %}
       {% endif %}
     {% endif %}
   {% endfor %}
@@ -177,7 +183,10 @@ permalink: /music/
         {% assign img3 = imgstr | slice: -3, 3 %}
     
         {% assign imgsize = imgstr.size %}
-        {% if imgsize == 5 %}
+        {% if imgsize == 3 %}
+            {% assign img1 = "000" %}
+            {% assign img2 = "00" %}
+        {% elsif imgsize == 5 %}
             {% assign img1 = "000" %}
         {% elsif imgsize == 6 %}
             {% assign prefix = imgstr | slice: 0, 1 %}
@@ -189,14 +198,14 @@ permalink: /music/
             {% assign img1 = imgstr | slice: 0, 3 %}
         {% endif %}
     
-        <a href="https://www.melon.com/album/detail.htm?albumId={{item.img}}" class="img-{{ item.idx }} myalbum" target="_blank"><img src="https://cdnimg.melon.co.kr/cm/album/images/{{ img1 }}/{{ img2 }}/{{ img3 }}/{{ imgstr }}_500.jpg"></a>
+        <a href="https://www.melon.com/album/detail.htm?albumId={{item.img}}" class="img-{{ item.img }} myalbum" target="_blank"><img src="https://cdnimg.melon.co.kr/cm/album/images/{{ img1 }}/{{ img2 }}/{{ img3 }}/{{ imgstr }}_500.jpg"></a>
 
       {% endif %}
     {% endfor %}
 
   {% for item in sorted_albums %}
     {% if item.tag contains tag %}
-    <div class="albumcaption cap-{{ item.idx }}">
+    <div class="albumcaption cap-{{ item.img }}">
       {% if item.artist == None %} {% else %} {{ item.artist }} - {% endif %}{{ item.title }} {% if item.caption == None %}{% else %}| {{ item.caption }}{% endif %}
     </div>
     {% endif %}
