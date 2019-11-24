@@ -46,8 +46,12 @@
   display: flex;
 }
 /* Create two equal columns that sits next to each other */
-.column {
-  flex: 50%;
+.column1 {
+  flex: none;
+  padding: 10px;
+}
+.column2 {
+  // flex: 50%;
   padding: 10px;
 }
 
