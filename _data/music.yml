@@ -140,7 +140,7 @@
 - img: 23249
   artist: Dream Theater
   title: Awake
-  tag: rock
+  tag: hardrock rock
 
 - img: 32804
   artist: Muse
@@ -167,10 +167,10 @@
   title: Player
   tag: rock 1970s
 
-- img: 30954
-  artist: Evanescence
-  title: Fallen
-  tag: rock
+# - img: 30954
+#   artist: Evanescence
+#   title: Fallen
+#   tag: rock
 
 - img: 10084781
   artist: Cigarettes After Sex
@@ -200,7 +200,7 @@
 - img: 2307764
   artist: Jack U
   title: Skrillex And Diplo Present Jack U
-  tag: Electronic
+  tag: electronic
 
 - img: 10211420
   artist: QUAVO
@@ -280,7 +280,7 @@
 - img: 10042493
   artist: Calvin Harris
   title: Funk Wav Bounces Vol.1
-  tag: pop electronica
+  tag: pop electronic
 
 - img: 20189
   artist: The Cardigans
@@ -330,7 +330,7 @@
 - img: 33571
   artist: DJ DOC
   title: The Life... DOC Blues 5%
-  tag: blues hip-hop ballad
+  tag: blues hip-hop ballad cynical
 
 - img: 10263715
   artist: Earth, Wind & Fire
@@ -377,15 +377,15 @@
   title: Appetite for Destruction
   tag: hardrock
 
-- img: 27730
-  artist: Guns N' Roses
-  title: Use Your Illusion I
-  tag: hardrock
+# - img: 27730
+#   artist: Guns N' Roses
+#   title: Use Your Illusion I
+#   tag: hardrock
 
-- img: 24180
-  artist: Guns N' Roses
-  title: Use Your Illusion II
-  tag: hardrock
+# - img: 24180
+#   artist: Guns N' Roses
+#   title: Use Your Illusion II
+#   tag: hardrock
 
 - img: 10038238
   artist: HOMESHAKE
@@ -401,6 +401,156 @@
   artist: Justin Bieber
   title: Purpose
   tag: pop
+
+- img: 69530
+  artist: Hirosue Ryoko
+  title: Rh Singles &
+  tag: j-pop
+
+- img: 10281273
+  artist: OLNL
+  title: Cyber Lover
+  tag: winter chill
+
+- img: 4165857
+  artist: JAY-Z
+  title: Magna Carta... Holy Grail
+  tag: hip-hop
+
+# - img: 2228802
+#   artist: Gain
+#   title: Truth Or Dare
+#   tag: pop
+
+# - img: 2307996
+#   artist: Gain
+#   title: Hawwah
+#   tag: pop
+
+- img: 10016438
+  artist: 
+  title: La La Land OST
+  tag: ost
+
+- img: 301627
+  artist: Gwen Stefani
+  title: Love, Angel, Music, Baby
+  tag: pop
+
+- img: 23530
+  artist: No Doubt
+  title: Tragic Kingdom
+  tag: rock
+
+- img: 10361683
+  artist: Taylor Swift
+  title: Christmas Tree Farm
+  tag: pop winter carol
+
+- img: 2149122
+  artist: Achime
+  title: Overcome
+  tag: rock indie
+
+- img: 10337527
+  artist: Harry Styles
+  title: Fine Line
+  tag: pop
+
+- img: 10038305
+  artist: Soyou x Baekhyun
+  title: Rain
+  tag: ballad
+
+- img: 34064
+  artist: Boa
+  title: Valenti
+  tag: j-pop 
+
+- img: 29396
+  artist: Tahiti 80
+  title: Wallpaper For The Soul
+  tag: rock
+
+- img: 2180913
+  artist: Zion.T
+  title: Red Light
+  tag: hip-hop
+
+- img: 10093386
+  artist: Peejay
+  title: WALKIN` Vol.2
+  tag: hip-hop r&b
+
+- img: 1053151
+  artist: Jazzyfact
+  title: Lifes Like
+  tag: hip-hop midnight
+
+- img: 10374358
+  artist: Mac Miller
+  title: Circles
+  tag: chill 
+
+- img: 34319
+  artist: Nirvana
+  title: Nevermind
+  tag: rock grunge alternative
+
+- img: 10355549
+  artist: Mac Miller
+  title: Watching Movies with the Sound Off
+  tag: gloomy dreamy
+
+- img: 10317832
+  artist: Cagnet
+  title: Long Vacation OST
+  tag: ost
+
+- img: 352432
+  artist: Ryo Yoshimata
+  title: 空から降る一億の星 OST
+  tag: ost calm
+
+# - img: 
+#   artist: Peggy Gou
+#   title: 
+#   tag: 
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 
 
 # - img: 
 #   artist: 

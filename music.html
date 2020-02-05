@@ -19,38 +19,6 @@ permalink: /music/
 
 
 <style>
-/* .myphotos:before,
-.myphotos:after,
-.caption:before,
-.caption:after{
-  content:"";display:block;clear:both
-}
-.myphotos{
-  position:relative;margin-bottom:15px
-}
-
-.myphoto{
-  display:inline-block;margin-right:15px;margin-bottom:15px;float:left
-}
-
-.myphoto img{
-  background-color:#f0f0f0;width:50px;height:50px;border-radius:10px}
-
-.myphoto.p-l:hover ~ .c-l,.myphoto.p-0:hover ~ .c-0,.myphoto.p-1:hover ~ .c-1,.myphoto.p-2:hover ~ .c-2,.myphoto.p-3:hover ~ .c-3,.myphoto.p-4:hover ~ .c-4,.myphoto.p-5:hover ~ .c-5,.myphoto.p-6:hover ~ .c-6,.myphoto.p-7:hover ~ .c-7,.myphoto.p-8:hover ~ .c-8,.myphoto.p-9:hover ~ .c-9,.myphoto.p-10:hover ~ .c-10,.myphoto.p-11:hover ~ .c-11,.myphoto.p-12:hover ~ .c-12,.myphoto.p-13:hover ~ .c-13,.myphoto.p-14:hover ~ .c-14,.myphoto.p-15:hover ~ .c-15,.myphoto.p-16:hover ~ .c-16,.myphoto.p-17:hover ~ .c-17,.myphoto.p-18:hover ~ .c-18,.myphoto.p-19:hover ~ .c-19,.myphoto.p-20:hover ~ .c-20,.myphoto.p-21:hover ~ .c-21,.myphoto.p-22:hover ~ .c-22,.myphoto.p-23:hover ~ .c-23,.myphoto.p-24:hover ~ .c-24,.myphoto.p-25:hover ~ .c-25,.myphoto.p-26:hover ~ .c-26,.myphoto.p-27:hover ~ .c-27,.myphoto.p-28:hover ~ .c-28,.myphoto.p-29:hover ~ .c-29,.myphoto.p-30:hover ~ .c-30,.myphoto.p-31:hover ~ .c-31,.myphoto.p-32:hover ~ .c-32,.myphoto.p-33:hover ~ .c-33,.myphoto.p-34:hover ~ .c-34,.myphoto.p-35:hover ~ .c-35,.myphoto.p-36:hover ~ .c-36,.myphoto.p-37:hover ~ .c-37,.myphoto.p-38:hover ~ .c-38,.myphoto.p-39:hover ~ .c-39
-{display:block}
-
-.caption{display:none;top:100%;line-height:1;font-size:0.95em;position:absolute}
-
-.post-list{
-  margin-left:0;list-style:none
-}
-.post-list>li{
-  vertical-align:middle;margin-bottom:17.5px
-}
-.hidden{display:none !important;visibility:hidden !important} */
-
-
-
 .myalbums:before,
 .myalbums:after,
 .albumcaption:before,
@@ -72,7 +40,7 @@ permalink: /music/
     float:left}
     
 .myalbum img{
-    background-color:#f0f0f0;
+    background-color:#9c7979;
     width:50px;
     height:50px;
     border-radius:10px}
@@ -82,7 +50,6 @@ permalink: /music/
   {% endfor %} 
   {display:block}
 
-/* .post-list>li{vertical-align:middle;margin-bottom:17.5px} */
 .albumcaption{
   display:none;
   top:100%;
@@ -91,7 +58,7 @@ permalink: /music/
   position:absolute}
 </style>
 
-<h2 class="page-heading">Favorite Music</h2>
+<h2 class="page-heading">Music Shelves</h2>
 
 <div class="row">
   <span class="left">
@@ -140,7 +107,13 @@ permalink: /music/
     {% elsif imgsize == 8 %}
         {% assign img1 = imgstr | slice: 0, 3 %}
     {% endif %}
-    <a href="https://www.melon.com/album/detail.htm?albumId={{item.img}}" class="img-{{ item.img }} myalbum" target="_blank"><img src="https://cdnimg.melon.co.kr/cm/album/images/{{ img1 }}/{{ img2 }}/{{ img3 }}/{{ imgstr }}_500.jpg"></a>
+    {% if item.img > 10320000 %}
+      {% assign cm = "cm2" %}
+    {% else %}
+      {% assign cm = "cm" %}
+    {% endif %}
+
+    <a href="https://www.melon.com/album/detail.htm?albumId={{item.img}}" class="img-{{ item.img }} myalbum" target="_blank"><img src="https://cdnimg.melon.co.kr/{{ cm }}/album/images/{{ img1 }}/{{ img2 }}/{{ img3 }}/{{ imgstr }}_500.jpg"></a>
   {% endfor %}
 
   {% for item in sorted_albums %}
@@ -163,8 +136,6 @@ permalink: /music/
       {% endif %}
     {% endif %}
   {% endfor %}
-  <!-- <br>>>>>>>> {{ tag }} : {{ album_ids }} <<<<<<<<br>
-  {% assign album_ids = album_ids | split: '|' %} -->
 
   <div class="myalbums hidden" id="{{ tag }}-container">
     {% assign num_albums = album_ids | size %}
@@ -198,7 +169,13 @@ permalink: /music/
             {% assign img1 = imgstr | slice: 0, 3 %}
         {% endif %}
     
-        <a href="https://www.melon.com/album/detail.htm?albumId={{item.img}}" class="img-{{ item.img }} myalbum" target="_blank"><img src="https://cdnimg.melon.co.kr/cm/album/images/{{ img1 }}/{{ img2 }}/{{ img3 }}/{{ imgstr }}_500.jpg"></a>
+        {% if item.img > 10320000 %}
+          {% assign cm = "cm2" %}
+        {% else %}
+          {% assign cm = "cm" %}
+        {% endif %}
+    
+        <a href="https://www.melon.com/album/detail.htm?albumId={{item.img}}" class="img-{{ item.img }} myalbum" target="_blank"><img src="https://cdnimg.melon.co.kr/{{ cm }}/album/images/{{ img1 }}/{{ img2 }}/{{ img3 }}/{{ imgstr }}_500.jpg"></a>
 
       {% endif %}
     {% endfor %}

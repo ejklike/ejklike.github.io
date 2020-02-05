@@ -21,7 +21,7 @@ permalink: /me/
 <br>
 
 
-Currently a research staff in [Samsung Advanced Institute of Technology (SAIT)](https://www.sait.samsung.co.kr/saithome/main/main.do).
+Currently a staff researcher in [Samsung Advanced Institute of Technology (SAIT)](https://www.sait.samsung.co.kr/saithome/main/main.do).
 
 I am interested in
 
@@ -63,6 +63,7 @@ I am familiar with Python and Matlab, and have experience with Java, R, C++, and
 
 ###  Company
 
+- Staff researcher, Samsung Advanced Institute of Technology (SAIT), Oct 2019 - Present.
 - Intern, Samsung Fire & Marine Insurance, Jul 2019.
 - Guest Consultant, Deloitte, May-Jun 2019.
 - Intern, Naver Clova AI, Mar-Jun 2018.
@@ -96,10 +97,10 @@ I am familiar with Python and Matlab, and have experience with Java, R, C++, and
  <ul>
 {% for item in site.data.journals %}
   <li>
-      {{ item.author | replace: 'Eunji Kim', '<u>Eunji Kim</u>' }} ({{ item.year }}), "{{ item.title }}." {{ item.journal }} {{ item.volnopage }}. ({{ item.sci }})
+      {{ item.author | replace: 'Eunji Kim', '<u>Eunji Kim</u>' }} ({{ item.year }}), "{{ item.title }}." {{ item.journal }} {{ item.volnopage }}.
   </li>
 {% endfor %}
-</ul>  
+</ul>
 
 ### Conferences
 
