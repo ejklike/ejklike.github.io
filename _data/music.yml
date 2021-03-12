@@ -174,7 +174,7 @@
 
 - img: 10084781
   artist: Cigarettes After Sex
-  title: igarettes After Sex
+  title: Cigarettes After Sex
   tag: dreamy rock
 
 - img: 2176139
@@ -192,30 +192,30 @@
   title: I Am...
   tag: j-pop motivating
 
-- img: 2202008
-  artist: 김간지x하헌진
-  title: 김간지x하헌진
-  tag: blues indie rock
+# - img: 2202008
+#   artist: 김간지x하헌진
+#   title: 김간지x하헌진
+#   tag: blues indie rock
 
 - img: 2307764
   artist: Jack U
   title: Skrillex And Diplo Present Jack U
   tag: electronic
 
-- img: 10211420
-  artist: QUAVO
-  title: QUAVO HUNCHO
-  tag: hip-hop
+# - img: 10211420
+#   artist: QUAVO
+#   title: QUAVO HUNCHO
+#   tag: hip-hop
 
-- img: 4163973
-  artist: Huncho Jack, Travis Scott, Quavo
-  title: Huncho Jack, Jack Huncho
-  tag: hip-hop
+# - img: 4163973
+#   artist: Huncho Jack, Travis Scott, Quavo
+#   title: Huncho Jack, Jack Huncho
+#   tag: hip-hop
 
-- img: 10011914
-  artist: Migos
-  title: Culture
-  tag: hip-hop
+# - img: 10011914
+#   artist: Migos
+#   title: Culture
+#   tag: hip-hop
 
 - img: 10191224
   artist: Travis Scott
@@ -272,10 +272,10 @@
   title: Buena Vista Social Club
   tag: world
 
-- img: 10286304
-  artist: C JAMM
-  title: 킁 (Keung)
-  tag: hip-hop
+# - img: 10286304
+#   artist: C JAMM
+#   title: 킁 (Keung)
+#   tag: hip-hop
 
 - img: 10042493
   artist: Calvin Harris
@@ -412,7 +412,7 @@
   title: Cyber Lover
   tag: winter chill
 
-- img: 4165857
+- img: 2191817
   artist: JAY-Z
   title: Magna Carta... Holy Grail
   tag: hip-hop
@@ -538,7 +538,7 @@
   tag: winter gloomy
 
 - img: 18384
-  artist: Sade???
+  artist: Sade
   title: The Best of Sade
   tag: 1980s
 
@@ -551,6 +551,66 @@
   artist: Amy Winehouse
   title: Back To Black
   tag: uk soul r&b
+
+- img: 10174912
+  artist: cos
+  title: coffee or coke
+  tag: chill instrumental jazz lofi beat dreamy
+
+- img: 10375635
+  artist: cos
+  title: a week in hawaii
+  tag: chill instrumental jazz lofi beat
+
+- img: 2104466
+  artist: Primary
+  title: Too Far
+  tag: gloomy hip-hop 
+
+- img: 310191
+  artist: Daft Punk
+  title: Discovery
+  tag: electronic
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 
+
+# - img: 
+#   artist: 
+#   title: 
+#   tag: 
 
 # - img: 
 #   artist: 
