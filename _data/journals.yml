@@ -1,41 +1,48 @@
+- author: Eunji Kim, Dongseon Lee*, Youngchun Kwon, Min Sik Park, and Youn-Suk Choi*
+  year: 2021
+  title: Valid, Plausible, and Diverse Retrosynthesis Using Tied Two-Way Transformers with Latent Variables
+  journal: Journal of Chemical Information and Modeling
+  volnopage: "61(1): 123–133"
+  url: https://pubs.acs.org/doi/10.1021/acs.jcim.0c01074
+
 - author: Eunji Kim*
-  year: 2020+
+  year: 2020
   title: Interpretable and Accurate Convolutional Neural Networks for Human Activity Recognition
-  journal: IEEE Transactions on Industrial Informatics,
-  volnopage: Accepted for publication
-  sci: SCIE
+  journal: IEEE Transactions on Industrial Informatics
+  volnopage: "16(11): 7190-7198"
+  url: https://ieeexplore.ieee.org/document/8990002
 
 - author: Eunji Kim, Sungzoon Cho*, Byeongeon Lee, Myoungsu Cho
   year: 2019
   title: Fault Detection and Diagnosis Using Self-Attentive Convolutional Neural Networks for Variable-length Sensor Data in Semiconductor Manufacturing
   journal: IEEE Transactions on Semiconductor Manufacturing
   volnopage: "32(3): 302-309"
-  sci: SCI
+  url: https://ieeexplore.ieee.org/document/8717673
   
 - author: Eunji Kim, Jehyuk Lee, Hunsik Shin, Hoseong Yang, Sungzoon Cho*, Seung-kwan Nam, Youngmi Song, Jeong-a Yoon, Jong-il Kim
   year: 2019
   title: "Champion-challenger analysis for credit card fraud detection: Hybrid ensemble and deep learning"
   journal: Expert Systems with Applications
   volnopage: "128: 214-224"
-  sci: SCIE
+  url: https://www.sciencedirect.com/science/article/abs/pii/S0957417419302167
 
 - author: Seokho Kang, Eunji Kim, Jaewoong Shim, Wonsang Chang, Sungzoon Cho*
   year: 2018
   title: Product failure prediction with missing data
   journal: International Journal of Production Research
   volnopage: "56(14): 4849-4859"
-  sci: SCI
+  url: https://www.tandfonline.com/doi/abs/10.1080/00207543.2017.1407883?journalCode=tprs20
 
 - author: Jiwon Yang, Eunji Kim, Minhoe Hur, Sungzoon Cho*, Myungbin Han, Iksang Seo
   year: 2018
   title: Knowledge extraction and visualization of digital design process
   journal: Expert Systems with Applications
   volnopage: "92: 206-215"
-  sci: SCIE
+  url: https://www.sciencedirect.com/science/article/abs/pii/S0957417417306036
 
 - author: Seokho Kang, Eunji Kim, Jaewoong Shim, Sungzoon Cho*, Wonsang Chang, Junhwan Kim
   year: 2017
   title: Mining the relationship between production and customer service data for failure analysis of industrial products
   journal: Computers & Industrial Engineering
   volnopage: "106: 137-146"
-  sci: SCIE
+  url: https://www.sciencedirect.com/science/article/abs/pii/S0360835217300451

@@ -4,6 +4,7 @@
   koorg: 현대자동차
   enorg: Hyundai Motors
   duration: 2017.08 - 2017.12
+  logo: hyundai-motor-company
 
 - position: PM
   kotitle: 딥러닝을 활용한 해외 오프라인 사기탐지 모형 개발
@@ -11,6 +12,7 @@
   koorg: 국민카드
   enorg: KB Card
   duration: 2017.03 - 2017.04
+  logo: kbcard
 
 - position: PM
   kotitle: 딥러닝을 활용한 해외 오프라인 사기탐지 모형 고도화
@@ -18,48 +20,72 @@
   koorg: 신한카드
   enorg: Shinhan Card
   duration: 2016.09 - 2017.02
+  logo: shinhancard
 
-- position: PL
+- position:
   kotitle: 민원 발생가능 고객 사전 예측
   entitle: Developing Models to predict Customer Complaints
   koorg: 현대카드
   enorg: Hyundai Card
   duration: 2016.09 - 2017.01
+  logo: hyundai-card
+
+- position:
+  kotitle: 머신러닝 기반 상담원 퇴직 징후 조기알림
+  entitle: Machine-learning based Prediction of retirement of Customer Service Representative
+  koorg: 현대카드
+  enorg: Hyundai Card
+  duration: 2016.09 - 2017.01
+  logo: hyundai-card
+
+- position:
+  kotitle: 머신러닝 기반 고객 중도 상환 예측
+  entitle: Machine Learning based Clien Prepayment Prediction
+  koorg: 현대카드
+  enorg: Hyundai Card
+  duration: 2016.09 - 2017.01
+  logo: hyundai-card
+
 
 - position: PM
   kotitle: 기계학습을 활용한 데이터 기반 진단, 고장예지 및 내구성평가 기술 연구
-  entitle: Machine Learning-based Diagnosis and Failure Prediction for Semiconductor Manufacturing
+  entitle: Machine Learning-based Fault Diagnosis and Failure Prediction
   koorg: 삼성전자
   enorg: Samsung Electronics
   duration: 2015.07 - 2016.06
+  logo: samsungsaengsan
 
-- position: PL
+- position:
   kotitle: 가전제품 필드 failure와 검사항목 관계 이해
   entitle: Data Mining for Product Quality Management of Home Appliances
   koorg: 삼성전자
   enorg: Samsung Electronics
   duration: 2015.03 - 2015.08
+  logo: samsungjejo
 
-- position: PL
+- position:
   kotitle: FDC 센서 값을 활용한 수율 예측 및 관리
   entitle: Yield Prediction using FDC sensor data for Semiconductor Manufacturing
   koorg: 삼성전자
   enorg: Samsung Electronics
   duration: 2014.10 - 2015.04
+  logo: samsungds
 
-- position: PE
+- position:
   kotitle: 자동차 부품 설계 검증 데이터 텍스트 분석
   entitle: Automotive Parts Design & Verification Text Analysis
   koorg: 현대자동차
   enorg: Hyundai Motors
   duration: 2014.04 - 2014.09
+  logo: hyundai-motor-company
 
-- position: PE
+- position:
   kotitle: 자동차 센서 데이터의 분석 방향 및 가용 알고리즘 탐색
   entitle: Machine Learning Algorithm Exploration for Automotive Sensor Data
   koorg: 현대자동차
   enorg: Hyundai Motors
   duration: 2013.12 - 2014.03
+  logo: hyundai-motor-company
 
 # - position: 
 #   kotitle: 

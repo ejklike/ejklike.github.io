@@ -1,0 +1,29 @@
+/**
+ * Blog post listing
+ */
+
+.post-list {
+    padding: 0;
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        vertical-align: middle;
+        margin-bottom: $spacing-unit*0.5;
+    }
+    *:focus {
+        outline: none;
+    }
+}
+
+.hidden {
+  display: none!important;
+  visibility: hidden!important;
+}
+
+.post-meta {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    color: $grey-color;
+}
+

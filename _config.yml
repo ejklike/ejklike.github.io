@@ -1,7 +1,11 @@
 # Site settings
-title: Study Note
+title: Eunji Kim @ CAU
 author: Eunji Kim
-email: eunjikim@dm.snu.ac.kr
+email_txt: eunjikim [at] cau.ac.kr
+office_ko: 310관 1119호
+office_en: Centennial Bldg (Bldg. 310) Room 1119
+address_ko: 서울특별시 동작구 흑석로 84 중앙대학교 310관(100주년기념관) 1119호
+address_en: Room 1119, Bldg 310, 84, Heukseok-ro, Dongjak-gu, Seoul 06974, South Korea
 url: "http://ejklike.github.io" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
 
@@ -9,59 +13,10 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 markdown: kramdown
 gems:
   - jemoji
-excerpt_separator: <!--more-->
+  - jekyll-email-protect
+  - jekyll-github-metadata
 sass:
   sass_dir: _sass
   style: compressed
 
-
-
-
-
-
-# assets:
-#   sources:
-#     - assets/NotoSans
-
-
-  # js_compressor:  uglifier
-  
-# compress_html:
-#   clippings: all
-#   comments: ["<!-- ", " -->"]
-#   endings: all
-#   ignore:
-#     envs: [local]
-#   blanklines: false
-#   startings: [html, head, body]
-  # profile: true
-  
 exclude: [img]
-
-
-# github_username:  ejklike
-# description: "machine learning, statistical learning, pattern recognition, deep learning, data, datamining, data mining, data scientist, python, programming"
-
-# kramdown:
-  # input: GFM
-  # syntax_highlighter: rouge
-
-  # - jekyll-paginate
-# paginate: 1
-# paginate_path: "/page:num/"
-
-# post:
-#   template: _post.txt
-#   extension: md
-
-# page:
-#   template: _page.txt
-#   extension: md
-# editor: gvim
-# git:
-#   branch: master
-# transfer:
-#   command: rsync
-#   settings: -av
-#   source: _site/
-#   destination: ~/Git/username.github.com/

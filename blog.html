@@ -4,11 +4,13 @@ title: Blog
 permalink: /blog/
 ---
 
+<h1>Blog</h1>
+
 <!--잡다한 기록. -->
-<center><img src="/assets/qwerkywriter-min.jpg" height="200"></center>
+<img src="/assets/qwerkywriter-min.jpg" height="200">
 
 
-<h1 class="page-heading">Tags</h1>
+<h2>Tags</h2>
 
 <ul class="tags-list">
   {% assign sorted_tags = site.tags | sort %}
@@ -24,7 +26,7 @@ permalink: /blog/
 
 <ul class="post-list" id='all-container'>
 
-  <h1 class="page-heading">Posts</h1>
+  <br><p><b>Posts</b></p>
 
   {% for post in site.posts %}
     <li>

@@ -1,5 +1,5 @@
 ---
-layout: resume
+layout: default
 title:  
 permalink: /music/
 ---
@@ -28,22 +28,37 @@ permalink: /music/
     clear:both}
     
 .myalbums{
-    margin-left: 30px;
+    /* margin-left: 30px; */
     position:relative;
-    text-align: center;
-    margin-bottom:15px}
+    /* padding: 0px; */
+    /* text-align: center; */
+    /* margin-bottom:15px */
+}
+
+.myalbums > a{
+  font-size: 0px;
+}
+
+.myalbums > *:focus {
+      outline: none;
+}
     
 .myalbum{
     display:inline-block;
-    margin-right:15px;
-    margin-bottom:15px;
-    float:left}
+    margin-right:10px;
+    margin-bottom:10px;
+    margin-left:0px;
+    margin-top:0px;
+    padding: 0px;
+    float: left;
+}
     
 .myalbum img{
-    background-color:#9c7979;
+    /* background-color:#9c7979; */
     width:50px;
     height:50px;
-    border-radius:10px}
+    border-radius:10px
+}
 
   {% for item in sorted_albums %}
     .myalbum.img-{{ item.img }}:hover ~ .cap-{{ item.img }}{% if forloop.last == false %},{% endif %}
@@ -58,7 +73,7 @@ permalink: /music/
   position:absolute}
 </style>
 
-<h2 class="page-heading">Music Shelves</h2>
+<h2>Music Shelves</h2>
 
 <div class="row">
   <span class="left">
@@ -82,7 +97,6 @@ permalink: /music/
   </span>
 </div>
 
-<br>
 <hr>
 
 <div class="myalbums" id='all-container'>
@@ -140,9 +154,9 @@ permalink: /music/
   <div class="myalbums hidden" id="{{ tag }}-container">
     {% assign num_albums = album_ids | size %}
       {% if num_albums == 1 %}
-        <br><p>{{ num_albums }} album related to <b>"{{ tag }}"</b></p>
+        <p>{{ num_albums }} album related to <b>"{{ tag }}"</b></p>
       {% else %}
-        <br><p>{{ num_albums }} albums related to <b>"{{ tag }}"</b></p>
+        <p>{{ num_albums }} albums related to <b>"{{ tag }}"</b></p>
       {% endif %}
 
     {% for item in sorted_albums %}
@@ -191,7 +205,7 @@ permalink: /music/
 {% endfor %}
 
 
-
+<br>
 
 
 <script type="text/javascript">

@@ -1,13 +1,34 @@
-<a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+<h1 class="h1">
+  Eunji Kim (김은지)
+</h1>
+<div>
+  Assistant Professor,
+</div>
+<div>
+  School of Business Administration,
+</div>
+<div>
+  Chung-Ang University
+</div>
+<div>
+  eunjikim [at] cau.ac.kr
+</div>
 
-<nav class="site-nav">
+<br>
 
-  <div class="trigger">
-    {% for page in site.pages %}
-      {% if page.title %}
-      <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-      {% endif %}
-    {% endfor %}
+<div>
 
-  </div>
-</nav>
+{% assign page_titles = "Profile,Publications,Projects,Teaching,Contact" | split: ',' %}
+{% assign page_urls = "/,/publications,/projects,/teaching,/contact" | split: ',' %}
+
+{% for title in page_titles %}
+{% if title == page.title %}
+  {{ title }}
+{% else %}
+  <a class="page-link" href="{{ page_urls[forloop.index0] }}">{{ title }}</a>
+{% endif %}
+{% if title != page_titles.last %} / {% endif %}
+{% endfor %}
+<br>
+
+</div>

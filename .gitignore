@@ -5,7 +5,9 @@ __backup
 _post.txt
 _drafts
 _tmp
-
+_trash
+.jekyll-cache
+.jekyll-metadata
 /.buildpath
 /build/
 */archive/
