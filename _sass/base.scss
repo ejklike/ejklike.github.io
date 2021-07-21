@@ -136,7 +136,7 @@ hr {
     background: #fcfcfc;
     // border-radius: 3px;
     transition: box-shadow .8s;
-
+    
     display: inline-block;
     margin: 8px 3px;
     min-height: 155px;
@@ -149,10 +149,21 @@ hr {
     border: 1px solid #e0e0e0;
     // border-radius: 5px 5px 5px 5px;
 }
+.projectimgframe {
+  width: 150px; 
+  height: 90px; 
+  line-height: 90px; 
+  background-color: #ffffff; 
+  border: 0px; 
+  display: inline-block; 
+  vertical-align: middle; 
+}
 .project img {
     max-width: 150px;
     width: 100%;
     margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .project p {
