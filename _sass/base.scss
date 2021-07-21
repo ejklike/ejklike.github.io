@@ -169,6 +169,7 @@ hr {
 .project p {
     margin: 0;
     padding: 0;
+    word-break: keep-all;
 }
 
 .project:target,
