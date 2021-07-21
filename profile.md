@@ -14,11 +14,11 @@ I am an Assistant Professor at the [School of Business Administration](http://bi
 <div></div>
 
 <div class="myphotos"> 
-    <a href="{{page.url}}" class="p-0 myphoto"><img src="/assets/mine/me.jpeg"></a>
+    <a href="{{page.url}}" class="p-0 myphoto"><img src="/assets/mine/me-small.png"></a>
     <a href="{{page.url}}" class="p-l myphoto"><img src="/assets/mine/smallheart.png"></a>
-    <a href="{{page.url}}" class="p-1 myphoto"><img src="/assets/mine/beer2.jpeg"></a>
-    <a href="{{page.url}}" class="p-2 myphoto"><img src="/assets/mine/latte2.jpeg"></a>
-    <a href="{{page.url}}" class="p-3 myphoto"><img src="/assets/mine/track.jpg"></a>
+    <a href="{{page.url}}" class="p-1 myphoto"><img src="/assets/mine/beer2-small.png"></a>
+    <a href="{{page.url}}" class="p-2 myphoto"><img src="/assets/mine/latte2-small.png"></a>
+    <a href="{{page.url}}" class="p-3 myphoto"><img src="/assets/mine/track-small.png"></a>
     <div class="caption c-0">Me.</div>
     <!-- <div class="caption c-l">:raised_hands:</div> -->
     <div class="caption c-1">Free and easy atmosphere.</div>
