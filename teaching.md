@@ -6,6 +6,8 @@ permalink: /teaching/
  
 ## Teaching <span class="smol">[In CAU]</span>
 
+- Business Analytics, Fall 2021.
+- Management Science, Fall 20201.
 - Operations Management, Spring 2021.
 - Management Science, Spring 2021.
 

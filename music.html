@@ -121,8 +121,11 @@ permalink: /music/
     {% elsif imgsize == 8 %}
         {% assign img1 = imgstr | slice: 0, 3 %}
     {% endif %}
-    {% if item.img > 10320000 %}
+    {% if item.img > 10316900 %}
       {% assign cm = "cm2" %}
+      {% if item.imgcode %}
+        {% assign imgstr = imgstr | append: "_" | append: item.imgcode %}
+      {% endif %}
     {% else %}
       {% assign cm = "cm" %}
     {% endif %}
