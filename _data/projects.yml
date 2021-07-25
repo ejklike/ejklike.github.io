@@ -6,7 +6,15 @@
   duration: 2021.07 - 2021.11
   logo: acc
 
-- position: PM
+- position: #PM
+  kotitle: 자동차 주행로그 구간분할 및 군집화 알고리즘 개발
+  entitle: Developing algorithms for segmentation and clustering of driving logs
+  koorg: 현대자동차
+  enorg: Hyundai Motors
+  duration: 2019.04 - 2019.06
+  logo: hyundai-motor-company
+
+- position: #PM
   kotitle: 딥러닝 기반 근미래 주행 경로 및 목적지 예측
   entitle: Driving Route and Destination Prediction based on Deep Learning
   koorg: 현대자동차
@@ -14,7 +22,7 @@
   duration: 2017.08 - 2017.12
   logo: hyundai-motor-company
 
-- position: PM
+- position: #PM
   kotitle: 딥러닝을 활용한 해외 오프라인 사기탐지 모형 개발
   entitle: Deep Learning-based Credit Card Fraud Detection
   koorg: 국민카드
@@ -22,7 +30,7 @@
   duration: 2017.03 - 2017.04
   logo: kbcard
 
-- position: PM
+- position: #PM
   kotitle: 딥러닝을 활용한 해외 오프라인 사기탐지 모형 고도화
   entitle: Deep Learning-based Credit Card Fraud Detection
   koorg: 신한카드
@@ -55,7 +63,7 @@
   logo: hyundai-card
 
 
-- position: PM
+- position: #PM
   kotitle: 기계학습을 활용한 데이터 기반 진단, 고장예지 및 내구성평가 기술 연구
   entitle: Machine Learning-based Fault Diagnosis and Failure Prediction
   koorg: 삼성전자
