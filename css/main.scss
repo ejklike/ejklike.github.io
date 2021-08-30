@@ -8,8 +8,15 @@
 // Our variables
 $base-font-family: 'Cousine', 'Noto Sans KR', monospace;
 $base-font-size:   14px;
-$base-font-weight: 300;
-$base-font-color: #000;
+$base-font-weight: normal;
+$base-font-color: #454545;
+
+$name-font-family: 'Space Mono', 'Helvetica Neue', 'Noto Sans KR', monospace;
+
+$main-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+$main-font-size:   14px;
+$main-font-weight: normal;
+$main-font-color: #454545;
 
 $code-font-family: 'Inconsolata', 'KoPub Batang', monospace;
 $code-font-size:   13px;
@@ -25,7 +32,7 @@ $base-line-height: 1.5;
 $spacing-unit:     35px;
 $header-height:    56px;
 
-$background-color: #fdfdfd;
+$background-color: #f9f9f9;
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
@@ -50,9 +57,17 @@ $on-laptop:        640px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
+        "photo",
+        "typewriter",
+        "custom",
+        "music",
+        "tag",
+        "publication",
+        "project",
         "blog",
         "post",
         "pygments-solarized-light",
         url(https://fonts.googleapis.com/css2?&family=Cousine&display=swap),
         url(https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/stylesheets/NotoSansKR-Hestia.css),
-        url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
+        url(//fonts.googleapis.com/earlyaccess/kopubbatang.css),
+        url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);

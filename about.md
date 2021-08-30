@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Profile
+title: about
 permalink: /
 ---
 
@@ -25,7 +25,6 @@ I am an Assistant Professor at the [School of Business Administration](http://bi
     <div class="caption c-2">A cup of iced Latte.</div>
     <div class="caption c-3">Running and Cycling.</div>
 </div>
-<br>
 
 
 ## Research Interests
@@ -65,3 +64,5 @@ I am an Assistant Professor at the [School of Business Administration](http://bi
 - Rookie Award in 2020 Real Mate Award, Material Research Center, Samsung Advanced Institute of Technology, 2020.
 - Grand Prize in 2019 Industry-Academic Cooperation Excellence Paper Award, Seoul National University & Samsung Electronics, 2019.
 - Best Paper Award in 2018 Fall Conference of Korea Business Intelligence Data Mining Society, Korea Data Mining Society, 2018.
+
+---

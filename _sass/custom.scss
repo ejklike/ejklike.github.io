@@ -1,0 +1,51 @@
+.site-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.site-desc {
+  font-size: inherit;
+  margin-bottom: 1.2rem;
+}
+
+.nocolor {
+  color: inherit
+}
+
+.smol {
+    font-size: .8em;
+    font-weight: normal
+}
+
+.ssmol {
+  font-size: .64em;
+  font-weight: normal
+}
+
+.suptagbox {
+  vertical-align: super;
+  font-family: $code-font-family;
+  font-size: .8em;
+  font-weight: $code-font-weight;
+  color: $code-font-color;
+  padding: 2px 3px;
+  margin: 1px;
+  line-height: 14px;
+  background: lighten($grey-color, 45%);// #e8e8e8;
+  border: 1px solid $grey-color-light;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/**
+ * mark (custom)
+ */
+ mark {
+    background-color: #ee8; // #F5FFCD; #FFC
+}
+
+
+// .task-list-item-checkbox {
+//   margin-right: .5em;
+//   vertical-align: middle
+// }

@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  
+title: music
 permalink: /music/
 ---
 
@@ -15,62 +15,16 @@ permalink: /music/
       {% assign mytagstr = tmp | append: item.tag %}
   {% endif %}
 {% endfor %}
-{% assign sorted_tags = mytagstr | split: ' ' | uniq %}
+{% assign sorted_tags = mytagstr | split: ' ' | uniq | sort %}
 
 
 <style>
-.myalbums:before,
-.myalbums:after,
-.albumcaption:before,
-.albumcaption:after{
-    content:"";
-    display:block;
-    clear:both}
-    
-.myalbums{
-    /* margin-left: 30px; */
-    position:relative;
-    /* padding: 0px; */
-    /* text-align: center; */
-    /* margin-bottom:15px */
-}
-
-.myalbums > a{
-  font-size: 0px;
-}
-
-.myalbums > *:focus {
-      outline: none;
-}
-    
-.myalbum{
-    display:inline-block;
-    margin-right:10px;
-    margin-bottom:10px;
-    margin-left:0px;
-    margin-top:0px;
-    padding: 0px;
-    float: left;
-}
-    
-.myalbum img{
-    /* background-color:#9c7979; */
-    width:50px;
-    height:50px;
-    border-radius:10px
-}
 
   {% for item in sorted_albums %}
     .myalbum.img-{{ item.img }}:hover ~ .cap-{{ item.img }}{% if forloop.last == false %},{% endif %}
   {% endfor %} 
   {display:block}
 
-.albumcaption{
-  display:none;
-  top:100%;
-  line-height:1;
-  font-size:0.95em;
-  position:absolute}
 </style>
 
 <h2>Music Shelves</h2>
@@ -186,14 +140,17 @@ permalink: /music/
             {% assign img1 = imgstr | slice: 0, 3 %}
         {% endif %}
     
-        {% if item.img > 10320000 %}
+        {% if item.img > 10316900 %}
           {% assign cm = "cm2" %}
+          {% if item.imgcode %}
+            {% assign imgstr = imgstr | append: "_" | append: item.imgcode %}
+          {% endif %}
         {% else %}
           {% assign cm = "cm" %}
         {% endif %}
     
         <a href="https://www.melon.com/album/detail.htm?albumId={{item.img}}" class="img-{{ item.img }} myalbum" target="_blank"><img src="https://cdnimg.melon.co.kr/{{ cm }}/album/images/{{ img1 }}/{{ img2 }}/{{ img3 }}/{{ imgstr }}_500.jpg/melon/resize/50/quality/80/optimize"></a>
-
+        
       {% endif %}
     {% endfor %}
 

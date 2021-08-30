@@ -1,0 +1,40 @@
+
+.tags-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+
+    *:focus {
+      outline: none;
+    }
+
+    li {
+        display: inline;
+        white-space: nowrap;
+
+        a {
+            font-family: $code-font-family;
+            font-weight: $code-font-weight;
+            color: $code-font-color;
+            padding: 3px 6px;
+            margin: 3px;
+            line-height: 28px;
+            background: lighten($grey-color, 45%);// #e8e8e8;
+            border: 1px solid $grey-color-light;
+            border-radius: 6px;
+            text-decoration: none;
+            /* border: 1px dashed $link-color; */
+        }
+
+        span {
+            vertical-align: super;
+            font-size: 0.8em;
+        }
+    }
+
+    li.active>a {
+            color: #458;
+            background: lighten($link-color, 47%);
+        }
+}

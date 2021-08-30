@@ -160,12 +160,12 @@
 - img: 4328106
   artist: Bobby Caldwell
   title: What You Won`t Do for Love
-  tag: jazz 1970s
+  tag: jazz 70s
 
 - img: 5655865
   artist: Player
   title: Player
-  tag: rock 1970s
+  tag: rock 70s
 
 # - img: 30954
 #   artist: Evanescence
@@ -267,10 +267,10 @@
   title: スキだよ -MY LOVE-／SUKIDAYO -MY LOVE-
   tag: j-pop
 
-- img: 169
-  artist: Buena Vista Social Club
-  title: Buena Vista Social Club
-  tag: world
+# - img: 169
+#   artist: Buena Vista Social Club
+#   title: Buena Vista Social Club
+#   tag: world
 
 # - img: 10286304
 #   artist: C JAMM
@@ -365,7 +365,7 @@
 - img: 133841
   artist: George Harrison
   title: All Things Must Pass
-  tag: rock pop 1970s
+  tag: rock pop 70s
 
 - img: 2688058
   artist: GIRIBOY
@@ -515,12 +515,12 @@
 - img: 10438267
   artist: The Zombies
   title: The Original Studio Recordings, Vol. 1
-  tag: 1960s rock calm
+  tag: 60s rock calm
 
 - img: 10333194
   artist: Zedd, Kehlani
   title: Good Thing
-  tag: pop vocal
+  tag: pop 3/4
 
 - img: 355525
   artist: Maroon 5
@@ -540,7 +540,7 @@
 - img: 18384
   artist: Sade
   title: The Best of Sade
-  tag: 1980s
+  tag: 80s
 
 - img: 2330930
   artist: Amy Winehouse
@@ -575,7 +575,7 @@
 - img: 343183
   artist: The Isley Brothers
   title: Highways of my life
-  tag: calm 1970s
+  tag: calm 70s
 
 - img: 359878
   artist: Stanley Turrentine
@@ -608,10 +608,10 @@
   title: Peace Or Love
   tag: chill
 
-# - img: 
-#   artist: 
-#   title: 
-#   tag: 
+- img: 2065575
+  artist: D'influence
+  title: Prayer 4 Unity
+  tag: 90s
 
 # - img: 
 #   artist: 

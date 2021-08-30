@@ -1,0 +1,66 @@
+
+/**
+ * Music photo and tags (custom)
+ */
+ .row {
+    display: flex;
+  
+    .left {
+      width: 50%;
+      float: left;
+      padding: 10px;
+    }
+    .right {
+      width: 50%;
+      float: right;
+      padding: 10px;
+    }
+  }
+
+.myalbums:before,
+.myalbums:after,
+.albumcaption:before,
+.albumcaption:after{
+    content:"";
+    display:block;
+    clear:both}
+    
+.myalbums{
+    /* margin-left: 30px; */
+    position:relative;
+    /* padding: 0px; */
+    /* text-align: center; */
+    /* margin-bottom:15px */
+}
+
+.myalbums > a{
+  font-size: 0px;
+}
+
+.myalbums > *:focus {
+      outline: none;
+}
+    
+.myalbum{
+    display:inline-block;
+    margin-right:10px;
+    margin-bottom:10px;
+    margin-left:0px;
+    margin-top:0px;
+    padding: 0px;
+    float: left;
+}
+    
+.myalbum img{
+    /* background-color:#9c7979; */
+    width:50px;
+    height:50px;
+    border-radius:10px
+}
+
+.albumcaption{
+  display:none;
+  top:100%;
+  line-height:1;
+  font-size:0.95em;
+  position:absolute}

@@ -1,6 +1,7 @@
-<h1 class="h1">
-  Eunji Kim (김은지)
+<h1 class="site-title">
+  Eunji Kim <span class="ssmol">(김은지)</span>
 </h1>
+<div class="site-desc">
 <div>
   Assistant Professor,
 </div>
@@ -13,13 +14,13 @@
 <div>
   eunjikim [at] cau.ac.kr
 </div>
+</div>
 
-<br>
 
 <div>
 
-{% assign page_titles = "Profile,Publications,Projects,Teaching,Contact" | split: ',' %}
-{% assign page_urls = "/,/publications,/projects,/teaching,/contact" | split: ',' %}
+{% assign page_titles = "about,publication,project,teaching,contact" | split: ',' %}
+{% assign page_urls = "/,/publication,/project,/teaching,/contact" | split: ',' %}
 
 {% for title in page_titles %}
 {% if title == page.title %}

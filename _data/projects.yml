@@ -1,3 +1,11 @@
+- position: #PI
+  kotitle: 시공간적 데이터마이닝 기반 자가 진단 및 설명 가능한 초지능 제조시스템
+  entitle: Self-diagnostic and Explainable Super-intelligent Manufacturing System based on Spatio-Temporal Data Mining
+  koorg: 한국연구재단
+  enorg: National Research Foundation
+  duration: 2021.09 - 2024.02
+  logo: nrf
+
 - position: 
   kotitle: 국립아시아문화전당 이용객 데이터 분석 및 고객관리 운영 방안
   entitle: Customer data analysis for CRM of the Asia Culture Center
@@ -5,6 +13,22 @@
   enorg: Asia Culture Center
   duration: 2021.07 - 2021.11
   logo: acc
+
+- position: #PM
+  kotitle: STT 데이터 기반 고객상담유형 분류모형 개발
+  entitle: Development of Customer Consultation Type Classifier using speech-to-Text Data
+  koorg: 삼성화재해상보험
+  enorg: Samsung Fire & Marine Insurance
+  duration: 2019.07
+  logo: samsungfire
+
+- position: #PM
+  kotitle: 애니핏 서비스 이용패턴과 서비스 성과 간 상관관계 분석
+  entitle: Analysis of Correlation between AnyFit Service Usage and Service Performance
+  koorg: 삼성화재해상보험
+  enorg: Samsung Fire & Marine Insurance
+  duration: 2019.07
+  logo: samsungfire
 
 - position: #PM
   kotitle: 자동차 주행로그 구간분할 및 군집화 알고리즘 개발

@@ -1,0 +1,85 @@
+
+  /* DEMO-SPECIFIC STYLES */
+  .typewriter {
+    width: 23ch;
+    line-height: 1.35rem;
+    text-align: left;
+    display: flex;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #9b9b9b; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0;
+    // letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 2s steps(23) 1s 1 normal both,
+        blink-caret 600ms steps(23) infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    // to { width: 196px }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #9b9b9b }
+  }
+
+
+
+.blinking-cursor {
+    line-height: 1.65rem;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #9b9b9b;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #9b9b9b;
+    }
+  }
+  
+  @-webkit-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #9b9b9b;
+    }
+  }
+  
+  @-ms-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #9b9b9b;
+    }
+  }
+  
+  @-o-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #9b9b9b;
+    }
+  }
+  

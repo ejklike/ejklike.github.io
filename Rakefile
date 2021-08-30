@@ -178,7 +178,7 @@ desc "Launch a preview of the site in the browser"
 task :preview do
   port = CONFIG["port"]
   if port.nil? or port.empty?
-    port = 3000
+    port = 4000
   end
   Thread.new do
     puts "Launching browser for preview..."

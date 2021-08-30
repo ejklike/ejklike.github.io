@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Publications
-permalink: /publications/
+title: publication
+permalink: /publication/
 ---
- 
+
 
 ## Journals
 

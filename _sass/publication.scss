@@ -1,0 +1,41 @@
+
+// publication lines
+.terminal .line {
+    display: flex;
+    padding: 0;
+    line-height: 1.6em
+  }
+  
+  .terminal .line>* {
+    padding: .4rem 1rem
+  }
+  
+  .terminal .line .line-link {
+    color: #aaa;
+    left: 0;
+    margin-right: .1rem;
+    border-right: 1px solid #ccc;
+    padding-left: 0;
+    text-decoration: none;
+    width: 1.5em;
+    text-align: right;
+    flex-shrink: 0
+  }
+  
+  .terminal .line:target {
+    background: #ffe
+  }
+  
+  .terminal {
+    list-style: none;
+    padding-left: 0
+  }
+  
+  .terminal li {
+    padding: .1rem 0
+  }
+  
+  .terminal ul {
+    margin-top: 0.5rem
+  }
+  

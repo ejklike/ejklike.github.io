@@ -1,3 +1,10 @@
+- author: Eunji Kim, Sungzoon Cho*
+  year: 2021
+  title: Exposing Fake Faces Through Deep Neural Networks Combining Content and Trace Feature Extractors 
+  journal: IEEE Access,
+  volnopage: "Forthcoming"
+  url: 
+
 - author: Eunji Kim, Dongseon Lee*, Youngchun Kwon, Min Sik Park, and Youn-Suk Choi*
   year: 2021
   title: Valid, Plausible, and Diverse Retrosynthesis Using Tied Two-Way Transformers with Latent Variables
