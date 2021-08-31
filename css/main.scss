@@ -4,45 +4,42 @@
 @charset "utf-8";
 
 
-
 // Our variables
+$background-color: #f9f9f9;
+$base-line-height: 1.65rem;
+$spacing-unit:     35px;
+$header-height:    56px;
+
 $base-font-family: 'Cousine', 'Noto Sans KR', monospace;
 $base-font-size:   14px;
 $base-font-weight: normal;
 $base-font-color: #454545;
 
-$name-font-family: 'Space Mono', 'Helvetica Neue', 'Noto Sans KR', monospace;
-
-$main-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
-$main-font-size:   14px;
-$main-font-weight: normal;
-$main-font-color: #454545;
+$project-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+$project-font-size:   13px;
 
 $code-font-family: 'Inconsolata', 'Cousine', 'KoPub Batang', monospace;
 $code-font-size:   13px;
 $code-font-weight: 400;
 $code-font-color:  #458;
 
-$post-font-family: 'Noto Sans KR', sans-serif;//'Spoqa Han Sans',  'KoPub Batang' 'Noto Sans KR' 'Nanum Gothic Coding'
+$post-font-family: 'Noto Sans KR', sans-serif;//'Spoqa Han Sans',  'KoPub Batang' 'Nanum Gothic Coding'
 $post-font-size: $base-font-size;
 $post-title-font-size:  $base-font-size * 1.7;
 $post-title-font-weight: 500;
 
-$base-line-height: 1.5;
-$spacing-unit:     35px;
-$header-height:    56px;
+// $name-font-family: 'Space Mono', 'Helvetica Neue', 'Noto Sans KR', monospace;
 
-$background-color: #f9f9f9;
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 $blockquote-font-color: $grey-color;
-$mark-color:       #F5FFCD;
 
-$brand-color:      #2a7ae2;
+$mark-color:       #F5FFCD;
 $link-color:       #cb4b16;
-$green:			   #18B888;
+// $brand-color:      #2a7ae2;
+// $green:		   #18B888;
 
 // Width of the content area
 $content-width:    640px;
@@ -69,5 +66,5 @@ $on-laptop:        640px;
         "pygments-solarized-light",
         url(https://fonts.googleapis.com/css2?&family=Cousine&display=swap),
         url(https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/stylesheets/NotoSansKR-Hestia.css),
-        url(//fonts.googleapis.com/earlyaccess/kopubbatang.css),
+        // url(//fonts.googleapis.com/earlyaccess/kopubbatang.css),
         url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);

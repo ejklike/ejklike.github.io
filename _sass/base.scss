@@ -1,13 +1,19 @@
 body {
     background: $background-color;
-    color: #454545;
+    color: $base-font-color;
     font-family: $base-font-family;
-    line-height: 1.65rem;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
     padding: 0 2.5em;
     margin: 0;
-    font-size: 14px;
     word-wrap: break-word;
+    overflow-y: scroll;
 }
+
+.site-layout-wrapper.modal-active {
+    overflow-y: hidden;
+    max-height: 100vh;
+} 
 
 a {
     color: #329
@@ -96,8 +102,6 @@ blockquote::before {
 .notes .note:last-of-type {
     margin-bottom: 0
 }
-
-
 
 img {
     max-width: 100%;
