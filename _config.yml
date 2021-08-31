@@ -1,6 +1,7 @@
 # Site settings
 title: Eunji Kim @ CAU
 author: Eunji Kim
+description: Eunji Kim's homepage
 email_txt: eunjikim [at] cau.ac.kr
 office_ko: 310관 1119호
 office_en: Centennial Bldg (Bldg. 310) Room 1119
@@ -15,6 +16,8 @@ plugins:
   - jemoji
   - jekyll-email-protect
   - jekyll-github-metadata
+  - jekyll-feed # atom feed
+  - jekyll-sitemap
 sass:
   sass_dir: _sass
   style: compressed
