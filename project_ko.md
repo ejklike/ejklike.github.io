@@ -5,7 +5,7 @@ permalink: /project/ko/
 ---
 
 
-## projects <span class="smol">[ 한국어 / <a href="/projects/">English</a> ]</span>
+## projects <span class="smol">[ 한국어 / <a href="/project/">English</a> ]</span>
 
 
 {% assign i = 0 %}
