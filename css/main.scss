@@ -23,7 +23,7 @@ $code-font-size:   13px;
 $code-font-weight: 400;
 $code-font-color:  #458;
 
-$post-font-family: 'Noto Sans KR', sans-serif;//'Spoqa Han Sans',  'KoPub Batang' 'Nanum Gothic Coding'
+$post-font-family: 'Archivo', 'Noto Sans KR', sans-serif;//'Spoqa Han Sans',  'KoPub Batang' 'Nanum Gothic Coding'
 $post-font-size: $base-font-size;
 $post-title-font-size:  $base-font-size * 1.7;
 $post-title-font-weight: 500;
@@ -64,6 +64,8 @@ $on-laptop:        640px;
         "blog",
         "post",
         "pygments-solarized-light",
+        "media",
+        url(http://fonts.googleapis.com/css?family=Archivo%3A400%2C400i%2C600%2C600i%2C700%2C700i&subset=latin-ext&ver=1),
         url(https://fonts.googleapis.com/css2?&family=Cousine&display=swap),
         url(https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/stylesheets/NotoSansKR-Hestia.css),
         // url(//fonts.googleapis.com/earlyaccess/kopubbatang.css),

@@ -50,14 +50,6 @@ footer {
     margin: auto
 }
 
-@media (min-width: 52em) {
-    header,
-    main,
-    footer {
-        border-left: 1px solid #e0e0e0;
-        padding-left: 2em
-    }
-}
 
 h1 {
     font-size: inherit
