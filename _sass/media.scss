@@ -6,3 +6,28 @@
         padding-left: 2em
     }
 }
+
+/* 500 PX */
+
+@media ( max-width: 500px ) {
+
+body {
+    padding: 0 1.5em;
+}
+
+/**
+ * Lists
+ */
+ul {
+    margin-left: 15px;
+    padding: 0 10px 0 10px;
+}
+ol {
+    margin-left: 15px;
+    padding: 0 10px 0 10px;
+}
+ol > li:before {
+    left: -20px;
+}
+
+}
