@@ -22,4 +22,6 @@ sass:
   sass_dir: _sass
   style: compressed
 
+include:
+  - class
 exclude: [img]
