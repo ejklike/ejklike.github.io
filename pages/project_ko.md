@@ -1,11 +1,10 @@
 ---
 layout: default
 title: project
-permalink: /project/
+permalink: /project/ko/
 ---
 
-
-## Projects <span class="smol">[ <a href="/project/ko/">한국어</a> / English ]</span>
+## Projects
 
 {% assign i = 0 %}
 {% for item in site.data.projects %}
@@ -14,6 +13,6 @@ permalink: /project/
       <div class="projectimgframe">
       <img src="/assets/logo/{{ item.logo }}.png">
       </div>
-      <p>{% if item.position == 'PM' %}(PM) {% endif %}{{ item.entitle }}</p>
+      <p>{% if item.position == 'PM' %}(PM) {% endif %}{{ item.kotitle }}</p>
   </div>
 {% endfor %}

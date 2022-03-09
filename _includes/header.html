@@ -1,35 +1,65 @@
-<h1 class="site-title">
-  Eunji Kim <span class="ssmol">(김은지)</span>
-</h1>
-<div class="site-desc">
-<div>
-  Assistant Professor,
-</div>
-<div>
-  School of Business Administration,
-</div>
-<div>
-  Chung-Ang University
-</div>
-<div>
-  eunjikim [at] cau.ac.kr
-</div>
+<div class="header-profile">
+
+  <div class="left">
+    <a href="/" class="nocolor">
+      <img src="{{site.url}}/assets/mine/id_sml2.jpeg">
+    </a>
+  </div>
+
+  <div class="right">
+
+    <div class="header-desc-de">
+    <a href="/" class="nocolor">
+      <h1 class="h1">Eunji Kim <span class="ssmol">김은지, 중앙대학교 경영학부 조교수</span></h1>
+      <div><span class="smol">Assistant Professor at School of Business Administration,</span></div>
+      <div><span class="smol">Chung-Ang University, Seoul, Korea</span></div>
+    </a>
+    <div class="desc">eunjikim at cau.ac.kr</div>
+
+  </div>
+  
+
+  <div class="header-desc-mo">
+
+    <a href="/" class="nocolor">
+      <h1 class="h1">Eunji Kim 김은지</h1>  
+      <div><span class="smol">Assistant Professor, CAU</span></div>
+      <div><span class="smol">중앙대학교 경영학부 조교수</span></div>
+    </a>
+    <div class="desc">eunjikim at cau.ac.kr</div>
+
+  </div>
+  
+  </div>
 </div>
 
+<a class="styled-link" href="{{ site.cv_url }}" target="_blank">Curriculum Vitae</a>
+<a class="styled-link" href="{{ site.scholar_url }}" target="_blank">Google Scholar</a>
+<a class="styled-link" href="{{ site.orcid_url }}" target="_blank">ORCiD</a>
 
-<div>
-
-{% assign page_titles = "about,publication,project,teaching,contact" | split: ',' %}
-{% assign page_urls = "/,/publication,/project,/teaching,/contact" | split: ',' %}
-
-{% for title in page_titles %}
-{% if title == page.title %}
-  {{ title }}
+{% if page.url contains "ko/" %}
+<a class="styled-link marked" href="{{ page.url | remove: "ko/" }}">English</a>
+{% elsif page.layout == "post" %} 
+<a class="styled-link marked" href="/blog/">←</a>
+{% elsif page.url contains "blog" %}
+<div></div>
 {% else %}
-  <a class="page-link" href="{{ page_urls[forloop.index0] }}">{{ title }}</a>
+<a class="styled-link marked" href="{{ page.url}}ko/">한국어</a>
 {% endif %}
-{% if title != page_titles.last %} / {% endif %}
-{% endfor %}
-<br>
 
-</div>
+
+{% if page.url contains "ko/" %}
+{% assign backurl = "/ko/" %}
+{% else %}
+{% assign backurl = "/" %}
+{% endif %}
+
+{% if page.url contains "/publication/" %}
+
+<a class="styled-link" href="{{ backurl }}#pub">←</a>
+
+{% elsif page.url contains "/project/" %}
+
+<a class="styled-link" href="{{ backurl }}#pjt">←</a>
+
+{% endif %}

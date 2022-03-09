@@ -2,14 +2,8 @@
  * Posts
  */
 
-.post-header {
-    margin-bottom: $spacing-unit;
-    font-family: $code-font-family;
-    font-weight: $code-font-weight;
-}
-
 .post-title {
-    font-size: $post-title-font-size;
+    font-size: 1.7rem;
     font-family: $post-font-family;
     font-weight: $post-title-font-weight;
     letter-spacing: -1px;
@@ -19,11 +13,9 @@
 }
 
 .post-date {
-  font-size: $base-font-size*0.9;
-  font-family: $code-font-family;
+  font-size: .9rem;
   margin: 60px 0 0 0;
   color: #b2b9be;
-//   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -217,16 +209,16 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
     float: left;
     a, a:active, a:visited, a:hover {
         color: $grey-color-dark;
-        font-size: $code-font-size;
-        font-family: $code-font-family;
+        // font-size: $code-font-size;
+        // font-family: $code-font-family;
     }
 }
 .right-pagi {
     float: right;
     a, a:active, a:visited, a:hover {
         color: $grey-color-dark;
-        font-size: $code-font-size;
-        font-family: $code-font-family;
+        // font-size: $code-font-size;
+        // font-family: $code-font-family;
     }
 }
 

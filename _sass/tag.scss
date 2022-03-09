@@ -14,13 +14,12 @@
         white-space: nowrap;
 
         a {
-            font-family: $code-font-family;
-            font-weight: $code-font-weight;
+            font-size: 0.8rem;
             color: $code-font-color;
             padding: 3px 6px;
             margin: 3px;
             line-height: 28px;
-            background: lighten($grey-color, 45%);// #e8e8e8;
+            background: lighten($grey-color, 47%);// #e8e8e8;
             border: 1px solid $grey-color-light;
             border-radius: 6px;
             text-decoration: none;

@@ -1,6 +1,9 @@
 - author: Eunji Kim, Sungzoon Cho*, Byeongeon Lee, Myoungsu Cho
   title: "Fault Detection and Diagnosis Using Self-Attentive Convolutional Neural Networks for Variable-length Sensor Data in Semiconductor Manufacturing"
   conf: 2019 Spring Conference of Korean Institute of Industrial Engineers (KIIE)
+  author_ko: 김은지, 조성준*, 이병언, 조명수
+  title_ko: 가변길이의 센서 데이터를 활용한 Self-attentive 합성곱 신경망 기반 반도체 불량 탐지 및 진단
+  conf_ko: 2019 대한산업공학회 춘계공동학술대회
   year: 2019
   month: April
   place: Gwangju, Korea
@@ -8,6 +11,9 @@
 - author: Eunji Kim, Sungzoon Cho*
   title: "Fake face detection model combining content and trace feature extractors"
   conf: 2018 Fall Conference of Korea Business Intelligence Data Mining Society (KDMS)
+  author_ko: 김은지, 조성준*
+  title_ko: 콘텐츠 피쳐 추출기와 자취 피쳐 추출기를 결합한 가짜 얼굴 탐지 모델
+  conf_ko: 한국BI데이터마이닝학회 2018 추계학술대회
   year: 2018
   month: November
   place: Seoul, Korea
@@ -15,6 +21,9 @@
 - author: Eunji Kim, Taewook Kim, Jihyung Moon, Sungzoon Cho*, Minhoe Hur
   title: "Personalized driving destination prediction based on deep learning"
   conf: 2018 Spring Conference of Korean Institute of Industrial Engineers (KIIE)
+  author_ko: 김은지, 김태욱, 문지형, 조성준*, 허민회
+  title_ko: 딥러닝 기반 개인별 주행 목적지 예측
+  conf_ko: 2018 대한산업공학회 춘계공동학술대회
   year: 2018
   month: April
   place: Gyeongju, Korea
@@ -29,6 +38,9 @@
 - author: Eunji Kim, Sungzoon Cho*
   title: Interpretable Variable-selectable Convolutional Filters for Multivariate Time-series Classifiation
   conf: 2017 Fall Conference of Korea Business Intelligence Data Mining Society (KDMS)
+  author_ko: 김은지, 조성준*
+  title_ko: Interpretable Variable-selectable Convolutional Filters for Multivariate Time-series Classification
+  conf_ko: 한국BI데이터마이닝학회 2017 추계학술대회
   year: 2017
   month: November
   place: Busan, Korea
@@ -36,6 +48,9 @@
 - author: Eunji Kim, Jehyuk Lee, Hunsik Shin, Hoseong Yang, Sungzoon Cho*, Seung-kwan Nam, Young Mi Song, Jeong A Yoon, Jong Il Kim, Wooho Jung, Kyungmo La, Kangshin Ko
   title: Detecting Credit Card Frauds with Deep learning
   conf: 2017 Spring Conference of Korean Institute of Industrial Engineers (KIIE)
+  author_ko: 김은지, 이제혁, 신훈식, 양호성, 조성준*, 남승관, 송영미, 윤정아, 김종일, 정우호, 라경모, 고강신
+  title_ko: 딥러닝을 이용한 신용카드 사기 탐지
+  conf_ko: 2017 대한산업공학회 춘계공동학술대회
   year: 2017
   month: April
   place: Yeosu, Korea
@@ -57,6 +72,9 @@
 - author: Seokho Kang, Eunji Kim, Jaewoong Shim, Sungzoon Cho*
   title: Identifying the cause of product defects using after-sales service data
   conf: 2015 Fall Conference of Korea Business Intelligence Data Mining Society (KDMS)
+  author_ko: 강석호, 김은지, 심재웅, 조성준*
+  title_ko: AS 서비스 데이터를 활용한 제품 불량 원인 도출
+  conf_ko: 한국BI데이터마이닝학회 2015 추계학술대회
   year: 2015
   month: November
   place: Yeosu, Korea
@@ -64,6 +82,9 @@
 - author: Eunji Kim, Hyun-chang Cho, Sungzoon Cho*
   title: Online Review Sentiment Analysis for Finding Features and Aspects of Products
   conf: 2015 Spring Conference of Korean Institute of Industrial Engineers (KIIE)
+  author_ko: 김은지, 조현창, 조성준*
+  title_ko: 소비자가 원하는 주요 기능 및 특징 파악을 위한 온라인 리뷰 내 등장단어의 제품군 별 정서 분석
+  conf_ko: 2015 대한산업공학회 춘계공동학술대회
   year: 2015
   month: April
   place: Jeju, Korea
@@ -71,6 +92,8 @@
 - author: Jaewoong Shim, Eunji Kim, Seokho Kang, Sungzoon Cho*
   title: Hybrid approach with centroid based classification and SVM for multi-class text classification
   conf: 2014 Fall Conference of Korea Business Intelligence Data Mining Society (KDMS)
+  author_ko: 심재웅, 김은지, 강석호, 조성준*
+  conf_ko: 한국BI데이터마이닝학회 2014 추계학술대회
   year: 2014
   month: November
   place: Busan, Korea
