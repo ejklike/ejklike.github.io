@@ -1,23 +1,19 @@
 .project {
-    font-family: $project-font-family;
-    font-size: $project-font-size;
-    // scroll-margin: 2em;
-    // padding: 1.5em 2em;
-    background: #ffffff; //#fcfcfc
-    // border-radius: 3px;
+    font-size: .85rem;
+    background: #fff;
     transition: box-shadow .8s;
-    
+
     display: inline-block;
     margin: 8px 3px;
     min-height: 160px;
-    min-width: 300px;
-    padding: 5px 5px;
+    min-width: 280px;
+    padding: 5px 3px;
     text-align: center;
     vertical-align: middle;
     width: 42%;
     height: 100%;
     border: 1px solid #e0e0e0;
-    // border-radius: 5px 5px 5px 5px;
+    border-radius: 10px;
 }
 
 .projectimgframe {
@@ -46,8 +42,6 @@
     line-height: 1.6em;
     word-break: keep-all;
 }
-
-
 
 .project:target,
 .project:hover {

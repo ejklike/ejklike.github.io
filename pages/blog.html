@@ -26,7 +26,7 @@ permalink: /blog/
 
 <ul class="post-list" id='all-container'>
 
-  <br><p><b>Posts</b></p>
+  <h2>Posts</h2>
 
   {% for post in site.posts %}
     <li>
@@ -54,9 +54,9 @@ permalink: /blog/
   <ul class="post-list hidden" id="{{ t }}-container">
     {% assign numPosts = posts | size %}
       {% if numPosts == 1 %}
-        <br><p>{{ numPosts }} post containing tag <b>"{{ t }}"</b></p>
+      <h2>{{ numPosts }} post containing tag <b>"{{ t }}"</b></h2>
       {% else %}
-        <br><p>{{ numPosts }} posts containing tag <b>"{{ t }}"</b></p>
+      <h2>{{ numPosts }} posts containing tag <b>"{{ t }}"</b></h2>
       {% endif %}
 
     {% for post in posts %}

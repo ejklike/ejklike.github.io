@@ -1,0 +1,20 @@
+.header-profile {
+    position: relative;
+    display: flex;
+  
+    img {
+      width: 100px;
+      height: 120px;
+      border-radius: 200px;
+      margin: 1em 0;
+    }
+    .left {
+      width: 100px;
+      min-width: 100px;
+      padding-top: 10px;
+    }
+    .right {
+      float: right;
+      padding: 10px;
+    }
+  }

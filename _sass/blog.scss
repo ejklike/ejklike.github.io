@@ -9,7 +9,7 @@
 
     > li {
         vertical-align: middle;
-        margin-bottom: $spacing-unit*0.5;
+        margin-bottom: .8rem;
     }
     *:focus {
         outline: none;
@@ -23,7 +23,7 @@
 
 .post-meta {
     font-family: $base-font-family;
-    font-size: $base-font-size;
+    font-size: .8rem;
     color: $grey-color;
 }
 

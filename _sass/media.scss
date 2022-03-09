@@ -1,33 +1,24 @@
-@media (min-width: 52em) {
-    header,
-    main,
-    footer {
-        border-left: 1px solid #e0e0e0;
-        padding-left: 2em
+@media ( min-width: 600px ) {
+	.header-desc-mo {
+		display: none !important;
+	}
+}
+
+@media ( max-width: 600px ) {
+
+    .header-desc-de {
+		display: none !important;
+	}
+    body {
+        padding: 0 1em;
+        font-size: 0.9rem;
     }
-}
 
-/* 500 PX */
-
-@media ( max-width: 500px ) {
-
-body {
-    padding: 0 1.5em;
-}
-
-/**
- * Lists
- */
-ul {
-    margin-left: 15px;
-    padding: 0 10px 0 10px;
-}
-ol {
-    margin-left: 15px;
-    padding: 0 10px 0 10px;
-}
-ol > li:before {
-    left: -20px;
-}
+    .post-list {
+        > li {
+            vertical-align: middle;
+            margin-bottom: .4rem;
+        }
+    }
 
 }
