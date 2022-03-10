@@ -1,10 +1,9 @@
+
 <div class="header-profile">
-<!-- 
+
   <div class="left">
-    <a href="/" class="nocolor">
-      <img src="{{site.url}}/assets/mine/me_93332.jpeg">
-    </a>
-  </div> -->
+    <a href="/"><img src=""></a>
+  </div>
 
   <div class="right">
 
@@ -20,46 +19,46 @@
   
 
   <div class="header-desc-mo">
-
     <a href="/" class="nocolor">
-      <h1 class="h1">Eunji Kim 김은지</h1>  
+      <h1 class="h1">Eunji Kim <span class="ssmol">김은지</span></h1>  
       <div><span class="smol">Assistant Professor, CAU</span></div>
       <div><span class="smol">중앙대학교 경영학부 조교수</span></div>
     </a>
     <div class="desc">eunjikim at cau.ac.kr</div>
-
   </div>
   
   </div>
 </div>
 
-<a class="styled-link" href="{{ site.cv_url }}" target="_blank">Curriculum Vitae</a>
-<a class="styled-link" href="{{ site.scholar_url }}" target="_blank">Google Scholar</a>
-<a class="styled-link" href="{{ site.orcid_url }}" target="_blank">ORCiD</a>
+<div class="header-bookmark">
+  <a class="styled-link" href="{{ site.cv_url }}" target="_blank">Curriculum Vitae</a>
+  <a class="styled-link" href="{{ site.scholar_url }}" target="_blank">Google Scholar</a>
+  <!-- <a class="styled-link" href="{{ site.orcid_url }}" target="_blank">ORCiD</a> -->
 
-{% if page.url contains "ko/" %}
-<a class="styled-link marked" href="{{ page.url | remove: "ko/" }}">English</a>
-{% elsif page.layout == "post" %} 
-<a class="styled-link marked" href="/blog/">←</a>
-{% elsif page.url contains "blog" %}
-<div></div>
-{% else %}
-<a class="styled-link marked" href="{{ page.url}}ko/">한국어</a>
-{% endif %}
+  {% if page.url contains "ko/" %}
+  <a class="styled-link marked" href="{{ page.url | remove: "ko/" }}">한국어/English</a>
+  {% elsif page.layout == "post" %} 
+  <a class="styled-link marked" href="/blog/">←</a>
+  {% elsif page.url contains "blog" %}
+  <div></div>
+  {% else %}
+  <a class="styled-link marked" href="{{ page.url}}ko/">English/한국어</a>
+  {% endif %}
 
 
-{% if page.url contains "ko/" %}
-{% assign backurl = "/ko/" %}
-{% else %}
-{% assign backurl = "/" %}
-{% endif %}
+  {% if page.url contains "ko/" %}
+  {% assign backurl = "/ko/" %}
+  {% else %}
+  {% assign backurl = "/" %}
+  {% endif %}
 
-{% if page.url contains "/publication/" %}
+  {% if page.url contains "/publication/" %}
 
-<a class="styled-link" href="{{ backurl }}#pub">←</a>
+  <a class="styled-link" href="{{ backurl }}#pub">←</a>
 
-{% elsif page.url contains "/project/" %}
+  {% elsif page.url contains "/project/" %}
 
-<a class="styled-link" href="{{ backurl }}#pjt">←</a>
+  <a class="styled-link" href="{{ backurl }}#pjt">←</a>
 
-{% endif %}
+  {% endif %}
+</div>
