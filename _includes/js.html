@@ -1,17 +1,17 @@
 <!-- Header JS -->
 <script type="text/javascript"> 
-    //  => [0, 1, 2, ..., n-1]
-    const imageArray = [...Array(76).keys()];
-    const image = document.querySelector("img");
-  
-    window.onload = () => generateRandomPicture(imageArray);
-  
-    function generateRandomPicture(array){
-      let randomNum = Math.floor(Math.random() * array.length); 
-      image.setAttribute("src", 
-      "{{site.url}}/assets/banner/"+array[randomNum]+" Small.jpeg");
-    }
-    </script>
+//  => [0, 1, 2, ..., n-1]
+const imageArray = [...Array(76).keys()];
+const image = document.querySelector('.left img')
+
+window.onload = () => generateRandomPicture(imageArray);
+
+function generateRandomPicture(array){
+    let randomNum = Math.floor(Math.random() * array.length); 
+    image.setAttribute("src", 
+    "{{site.url}}/assets/banner/"+array[randomNum]+" Small.jpeg");
+}
+</script>
 
 
 <!-- mathjax config -->
