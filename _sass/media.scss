@@ -1,14 +1,14 @@
+// 600 header-desc
 @media ( min-width: 600px ) {
-	.header-desc-mo {
+	.atmost600 {
 		display: none !important;
 	}
 }
-
 @media ( max-width: 600px ) {
-
-    .header-desc-de {
+    .atleast600 {
 		display: none !important;
 	}
+
     body {
         padding: 0 1em;
         font-size: 0.9rem;
@@ -20,5 +20,30 @@
             margin-bottom: .4rem;
         }
     }
-
+}
+// 500
+@media ( max-width: 500px ) {
+    .project {
+        width: 90%;
+    }    
+}
+// 400
+@media ( min-width: 400px ) {
+	.atmost400 {
+		display: none !important;
+	}
+}
+@media ( max-width: 400px ) {
+	.atleast400 {
+		display: none !important;
+	}
+}
+// 350
+@media ( max-width: 350px ) {
+	.atleast350 {
+		display: none !important;
+	}    
+    .project {
+        min-width: 95%;
+    }   
 }
