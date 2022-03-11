@@ -42,10 +42,12 @@
 
 <div class="header-bookmark">
   
-  <a class="styled-link atleast400" href="{{ site.cv_url }}" target="_blank">Curriculum Vitae</a>
-  <a class="styled-link atleast350 atmost400" href="{{ site.cv_url }}" target="_blank">CV</a>
-  <a class="styled-link" href="{{ site.scholar_url }}" target="_blank">Google Scholar</a>
-  <!-- <a class="styled-link" href="{{ site.orcid_url }}" target="_blank">ORCiD</a> -->
+  {% unless page.layout == "post" or page.url contains "blog" %}
+    <a class="styled-link atleast400" href="{{ site.cv_url }}" target="_blank">Curriculum Vitae</a>
+    <a class="styled-link atleast350 atmost400" href="{{ site.cv_url }}" target="_blank">CV</a>
+    <a class="styled-link" href="{{ site.scholar_url }}" target="_blank">Google Scholar</a>
+    <!-- <a class="styled-link" href="{{ site.orcid_url }}" target="_blank">ORCiD</a> -->
+  {% endunless %}
 
   {% if page.url contains "ko/" %}
   <a class="styled-link marked" href="{{ page.url | remove: "ko/" }}">한국어/English</a>
