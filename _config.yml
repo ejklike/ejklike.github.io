@@ -19,7 +19,6 @@ plugins:
   - jemoji
   - jekyll-email-protect
   - jekyll-github-metadata
-  - jekyll-feed # atom feed
   - jekyll-sitemap
 sass:
   sass_dir: _sass
