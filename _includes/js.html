@@ -1,3 +1,15 @@
+<script type="text/javascript">
+    function preload(){
+        let images = new Array();
+        for ( i = 0; i < len; i++) {
+            let image = new Image();
+            image.src = "{{site.url}}/assets/banner/"+i+" Small.jpeg";
+            images.push(image)
+        }
+    }
+    window.onload = () => preload();
+</script>
+
 <!-- mathjax config -->
 <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> -->
 <!-- MathJax -->
