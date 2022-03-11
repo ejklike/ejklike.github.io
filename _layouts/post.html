@@ -18,11 +18,11 @@ layout: default
 </ul>
 {% endunless %}  
 
-<br>
 
+<div class="pagination">
 <p class="left-pagi">
 {% if page.next %}
-  <a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}"><i class="fa fa-angle-double-left"></i>-Next</a>
+  <a class="styled-link" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">← {{ page.next.title | slice: 0, 10}}..</a>
 {% else %}
   <a>&nbsp;&nbsp;</a>
 {% endif %}
@@ -30,12 +30,12 @@ layout: default
 
 <p class="right-pagi">
 {% if page.previous %}
-  <a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">Prev-<i class="fa fa-angle-double-right"></i></a>
+  <a class="styled-link" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title | slice: 0, 10}}.. →</a>
 {% else %}
   <a>&nbsp;&nbsp;</a>
 {% endif %}
 </p>
-
+</div>
 
 
 
@@ -62,5 +62,3 @@ for (var i = 0, linksLength = links.length; i < linksLength; i++) {
    } 
 }
 </script>
-
-        
