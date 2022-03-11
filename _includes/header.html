@@ -1,7 +1,13 @@
+{% if page.url contains "ko/" %}
+{% assign homeurl = "/ko/" %}
+{% else %}
+{% assign homeurl = "/" %}
+{% endif %}
+
 <div class="header-profile">
 
   <div class="left atleast350">
-  <a href="/" id="banner"></a>
+  <a href="{{homeurl}}" id="banner"></a>
   <script>
     const len = 76;
     const randomNum = Math.floor(Math.random() * len);
@@ -12,7 +18,7 @@
   <div class="right">
 
     <div class="header-desc atleast600">
-    <a href="/" class="nocolor">
+    <a href="{{homeurl}}" class="nocolor">
       <h1 class="h1">Eunji Kim <span class="ssmol">김은지, 중앙대학교 경영학부 조교수</span></h1>
       <div><span class="smol">Assistant Professor, School of Business Administration,</span></div>
       <div><span class="smol">Chung-Ang University, Seoul, Korea</span></div>
@@ -23,7 +29,7 @@
 
   
   <div class="header-desc atmost600">
-    <a href="/" class="nocolor">
+    <a href="{{homeurl}}" class="nocolor">
       <h1 class="h1">Eunji Kim <span class="ssmol">김은지</span></h1>  
       <div><span class="smol">Assistant Professor, CAU</span></div>
       <div><span class="smol">중앙대학교 경영학부 조교수</span></div>
@@ -51,20 +57,10 @@
   <a class="styled-link marked" href="{{ page.url}}ko/">English/한국어</a>
   {% endif %}
 
-
-  {% if page.url contains "ko/" %}
-  {% assign backurl = "/ko/" %}
-  {% else %}
-  {% assign backurl = "/" %}
-  {% endif %}
-
   {% if page.url contains "/publication/" %}
-
-  <a class="styled-link" href="{{ backurl }}#pub">←</a>
-
+  <a class="styled-link" href="{{ homeurl }}#pub">←</a>
   {% elsif page.url contains "/project/" %}
-
-  <a class="styled-link" href="{{ backurl }}#pjt">←</a>
-
+  <a class="styled-link" href="{{ homeurl }}#pjt">←</a>
   {% endif %}
+
 </div>
