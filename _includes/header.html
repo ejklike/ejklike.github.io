@@ -1,33 +1,12 @@
-<div class="atleast350">
-  <script type="text/javascript">
-    var urls = new Array();
-    for ( i = 0; i < 76; i++ ) {
-      const url = "{{site.url}}/assets/banner/"+i+" Small.jpeg";
-      urls.push(url);
-    }
-
-    let images = [];
-    function preload() {
-      for(let i = 0; i < preload.arguments.lenght; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments.src;
-      }
-    }
-    preload(urls)
-
-    function generateRandomPicture(array){
-      let randomNum = Math.floor(Math.random() * array.length);
-      document.querySelector('.left img').setAttribute("src", array[randomNum]);
-    }
-    window.onload = () => generateRandomPicture(urls);
-  </script>
-</div>
-
-
 <div class="header-profile">
 
   <div class="left atleast350">
-    <a href="/"><img src="{{site.url}}/assets/blank.jpg"></a>
+  <a href="/" id="banner"></a>
+  <script>
+    const len = 76;
+    const randomNum = Math.floor(Math.random() * len);
+    document.getElementById("banner").innerHTML = '<img src="{{site.url}}/assets/banner/'+randomNum+' Small.jpeg">';
+  </script>
   </div>
 
   <div class="right">
