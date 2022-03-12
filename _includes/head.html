@@ -3,12 +3,12 @@
   <meta content="text/html; charset=utf-8" http-equiv="content-type">
   <meta name="google-site-verification" content="rtyWkozhFCSimZPjtXzLbYkr3rSkte05DWTEIfYeqg8" />
   <title>{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="keywords" content="중앙대학교,중앙대,중대,경영학부,경영학과,경영대학,경영,김은지,김은지교수,데이터마이닝,딥러닝,인공지능,빅데이터,산업인공지능,비즈니스애널리틱스,빅데이터애널리틱스">
 
-  <meta property="og:url" content="http://ejklike.github.io" />
-  <meta property="og:title" content="Eunji Kim @ CAU" />
-  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:url" content="{{page.url}}" />
+  <meta property="og:title" content="{% if page.title == 'about' %}{{ site.title }}{% else %}{{ site.title }} - {{ page.title }}{% endif %}" />
+  <meta name="description" property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
 
   <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/feed.xml">
   <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/rss.xml">
