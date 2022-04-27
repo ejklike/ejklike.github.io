@@ -2,14 +2,14 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="text/html; charset=utf-8" http-equiv="content-type">
   <meta name="google-site-verification" content="rtyWkozhFCSimZPjtXzLbYkr3rSkte05DWTEIfYeqg8" />
-  <title>{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>{% if page.title and page.title != 'about' %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <meta property="og:url" content="{{page.url}}" />
   <meta property="og:title" content="{% if page.title == 'about' %}{{ site.title }}{% else %}{{ site.title }} - {{ page.title }}{% endif %}" />
-  <meta name="description" property="og:description" content="{{ site.description }} {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
-  <meta name="keywords" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description" property="og:description" content="{% if page.layout == 'post' and page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords" content="{% if page.layout == 'post' and page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   {% unless page.image %}
-    <meta content="{{ site.url }}/assets/banner/0 Small.jpeg" property="og:image">
+    <meta content="{{ site.url }}/assets/qwerkywriter-min.jpg" property="og:image">
   {% endunless %}
 
   <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/feed.xml">
