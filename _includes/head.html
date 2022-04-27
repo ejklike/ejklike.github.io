@@ -6,7 +6,7 @@
 
   <meta property="og:url" content="{{page.url}}" />
   <meta property="og:title" content="{% if page.title == 'about' %}{{ site.title }}{% else %}{{ site.title }} - {{ page.title }}{% endif %}" />
-  <meta name="description" property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description" property="og:description" content="{{ site.description }} {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
   <meta name="keywords" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   {% unless page.image %}
     <meta content="{{ site.url }}/assets/banner/0 Small.jpeg" property="og:image">
