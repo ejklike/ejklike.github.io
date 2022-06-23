@@ -1,3 +1,11 @@
+- position:
+  kotitle: 원유처리설비 고장예지 모형 개발
+  entitle: Predictive Analytics for Equipment Management
+  koorg: Brunei Shell Petroleum
+  enorg: Brunei Shell Petroleum
+  duration: 2022.02 - 2022.06
+  logo: bsp
+
 - position: #PI
   kotitle: 시공간적 데이터마이닝 기반 자가 진단 및 설명 가능한 초지능 제조시스템
   entitle: Self-diagnostic and Explainable Super-intelligent Manufacturing System based on Spatio-Temporal Data Mining
