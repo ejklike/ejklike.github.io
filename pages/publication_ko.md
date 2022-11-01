@@ -15,7 +15,7 @@ permalink: /publication/ko/
   <li class="line">
   <div class="lineno">[{{ i }}]</div>
   <div>
-      {{ item.author | replace: 'Eunji Kim', '<u>Eunji Kim</u>' }} ({{ item.year }}), "<a href="{{ item.url }}" target="_blank">{{ item.title }}</a>." {{ item.journal }}{% if item.volnopage =="Accepted" or item.volnopage =="In revision" %},{% endif %} {{ item.volnopage }}.
+      {{ item.author | replace: 'Eunji Kim', '<u>Eunji Kim</u>' }} ({{ item.year }}), "<a href="{{ item.url }}" target="_blank">{{ item.title }}</a>." <i>{{ item.journal }}</i>{% if item.volnopage =="Accepted" or item.volnopage =="In revision" %},{% endif %} {{ item.volnopage }}.
   </div>
   </li>
 {% endfor %}
