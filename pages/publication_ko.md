@@ -15,7 +15,7 @@ permalink: /publication/ko/
   <li class="line">
   <div class="lineno">[{{ i }}]</div>
   <div>
-      {{ item.author | replace: 'Eunji Kim', '<u>Eunji Kim</u>' }} ({{ item.year }}), "<a href="{{ item.url }}" target="_blank">{{ item.title }}</a>." {{ item.journal }} {{ item.volnopage }}.
+      {{ item.author | replace: 'Eunji Kim', '<u>Eunji Kim</u>' }} ({{ item.year }}), "<a href="{{ item.url }}" target="_blank">{{ item.title }}</a>." {{ item.journal }}{% if item.volnopage =="Accepted" or item.volnopage =="In revision" %},{% endif %} {{ item.volnopage }}.
   </div>
   </li>
 {% endfor %}
@@ -44,12 +44,44 @@ permalink: /publication/ko/
 ## <strong>특허</strong>
 
 <ul class="publication">
+{% assign i = 0 %}
+{% for item in site.data.patents %}
+  {% assign i = i | plus:1 %}
   <li class="line">
-  <div class="lineno">[1]</div>
+  <div class="lineno">[{{ i }}]</div>
   <div>
-    뉴럴 네트워크를 이용하여 표적 생성물을 합성하는 장치 및 방법 (KR, 10-2021-0017869), 2021.
+    {{ item.author | replace: 'Eunji Kim', '<u>Eunji Kim</u>' }} ({{ item.year }}), "{{ item.title }}" 
+    <ul>
+      <!-- <li class="patent"> -->
+      {% if item.application_no_kr %}
+        <li><div>
+          KR Patent, Application No. <a href="{{ item.url_kr }}" target="_blank">{{ item.application_no_kr }}</a>.
+        </div></li>
+      {% endif %}
+      {% if item.application_no_us %}
+        <li><div>
+          US Patent, Application No. <a href="{{ item.url_us }}" target="_blank">{{ item.application_no_us }}</a>.
+        </div></li>
+      {% endif %}
+      {% if item.application_no_ep %}
+        <li><div>
+          EP Patent, Application No. <a href="{{ item.url_ep }}" target="_blank">{{ item.application_no_ep }}</a>.
+        </div></li>
+      {% endif %}
+      {% if item.application_no_jp %}
+        <li><div>
+          JP Patent, Application No. <a href="{{ item.url_jp }}" target="_blank">{{ item.application_no_jp }}</a>.
+        </div></li>
+      {% endif %}
+      {% if item.application_no_cp %}
+        <li><div>
+          CP Patent, Application No. <a href="{{ item.url_cp }}" target="_blank">{{ item.application_no_cp }}</a>.
+        </div></li>
+      {% endif %}
+    </ul>
   </div>
   </li>
+{% endfor %}
 </ul>
 
 

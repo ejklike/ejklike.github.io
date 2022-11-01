@@ -1,5 +1,21 @@
+- position: #PI
+  kotitle: 마스크제조기기 및 사용자 데이터 분석모델 개발
+  entitle: Mask-making device and user data analysis model development
+  koorg: 뷰넥스
+  enorg: BEAUnex
+  duration: 2022.07 - 2022.09
+  logo: beaunex
+
 - position:
-  kotitle: 원유처리설비 고장예지 모형 개발
+  kotitle: 멀티모달 데이터를 활용한 설명가능한 인공지능 및 심층강화학습 기반 주가 예측 모델 개발
+  entitle: Development of Stock Prediction Models using Explainable AI with Multi-modal Data and Deep Reinforcement Learning
+  koorg: 한국연구재단
+  enorg: National Research Foundation
+  duration: 2022.07 - 2025.06
+  logo: nrf
+
+- position:
+  kotitle: 원유처리설비의 고장예지를 위한 이상탐지 모형 개발
   entitle: Predictive Analytics for Equipment Management
   koorg: Brunei Shell Petroleum
   enorg: Brunei Shell Petroleum
