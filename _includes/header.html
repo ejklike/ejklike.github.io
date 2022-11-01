@@ -1,9 +1,41 @@
-{% if page.url contains "ko/" %}
+{% if page.url contains "/ko/" %}
 {% assign homeurl = "/ko/" %}
+{% elsif page.url contains "/ko/" %}
+{% assign homeurl = "/" %}
 {% else %}
 {% assign homeurl = "/" %}
 {% endif %}
 
+
+<!-- translator -->
+<div class="lang">
+
+{% if page.layout == "post" or page.url contains "blog" %} 
+<a href="{{ page.url}}" aria-current="true">한국어</a>
+<a>English</a>
+
+{% elsif page.url == "/" %}
+<a href="{{ site.url }}/ko">한국어</a>
+<a href="{{ site.url }}/" aria-current="true">English</a>
+
+{% elsif page.url == "/ko/" %}
+<a href="{{ site.url }}/ko" aria-current="true">한국어</a>
+<a href="{{ site.url }}/">English</a>
+
+{% elsif page.url contains "ko/" %} <!-- publication/ko, project/ko -->
+<a href="{{ page.url }}" aria-current="true">한국어</a>
+<a href="{{ page.url | replace: "/ko/", "/" }}">English</a>
+
+{% else %} <!-- publication/, project/ -->
+<a href="{{ page.url }}ko/" }}">한국어</a>
+<a href="{{ page.url}}" aria-current="true">English</a>
+
+{% endif %}
+</div>
+<!-- translator -->
+
+
+<!-- header profile -->
 <div class="header-profile">
 
   <div class="left atleast350">
@@ -25,44 +57,40 @@
     </a>
     <div class="desc">eunjikim at cau.ac.kr</div>
 
-  </div>
+    </div>
 
-  
-  <div class="header-desc atmost600">
-    <a href="{{homeurl}}" class="nocolor">
-      <h1 class="h1">Eunji Kim <span class="ssmol">김은지</span></h1>  
-      <div><span class="smol">Assistant Professor, CAU</span></div>
-      <div><span class="smol">중앙대학교 경영학부 조교수</span></div>
-    </a>
-    <div class="desc">eunjikim at cau.ac.kr</div>
-  </div>
+    <div class="header-desc atmost600">
+      <a href="{{homeurl}}" class="nocolor">
+        <h1 class="h1">Eunji Kim <span class="ssmol">김은지</span></h1>  
+        <div><span class="smol">Assistant Professor, CAU</span></div>
+        <div><span class="smol">중앙대학교 경영학부 조교수</span></div>
+      </a>
+      <div class="desc">eunjikim at cau.ac.kr</div>
+    </div>
   
   </div>
 </div>
+<!-- header profile -->
 
+
+
+<!-- header bookmark -->
 <div class="header-bookmark">
-  
-  {% unless page.layout == "post" or page.url contains "blog" %}
-    <a class="styled-link atleast400" href="{{ site.cv_url }}" target="_blank">Curriculum Vitae</a>
-    <a class="styled-link atleast350 atmost400" href="{{ site.cv_url }}" target="_blank">CV</a>
-    <a class="styled-link" href="{{ site.scholar_url }}" target="_blank">Google Scholar</a>
-    <!-- <a class="styled-link" href="{{ site.orcid_url }}" target="_blank">ORCiD</a> -->
-  {% endunless %}
-
-  {% if page.url contains "ko/" %}
-  <a class="styled-link marked" href="{{ page.url | remove: "ko/" }}">한국어/English</a>
-  {% elsif page.layout == "post" %} 
-  <a class="styled-link marked" href="/blog/">←</a>
-  {% elsif page.url contains "blog" %}
-  <div></div>
-  {% else %}
-  <a class="styled-link marked" href="{{ page.url}}ko/">English/한국어</a>
-  {% endif %}
 
   {% if page.url contains "/publication/" %}
-  <a class="styled-link" href="{{ homeurl }}#pub">←</a>
+  <a class="styled-link marked" href="{{ homeurl }}#pub">←</a>
   {% elsif page.url contains "/project/" %}
-  <a class="styled-link" href="{{ homeurl }}#pjt">←</a>
+  <a class="styled-link marked" href="{{ homeurl }}#pjt">←</a>
   {% endif %}
 
+
+  {% if page.layout == "post" %} 
+  <a class="styled-link marked" href="/blog/">← Back to List</a>
+  {% endif %}
+
+  <a class="styled-link atleast400" href="{{ site.cv_url }}" target="_blank">Curriculum Vitae</a>
+  <a class="styled-link atleast350 atmost400" href="{{ site.cv_url }}" target="_blank">CV</a>
+  <a class="styled-link" href="{{ site.scholar_url }}" target="_blank">Google Scholar</a>
+
 </div>
+<!-- header bookmark -->
