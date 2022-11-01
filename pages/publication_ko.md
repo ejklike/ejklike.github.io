@@ -50,7 +50,7 @@ permalink: /publication/ko/
   <li class="line">
   <div class="lineno">[{{ i }}]</div>
   <div>
-    {{ item.author | replace: 'Eunji Kim', '<u>Eunji Kim</u>' }} ({{ item.year }}), "{{ item.title }}" 
+    {{ item.author_ko | replace: '김은지', '<u>김은지</u>' }} ({{ item.year }}), "{{ item.title_ko }}" 
     <ul>
       <!-- <li class="patent"> -->
       {% if item.application_no_kr %}

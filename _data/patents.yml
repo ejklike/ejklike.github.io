@@ -1,6 +1,8 @@
 - author: Dongseon Lee, Taesin Ha, Younsuk Choi, Jeonghun Kim, Wonseok Oh, Hyunjeong Jeon, ByungKwon Choi, Youngchun Kwon, Hyukju Kwon, Gahee Kim, Bosung Kim, Eunji Kim, Minsik Min, Minsik Park, Youngjin Park, Jinwoo Park, Hyungtae Seo, Sangyoon Lee, Jaejun Chang, Junwon Jang, Aram Jeon, Yongsik Jung, Joonkee Cho, Wonje Choi, Hyundo Choi, Dal Heo, Wooram Hong
+  author_ko: 이동선, 하태신, 최윤석, 김정훈, 오원석, 전현정, 최병권, 권영천, 권혁주, 김가희, 김보성, 김은지, 민민식, 박민식, 박영진, 박진우, 서형태, 이상윤, 장재준, 장준원, 전아람, 정용식, 조준기, 최원제, 최현도, 허달, 홍우람
   year: 2021
   title: Material synthesis apparatus and method of operating the same (물질 합성 장치 및 이의 동작 방법)
+  title_ko: 물질 합성 장치 및 이의 동작 방법 (Material synthesis apparatus and method of operating the same)
   application_no_us: US17/507,401
   application_no_kr: KR10-2021-0041357
   application_no_ep: 
@@ -13,8 +15,10 @@
   url_cp: 
 
 - author: Eunji Kim, Youngchun Kwon, Minsik Park, Dongseon Lee, Younsuk Choi
+  author_ko: 김은지, 권영천, 박민식, 이동선, 최윤석
   year: 2021
   title: Method and apparatus for synthesizing target products by using neural networks (뉴럴 네트워크를 이용하여 표적 생성물을 합성하는 장치 및 방법)
+  title_ko: 뉴럴 네트워크를 이용하여 표적 생성물을 합성하는 장치 및 방법 (Method and apparatus for synthesizing target products by using neural networks)
   application_no_us: US17/372,808
   application_no_kr: KR10-2021-0017869
   application_no_ep: EP21186592.8A
