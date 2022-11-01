@@ -40,7 +40,7 @@ permalink: /ko/
   {% assign i = i | plus:1 %}
   <li>
   <div>
-      {{ item.author | replace: 'Eunji Kim', '<u>Eunji Kim</u>' }} ({{ item.year }}), "<a href="{{ item.url }}" target="_blank">{{ item.title }}</a>." <i>{{ item.journal }}</i> {{ item.volnopage }}.
+      {{ item.author | replace: 'Eunji Kim', '<u>Eunji Kim</u>' }} ({{ item.year }}), "<a href="{{ item.url }}" target="_blank">{{ item.title }}</a>." <i>{{ item.journal }}</i>{% if item.volnopage =="Accepted" or item.volnopage =="In revision" %},{% endif %} {{ item.volnopage }}.
   </div>
   </li>
   {% if i == 3 %}
