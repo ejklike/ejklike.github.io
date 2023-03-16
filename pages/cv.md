@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Curriculum Viate
-permalink: /cv.html
+permalink: /cv
 sitemap: false
 ---
 
