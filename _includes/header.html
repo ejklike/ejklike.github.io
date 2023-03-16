@@ -15,8 +15,8 @@
 <a>English</a>
 
 {% elsif page.url contains "cv" or page.url contains "404" %}
-<a href="{{ page.url }}">한국어</a>
-<a href="{{ page.url }}/" aria-current="true">English</a>
+<a>한국어</a>
+<a href="{{ page.url }}" aria-current="true">English</a>
 
 {% elsif page.url == "/" %}
 <a href="{{ site.url }}/ko">한국어</a>
