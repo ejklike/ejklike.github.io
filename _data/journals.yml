@@ -1,8 +1,15 @@
-- author: Eunji Kim, Jinwon An, Hyun-Chang Cho, Sungzoon Cho, Byeongeon Lee
-  year: 2022+
+- author: Taesin Ha, Dongseon Lee, Youngchun Kwon, Min Sik Park, Sangyoon Lee, Jaejun Jang, Byungkwon Choi, Hyunjeong Jeon, Jeonghun Kim, Hyundo Choi, Hyung-Tae Seo, Wonje Choi, Wooram Hong, Young Jin Park, Junwon Jang, Joonkee Cho, Bosung Kim, Hyukju Kwon, Gahee Kim, Won Seok Oh, Jin Woo Kim, Joonhyuk Choi, Minsik Min, Aram Jeon, Yongsik Jung, Eunji Kim, Hyosug Lee, Youn-Suk Choi
+  year: 2023
+  title: AI-driven robotic chemist for autonomous synthesis of organic molecules
+  journal: Science Advances
+  volnopage: "9(44): eadj0461"
+  url: https://doi.org/10.1126/sciadv.adj0461
+
+- author: Eunji Kim*, Jinwon An, Hyun-Chang Cho, Sungzoon Cho, Byeongeon Lee
+  year: 2023
   title: A sensor data mining process for identifying root causes associated with low yield in semiconductor manufacturing
   journal: Data Technologies and Applications
-  volnopage: "Accepted"
+  volnopage: "57(3): 397-417"
   url: https://doi.org/10.1108/DTA-08-2022-0341
 
 - author: Min Sik Park*, Dongseon Lee, Young Chun Kwon, Eunji Kim, and Youn-Suk Choi
