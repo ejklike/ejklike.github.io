@@ -1,4 +1,13 @@
 - position:
+  kotitle: 금융 시계열의 동적 네트워크화를 통한 시장 구조 변화 및 국면 분석
+  entitle: Market Structure Change and Regime Analysis through Dynamic Network Modeling of Financial Time Series
+  koorg: 한국연구재단
+  enorg: National Research Foundation
+  duration: 2026.06 - 2029.05
+  logo: nrf
+
+
+- position:
   kotitle: 실시간 텐서 스트림 구간분할 및 군집화를 위한 뉴럴 가속화 동적 그래프 모델링
   entitle: Neural-Accelerated Dynamic Graph Modeling for Real-Time Tensor Stream Segmentation and Clustering
   koorg: 한국연구재단
